@@ -1,0 +1,331 @@
+$bg-image:'img/header.png';
+$bg-color:#074B00;
+$bg-gradiant-color:#003900;
+//220px
+//155px
+html,body
+{
+  height: 100%;
+}
+
+body {
+    background-color: $bg-color;
+    background-position: 0% 0%, 0% 0%;
+    background-size: 100px 220px, auto;
+    background-repeat: repeat-x, repeat;
+    background-image: linear-gradient(to bottom, $bg-gradiant-color 155px, $bg-color 100%), none;
+
+/*
+    background: url($bg-image) -2px -75px  no-repeat,
+                linear-gradient(to bottom, $bg-gradiant-color, $bg-color) top center 100% 220px repeat-x,
+                $bg-color;
+*/
+
+    margin:0px;
+}
+
+.header {
+    display: block;
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+    background-image: url($bg-image);
+    background-size: cover;
+    width:100%;
+    height:140px;
+    z-index:5;
+
+    a.brand-link {
+        display: block;
+        position: absolute;
+        width: 355px;
+        height: 165px;
+        left: 70px;
+        top: 60px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        height:240px;
+        background-position: -2px top;
+        background-repeat: no-repeat;
+        background-size: auto;
+
+        a.brand-link {
+            left: 70px;
+            top: 60px;
+        }
+    }
+}
+
+
+.sponsor {
+    width: 100%;
+    height: 60px;
+    text-align:center;
+    margin: 0px 0px 20px;
+
+    @media (min-width: $screen-sm-min) {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        margin: 0px;
+        width: 468px;
+    }
+}
+
+
+$navi-bg-color:#383E34;
+$navi-border-inner-color:#848A7E;
+$navi-border-outer-color:#4C5445;
+
+.navigation {
+    z-index:-1;
+    position:absolute;
+    top:0px;
+    background: $navi-bg-color;
+
+    width:190px;
+    border-left:18px solid $navi-border-outer-color;
+    border-bottom-right-radius: 4px;
+
+    box-shadow: 0px 0px 3px 5px rgba(0,0,0,0.7);
+
+    ul {
+        border-left:5px solid $navi-border-inner-color;
+        margin-top:0px;
+        padding-top:250px;
+        padding-bottom:20px;
+    }
+}
+
+
+.border-panel {
+    border-style: solid;
+    border-width: 8px;
+    -moz-border-image: url(img/border.png) 8 repeat;
+    -webkit-border-image: url(img/border.png) 8 repeat;
+    -o-border-image: url(img/border.png) 8 repeat;
+    border-image: url(img/border.png) 8 repeat;
+
+    background-color: #053C03;
+}
+
+
+
+
+.box {
+    margin-bottom:$grid-gutter-width;
+
+    background-color:#383E34;
+    border:1px solid #000000;
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.6);
+    padding:15px;
+    color:#CCCCCC;
+
+    .coat-of-arms {
+        float: left;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        width: 78px;
+    }
+    .content {
+        float: left;
+        min-height: 1px;
+        padding-left: 0px;
+        padding-right: 15px;
+        position: relative;
+        @include calc("width", "100% - 78px");
+    }
+
+    h2 {
+        @extend h4;
+        color:#FFF;
+
+        & + .sub-line {
+            margin-top:-10px;
+        }
+    }
+}
+
+
+
+
+
+.navbar-default {
+    @extend .border-panel;
+    border-left:0px;
+    border-right:0px;
+    width:100%;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.6);
+    margin-bottom:40px;
+    color:#CCC;
+
+    .navbar-nav {
+
+        & > li {
+
+            & > a {
+                font-weight:600;
+            }
+
+            & > .dropdown-menu {
+                margin-top: 2px;
+                border-top: 1px solid $dropdown-fallback-border; // IE8 fallback
+                border-top: 1px solid $dropdown-top-border;
+                border-radius: 0;
+                box-shadow: 4px 4px 4px -1px rgba(0, 0, 0, 0.6)
+            }
+        }
+    }
+}
+
+$dropdown-forum-width: 230px;
+$dropdown-forum-number: 20;
+.dropdown.dropdown-forum {
+    & > .dropdown-menu {
+        width: $dropdown-forum-width;
+        // 2 * (boder + padding) + title + x * entries
+        height:2* (1px + 5px) + 23px + 26px * $dropdown-forum-number;
+
+        &:last-child {
+            margin-left: $dropdown-forum-width - 1px;
+            border-left: 0px;
+        }
+
+        & > li > a {
+            padding: 2px 20px 4px;
+            & > img {
+                vertical-align: top;
+                padding-top: 3px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: $screen-xs-max) {
+    .navbar {
+        display: none;
+    }
+}
+
+
+$network-carousel-width: 80px;
+$network-carousel-height: 100px;
+$network-carousel-num-sm: 5;
+$network-carousel-num-md: 7;
+.network-carousel {
+    @extend .border-panel;
+    border-left:0;
+    border-right:0;
+    width: 100%;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+
+    a {
+        display: block;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        background: none;
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        width: $network-carousel-width * $network-carousel-num-sm;
+        margin: 0px;
+        border: 0;
+    }
+    @media (min-width: $screen-md-min) {
+        width: $network-carousel-width * $network-carousel-num-md;
+    }
+}
+.jcarousel-wrapper {
+/*
+    width: $network-carousel-width * $network-carousel-num-xs;
+*/
+    position: relative;
+    width:100%;
+    margin: 0px auto;
+
+    @media (min-width: $screen-sm-min) {
+        width: auto;
+    }
+
+    $pagination-size: 35px;
+    $pagination-offset-mobile: 10px;
+    $pagination-offset-desktop: -12px;
+    .jcarousel-prev,
+    .jcarousel-next {
+        @extend .btn;
+        @extend .btn-default;
+        @extend .glyphicon;
+
+        position: absolute;
+        top: ($network-carousel-height - $pagination-size) / 2;
+
+        display: block;
+        width: $pagination-size;
+        height: $pagination-size;
+        padding: 0 2px 0 0;
+        text-align:center;
+        font-size:20px;
+        line-height:$pagination-size;
+        z-index: 1000;
+    }
+    .jcarousel-prev {
+        @extend .glyphicon-chevron-left;
+        left: $pagination-offset-mobile;
+    }
+    .jcarousel-next {
+        @extend .glyphicon-chevron-right;
+        right: $pagination-offset-mobile;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        .jcarousel-prev {
+            left: $pagination-offset-desktop;
+        }
+        .jcarousel-next {
+            right: $pagination-offset-desktop;
+        }
+    }
+}
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    width:$network-carousel-width - 6px;
+    height:$network-carousel-height;
+    margin:0px 3px;
+}

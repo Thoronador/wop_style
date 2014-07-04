@@ -1,0 +1,44 @@
+//== Colors
+$brand-primary:         #FF9900 !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+
+//== Typography
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@import "bootstrap/variables";
+
+//== Typography
+$headings-font-weight: 700;
+$font-path: "../fonts/";
+$icon-font-path: "../fonts/bootstrap/";
+
+//== Buttons
+$btn-default-bg: #888;
+
+
+//== Navbars
+$navbar-default-color: #CCC;
+$navbar-default-link-color: #CCC;
+$navbar-default-link-hover-color: #FFF;
+$navbar-default-link-hover-bg: darken(#053C03, 1);
+$navbar-default-link-active-color: #FFF;
+$navbar-default-link-active-bg: darken(#053C03, 2);
+$navbar-default-link-disabled-color: #666;
+$navbar-default-link-disabled-bg: rgba(0,0,0,0);
+
+//== Dropdowns
+$dropdown-link-color: #CCC;
+$dropdown-bg:#383E34;
+$dropdown-fallback-border: #000; // IE8 fallback
+$dropdown-border: #000;
+$dropdown-top-border: rgba(0, 0, 0, 0.1);
+
+$dropdown-link-hover-color: #FFF;
+$dropdown-link-hover-bg: lighten(#383E34, 5);
+$dropdown-link-active-color: #FFF;
+$dropdown-link-active-bg: lighten(#383E34, 5);
+$dropdown-link-disabled-color: #666;

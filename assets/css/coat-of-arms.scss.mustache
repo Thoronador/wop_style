@@ -1,0 +1,57 @@
+{
+  // Default options
+  'functions': true
+}
+
+{{#items}}
+  $coa-{{name}}-x: {{px.x}};
+  $coa-{{name}}-y: {{px.y}};
+  $coa-{{name}}-offset-x: {{px.offset_x}};
+  $coa-{{name}}-offset-y: {{px.offset_y}};
+  $coa-{{name}}-width: {{px.width}};
+  $coa-{{name}}-height: {{px.height}};
+  $coa-{{name}}-total-width: {{px.total_width}};
+  $coa-{{name}}-total-height: {{px.total_height}};
+  $coa-{{name}}-image: '{{{escaped_image}}}';
+  $coa-{{name}}: {{px.x}} {{px.y}} {{px.offset_x}} {{px.offset_y}} {{px.width}} {{px.height}} {{px.total_width}} {{px.total_height}} '{{{escaped_image}}}';
+{{/items}}
+
+{{#options.functions}}
+  @mixin sprite-width($sprite) {
+    width: nth($sprite, 5);
+  }
+
+  @mixin sprite-height($sprite) {
+    height: nth($sprite, 6);
+  }
+
+  @mixin sprite-position($sprite) {
+    $sprite-offset-x: nth($sprite, 3);
+    $sprite-offset-y: nth($sprite, 4);
+    background-position: $sprite-offset-x  $sprite-offset-y;
+  }
+
+  @mixin sprite-image($sprite) {
+    $sprite-image: nth($sprite, 9);
+    background-image: url(#{$sprite-image});
+  }
+
+  @mixin sprite($sprite) {
+    @include sprite-image($sprite);
+    @include sprite-position($sprite);
+    @include sprite-width($sprite);
+    @include sprite-height($sprite);
+  }
+{{/options.functions}}
+
+{{#items}}
+  .coat-of-arm-{{name}} {
+    @include sprite($coa-{{name}});
+    $name: "{{name}}";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+{{/items}}
