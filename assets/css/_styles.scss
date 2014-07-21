@@ -1,4 +1,5 @@
 $bg-image:'img/header.png';
+$bg-image-sm:'img/header_sm.png';
 $bg-color:#074B00;
 $bg-gradiant-color:#003900;
 //220px
@@ -14,13 +15,6 @@ body {
     background-size: 100px 220px, auto;
     background-repeat: repeat-x, repeat;
     background-image: linear-gradient(to bottom, $bg-gradiant-color 155px, $bg-color 100%), none;
-
-/*
-    background: url($bg-image) -2px -75px  no-repeat,
-                linear-gradient(to bottom, $bg-gradiant-color, $bg-color) top center 100% 220px repeat-x,
-                $bg-color;
-*/
-
     margin:0px;
 }
 
@@ -28,47 +22,52 @@ body {
     display: block;
     background-position: 50% 80%;
     background-repeat: no-repeat;
-    background-image: url($bg-image);
-    background-size: cover;
+    background-image: url($bg-image-sm);
+    background-size: contain;
     width:100%;
-    height:140px;
+    height:70px;
+    margin-bottom: 20px;
     z-index:5;
 
     a.brand-link {
         display: block;
-        position: absolute;
-        width: 355px;
-        height: 165px;
-        left: 70px;
-        top: 60px;
+        width: 100%;
+        height: 70px;
     }
 
     @media (min-width: $screen-sm-min) {
         height:240px;
+        background-image: url($bg-image);
         background-position: -2px top;
         background-repeat: no-repeat;
         background-size: auto;
+        margin-bottom: 0;
 
         a.brand-link {
+            position: absolute;
             left: 70px;
             top: 60px;
+            width: 355px;
+            height: 165px;
         }
     }
 }
 
 
 .sponsor {
-    width: 100%;
-    height: 60px;
     text-align:center;
     margin: 0px 0px 20px;
+    width:100%;
+    height:90px;
+    max-height:90px;
+    overflow:hidden;
 
     @media (min-width: $screen-sm-min) {
         position: absolute;
         top: 20px;
         right: 20px;
         margin: 0px;
-        width: 468px;
+        width: calc(100% - 500px);
     }
 }
 
@@ -136,6 +135,24 @@ $navi-border-outer-color:#4C5445;
         padding-right: 15px;
         position: relative;
         @include calc("width", "100% - 78px");
+
+        &.news {
+            text-align:justify;
+            h2 {
+                @include text-truncate;
+            }
+
+            p img{
+                box-shadow: 0 0 5px #333;
+                margin: 15px 0;
+                &[align="left"] {
+                    margin-right: 15px;
+                }
+                &[align="right"] {
+                    margin-left: 15px;
+                }
+            }
+        }
     }
 
     h2 {
@@ -146,9 +163,18 @@ $navi-border-outer-color:#4C5445;
             margin-top:-10px;
         }
     }
+
+    img {
+        max-width:100%;
+        max-height: 250px;
+    }
 }
 
-
+span.copyright {
+    font-size: $font-size-small;
+    color:#CCCCCC;
+    padding-bottom: 20px;
+}
 
 
 
@@ -213,7 +239,9 @@ $dropdown-forum-number: 20;
 
 $network-carousel-width: 80px;
 $network-carousel-height: 100px;
-$network-carousel-num-sm: 5;
+$network-carousel-num-sm3: 3;
+$network-carousel-num-sm4: 4;
+$network-carousel-num-sm5: 5;
 $network-carousel-num-md: 7;
 .network-carousel {
     @extend .border-panel;
@@ -230,13 +258,19 @@ $network-carousel-num-md: 7;
     @media (min-width: $screen-sm-min) {
         background: none;
         position: absolute;
-        top: 100px;
-        right: 20px;
-        width: $network-carousel-width * $network-carousel-num-sm;
+        top: 120px;
+        right: 32px;
+        width: $network-carousel-width * $network-carousel-num-sm3;
         margin: 0px;
         border: 0;
     }
-    @media (min-width: $screen-md-min) {
+    @media (min-width: 820px) {
+        width: $network-carousel-width * $network-carousel-num-sm4;
+    }
+    @media (min-width: 900px) {
+        width: $network-carousel-width * $network-carousel-num-sm5;
+    }
+    @media (min-width: 1050px) {
         width: $network-carousel-width * $network-carousel-num-md;
     }
 }
@@ -258,8 +292,16 @@ $network-carousel-num-md: 7;
     .jcarousel-prev,
     .jcarousel-next {
         @extend .btn;
-        @extend .btn-default;
-        @extend .glyphicon;
+        @extend .fa;
+
+        background-color: rgba(#000, 0.3);
+        color: #CCC;
+
+        &:hover, &:focus, &:active {
+            background-color: rgba(#000, 0.6);
+            color: #CCC;
+            text-shadow: -1px 1px 5px #ffc, 1px -1px 5px #fff;
+        }
 
         position: absolute;
         top: ($network-carousel-height - $pagination-size) / 2;
@@ -267,19 +309,21 @@ $network-carousel-num-md: 7;
         display: block;
         width: $pagination-size;
         height: $pagination-size;
-        padding: 0 2px 0 0;
+        padding: 0;
         text-align:center;
-        font-size:20px;
+        font-size:30px;
         line-height:$pagination-size;
         z-index: 1000;
     }
     .jcarousel-prev {
-        @extend .glyphicon-chevron-left;
+        @extend .fa-angle-left;
         left: $pagination-offset-mobile;
+        padding-right: 2px;
     }
     .jcarousel-next {
-        @extend .glyphicon-chevron-right;
+        @extend .fa-angle-right;
         right: $pagination-offset-mobile;
+        padding-left: 2px;
     }
 
     @media (min-width: $screen-sm-min) {
