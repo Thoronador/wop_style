@@ -6399,6 +6399,7 @@ footer .navbar {
 }
 .network-carousel a {
   display: block;
+  font-size: 0;
 }
 @media (min-width: 768px) {
   .network-carousel {
