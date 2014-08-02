@@ -1,0 +1,127 @@
+.network-carousel {
+    @extend .border-panel;
+    border-left:0;
+    border-right:0;
+    width: 100%;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+
+    a {
+        display: block;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        background: none;
+        position: absolute;
+        top: 120px;
+        right: 32px;
+        width: $network-carousel-width * $network-carousel-num-sm3;
+        margin: 0px;
+        border: 0;
+    }
+    @media (min-width: 820px) {
+        width: $network-carousel-width * $network-carousel-num-sm4;
+    }
+    @media (min-width: 900px) {
+        width: $network-carousel-width * $network-carousel-num-sm5;
+    }
+    @media (min-width: 1050px) {
+        width: $network-carousel-width * $network-carousel-num-md;
+    }
+}
+.jcarousel-wrapper {
+    position: relative;
+    width:100%;
+    margin: 0px auto;
+
+    @media (min-width: $screen-sm-min) {
+        width: auto;
+    }
+
+    $pagination-size: 35px;
+    $pagination-offset-mobile: 10px;
+    $pagination-offset-desktop: -12px;
+    .jcarousel-prev,
+    .jcarousel-next {
+        @extend .btn;
+        @extend .fa;
+
+        background-color: rgba(#000, 0.3);
+        color: #CCC;
+
+        &:hover, &:focus, &:active {
+            background-color: rgba(#000, 0.6);
+            color: #CCC;
+            text-shadow: -1px 1px 5px #ffc, 1px -1px 5px #fff;
+        }
+
+        position: absolute;
+        top: ($network-carousel-height - $pagination-size) / 2;
+
+        display: block;
+        width: $pagination-size;
+        height: $pagination-size;
+        padding: 0;
+        text-align:center;
+        font-size:30px;
+        line-height:$pagination-size;
+        z-index: 1000;
+    }
+    .jcarousel-prev {
+        @extend .fa-angle-left;
+        left: $pagination-offset-mobile;
+        padding-right: 2px;
+    }
+    .jcarousel-next {
+        @extend .fa-angle-right;
+        right: $pagination-offset-mobile;
+        padding-left: 2px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        .jcarousel-prev {
+            left: $pagination-offset-desktop;
+        }
+        .jcarousel-next {
+            right: $pagination-offset-desktop;
+        }
+    }
+}
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    width:$network-carousel-width - 6px;
+    height:$network-carousel-height;
+    margin:0px 3px;
+}

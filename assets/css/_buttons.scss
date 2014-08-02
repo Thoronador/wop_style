@@ -1,4 +1,12 @@
 .btn {
     border-radius: 0px;
-    border:none;
+}
+.btn-default {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: #757575;
+    border-color:#757575;
+  }
 }

@@ -5,6 +5,11 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+//== Base
+$bg-image:'img/header.png';
+$bg-image-sm:'img/header_sm.png';
+$bg-color:#074B00;
+$bg-gradiant-color:#003900;
 
 //== Typography
 $font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -17,9 +22,6 @@ $font-path: "../fonts/";
 $icon-font-path: "../fonts/bootstrap/";
 $fa-font-path: $font-path;
 
-//== Buttons
-$btn-default-bg: #888;
-
 
 //== Navbars
 $navbar-default-color: #CCC;
@@ -30,6 +32,13 @@ $navbar-default-link-active-color: #FFF;
 $navbar-default-link-active-bg: darken(#053C03, 2);
 $navbar-default-link-disabled-color: #666;
 $navbar-default-link-disabled-bg: rgba(0,0,0,0);
+
+
+//== Navigation
+$navi-bg-color:#383E34;
+$navi-border-inner-color:#848A7E;
+$navi-border-outer-color:#4C5445;
+
 
 //== Dropdowns
 $dropdown-link-color: #CCC;
@@ -43,3 +52,58 @@ $dropdown-link-hover-bg: lighten(#383E34, 5);
 $dropdown-link-active-color: #FFF;
 $dropdown-link-active-bg: lighten(#383E34, 5);
 $dropdown-link-disabled-color: #666;
+
+//== network-carousel
+$network-carousel-width: 80px;
+$network-carousel-height: 100px;
+$network-carousel-num-sm3: 3;
+$network-carousel-num-sm4: 4;
+$network-carousel-num-sm5: 5;
+$network-carousel-num-md: 7;
+
+//== List group
+$list-group-bg:                 transparent;
+$list-group-border:             #999;
+$list-group-border-radius:      0;
+$list-group-hover-bg:           $component-active-bg;
+$list-group-hover-link-color:   #333;
+$list-group-hover-border:       $list-group-hover-bg;
+$list-group-active-color:       #333;
+$list-group-active-bg:          $component-active-bg;
+$list-group-active-border:      $list-group-active-bg;
+$list-group-active-text-color:  #333;
+$list-group-link-color:         $link-color;
+$list-group-link-heading-color: #333 !default;
+
+
+//== Badges
+$badge-color:                 #333;
+$badge-link-hover-color:      #fff;
+$badge-bg:                    #999;
+$badge-active-color:          $link-color;
+$badge-active-bg:             #383E34;
+$badge-font-weight:           bold;
+$badge-line-height:           1;
+$badge-border-radius:         0;
+
+
+//== Buttons
+$btn-default-color:              #333;
+$btn-default-bg:                 #999;
+$btn-default-border:             $btn-default-bg;
+$btn-primary-color:              #333;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             $btn-primary-bg;
+
+
+//== Forms
+$input-bg:                       #fff;
+$input-bg-disabled:              $gray-lighter;
+$input-color:                    #333;
+$input-border:                   #999;
+$input-border-radius:            0;
+$input-border-focus:             #053C03;
+$input-color-placeholder:        $gray-light;
+
+$input-group-addon-bg:           #CCC;
+$input-group-addon-border-color: $input-border;

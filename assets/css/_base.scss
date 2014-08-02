@@ -1,0 +1,143 @@
+html,body {
+  height: 100%;
+}
+
+body {
+    background-color: $bg-color;
+    background-position: 0% 0%, 0% 0%;
+    background-size: 100px 220px, auto;
+    background-repeat: repeat-x, repeat;
+    background-image: linear-gradient(to bottom, $bg-gradiant-color 155px, $bg-color 100%), none;
+    margin:0px;
+}
+
+.header {
+    display: block;
+    width:100%;
+    margin: 10px 0;
+    z-index:5;
+
+    a.brand-link {
+        display: block;
+        height: 61px;
+        width: calc(100% - 110px);
+        margin-left: 5px;
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-image: url($bg-image-sm);
+        background-size: contain;
+        font-size:0px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        height:240px;
+        background-image: url($bg-image);
+        background-position: -2px top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        margin: 0;
+
+        a.brand-link {
+            position: absolute;
+            left: 70px;
+            top: 60px;
+            width: 355px;
+            height: 165px;
+            background:transparent;
+        }
+    }
+}
+
+
+.sponsor {
+    text-align:center;
+    margin: 0px 0px 20px;
+    width:100%;
+    height:90px;
+    max-height:90px;
+    overflow:hidden;
+
+    @media (min-width: $screen-sm-min) {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        margin: 0px;
+        width: calc(100% - 500px);
+    }
+}
+
+span.copyright {
+    font-size: $font-size-small;
+    color:#CCCCCC;
+    padding-bottom: 20px;
+}
+
+
+
+
+.box {
+    margin-bottom:$grid-gutter-width;
+
+    background-color:#383E34;
+    border:1px solid #000000;
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.6);
+    padding:15px;
+    color:#CCCCCC;
+
+    .coat-of-arms {
+        float: left;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        width: 78px;
+        @media (max-width: $screen-xs-max) {
+            display: none;
+        }
+    }
+    .content {
+        float: left;
+        min-height: 1px;
+        padding-left: 0px;
+        padding-right: 15px;
+        position: relative;
+        @include calc("width", "100% - 78px");
+        @media (max-width: $screen-xs-max) {
+            padding-left: 15px;
+            width: 100%;
+        }
+
+        &.news {
+            text-align:justify;
+            h2 {
+                @include text-truncate;
+            }
+
+            p img{
+                box-shadow: 0 0 5px #333;
+                margin: 15px 0;
+                &[align="left"] {
+                    margin-right: 15px;
+                }
+                &[align="right"] {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+
+    h2 {
+        @extend h4;
+        color:#FFF;
+    }
+
+    img {
+        max-width:100%;
+        max-height: 250px;
+    }
+}
+
+
+.sidebar-content + .sidebar-content {
+    margin-top: $grid-gutter-width;
+}
