@@ -23,16 +23,32 @@
 }
 
 a.list-group-item {
-  // Hover state
-  &:hover,
-  &:focus {
-    color: $list-group-hover-link-color;
-    border-color: $list-group-hover-border;
-    & > .badge {
-      color: $badge-active-color;
-      background-color: $badge-active-bg;
+    // Hover state
+        &:hover,
+        &:focus {
+        color: $list-group-hover-link-color;
+        border-color: $list-group-hover-border;
+        & > .badge {
+          color: $badge-active-color;
+          background-color: $badge-active-bg;
+        }
     }
-  }
+
+    &.list-group-content {
+        color: $text-color;
+        .list-group-content-heading {
+            color: $list-group-link-color;
+        }
+
+        // Hover state
+        &:hover,
+        &:focus {
+            color: $list-group-hover-link-color;
+            .list-group-content-heading {
+                color: $list-group-hover-link-color;
+            }
+        }
+    }
 }
 
 
@@ -44,4 +60,29 @@ select {
     option:not(:disabled) {
         cursor:pointer;
     }
+}
+
+
+.label {
+    border-radius:0;
+}
+
+.truncate {
+    @include text-truncate();
+}
+@include truncate-space(50);
+@include truncate-space(60);
+@include truncate-space(70);
+@include truncate-space(80);
+@include truncate-space(90);
+@include truncate-space(100);
+
+
+
+
+.offset-top {
+    margin-top:20px;
+}
+.offset-bottom {
+    margin-bottom:20px;
 }

@@ -12,6 +12,15 @@
   text-overflow: ellipsis;
 }
 
+@mixin truncate-space($space) {
+  .truncate.truncate-#{$space} {
+      padding-right: #{$space}px !important;
+      & > .pull-right {
+        margin-right:-#{$space}px;
+      }
+  }
+}
+
 @mixin headings($from: 1, $to: 6){
     @for $i from $from through $to{
       h#{$i}, .h#{$i} {

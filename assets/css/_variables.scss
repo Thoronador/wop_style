@@ -1,9 +1,12 @@
+//== Text
+$text-color:            #cccccc;
+
 //== Colors
-$brand-primary:         #FF9900 !default;
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:         #FF9900;
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
 
 //== Base
 $bg-image:'img/header.png';
@@ -107,3 +110,13 @@ $input-color-placeholder:        $gray-light;
 
 $input-group-addon-bg:           #CCC;
 $input-group-addon-border-color: $input-border;
+
+
+//== Tables
+$table-cell-padding:            8px;
+$table-condensed-cell-padding:  5px;
+$table-bg:                      transparent;
+$table-bg-accent:               #f9f9f9 !default;
+$table-bg-hover:                #f5f5f5 !default;
+$table-bg-active:               $table-bg-hover !default;
+$table-border-color:            #999;
