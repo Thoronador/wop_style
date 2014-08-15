@@ -1,0 +1,407 @@
+  $coa-assassinscreed-x: 66px;
+  $coa-assassinscreed-y: 69px;
+  $coa-assassinscreed-offset-x: -66px;
+  $coa-assassinscreed-offset-y: -69px;
+  $coa-assassinscreed-width: 16px;
+  $coa-assassinscreed-height: 16px;
+  $coa-assassinscreed-total-width: 109px;
+  $coa-assassinscreed-total-height: 85px;
+  $coa-assassinscreed-image: 'img/icons.png';
+  $coa-assassinscreed: 66px 69px -66px -69px 16px 16px 109px 85px 'img/icons.png';
+  $coa-cyberpunk-x: 73px;
+  $coa-cyberpunk-y: 20px;
+  $coa-cyberpunk-offset-x: -73px;
+  $coa-cyberpunk-offset-y: -20px;
+  $coa-cyberpunk-width: 16px;
+  $coa-cyberpunk-height: 16px;
+  $coa-cyberpunk-total-width: 109px;
+  $coa-cyberpunk-total-height: 85px;
+  $coa-cyberpunk-image: 'img/icons.png';
+  $coa-cyberpunk: 73px 20px -73px -20px 16px 16px 109px 85px 'img/icons.png';
+  $coa-demonicon-x: 93px;
+  $coa-demonicon-y: 20px;
+  $coa-demonicon-offset-x: -93px;
+  $coa-demonicon-offset-y: -20px;
+  $coa-demonicon-width: 16px;
+  $coa-demonicon-height: 16px;
+  $coa-demonicon-total-width: 109px;
+  $coa-demonicon-total-height: 85px;
+  $coa-demonicon-image: 'img/icons.png';
+  $coa-demonicon: 93px 20px -93px -20px 16px 16px 109px 85px 'img/icons.png';
+  $coa-diablo-x: 93px;
+  $coa-diablo-y: 40px;
+  $coa-diablo-offset-x: -93px;
+  $coa-diablo-offset-y: -40px;
+  $coa-diablo-width: 16px;
+  $coa-diablo-height: 16px;
+  $coa-diablo-total-width: 109px;
+  $coa-diablo-total-height: 85px;
+  $coa-diablo-image: 'img/icons.png';
+  $coa-diablo: 93px 40px -93px -40px 16px 16px 109px 85px 'img/icons.png';
+  $coa-divinity-x: 27px;
+  $coa-divinity-y: 0px;
+  $coa-divinity-offset-x: -27px;
+  $coa-divinity-offset-y: 0px;
+  $coa-divinity-width: 20px;
+  $coa-divinity-height: 20px;
+  $coa-divinity-total-width: 109px;
+  $coa-divinity-total-height: 85px;
+  $coa-divinity-image: 'img/icons.png';
+  $coa-divinity: 27px 0px -27px 0px 20px 20px 109px 85px 'img/icons.png';
+  $coa-dragonage-x: 0px;
+  $coa-dragonage-y: 0px;
+  $coa-dragonage-offset-x: 0px;
+  $coa-dragonage-offset-y: 0px;
+  $coa-dragonage-width: 23px;
+  $coa-dragonage-height: 21px;
+  $coa-dragonage-total-width: 109px;
+  $coa-dragonage-total-height: 85px;
+  $coa-dragonage-image: 'img/icons.png';
+  $coa-dragonage: 0px 0px 0px 0px 23px 21px 109px 85px 'img/icons.png';
+  $coa-drakensang-x: 51px;
+  $coa-drakensang-y: 0px;
+  $coa-drakensang-offset-x: -51px;
+  $coa-drakensang-offset-y: 0px;
+  $coa-drakensang-width: 18px;
+  $coa-drakensang-height: 19px;
+  $coa-drakensang-total-width: 109px;
+  $coa-drakensang-total-height: 85px;
+  $coa-drakensang-image: 'img/icons.png';
+  $coa-drakensang: 51px 0px -51px 0px 18px 19px 109px 85px 'img/icons.png';
+  $coa-dungeonlords-x: 20px;
+  $coa-dungeonlords-y: 49px;
+  $coa-dungeonlords-offset-x: -20px;
+  $coa-dungeonlords-offset-y: -49px;
+  $coa-dungeonlords-width: 16px;
+  $coa-dungeonlords-height: 16px;
+  $coa-dungeonlords-total-width: 109px;
+  $coa-dungeonlords-total-height: 85px;
+  $coa-dungeonlords-image: 'img/icons.png';
+  $coa-dungeonlords: 20px 49px -20px -49px 16px 16px 109px 85px 'img/icons.png';
+  $coa-gothic-x: 40px;
+  $coa-gothic-y: 49px;
+  $coa-gothic-offset-x: -40px;
+  $coa-gothic-offset-y: -49px;
+  $coa-gothic-width: 16px;
+  $coa-gothic-height: 16px;
+  $coa-gothic-total-width: 109px;
+  $coa-gothic-total-height: 85px;
+  $coa-gothic-image: 'img/icons.png';
+  $coa-gothic: 40px 49px -40px -49px 16px 16px 109px 85px 'img/icons.png';
+  $coa-grotesque-x: 73px;
+  $coa-grotesque-y: 0px;
+  $coa-grotesque-offset-x: -73px;
+  $coa-grotesque-offset-y: 0px;
+  $coa-grotesque-width: 16px;
+  $coa-grotesque-height: 16px;
+  $coa-grotesque-total-width: 109px;
+  $coa-grotesque-total-height: 85px;
+  $coa-grotesque-image: 'img/icons.png';
+  $coa-grotesque: 73px 0px -73px 0px 16px 16px 109px 85px 'img/icons.png';
+  $coa-herrderringe-x: 0px;
+  $coa-herrderringe-y: 49px;
+  $coa-herrderringe-offset-x: 0px;
+  $coa-herrderringe-offset-y: -49px;
+  $coa-herrderringe-width: 16px;
+  $coa-herrderringe-height: 16px;
+  $coa-herrderringe-total-width: 109px;
+  $coa-herrderringe-total-height: 85px;
+  $coa-herrderringe-image: 'img/icons.png';
+  $coa-herrderringe: 0px 49px 0px -49px 16px 16px 109px 85px 'img/icons.png';
+  $coa-kingdomhearts-x: 73px;
+  $coa-kingdomhearts-y: 40px;
+  $coa-kingdomhearts-offset-x: -73px;
+  $coa-kingdomhearts-offset-y: -40px;
+  $coa-kingdomhearts-width: 16px;
+  $coa-kingdomhearts-height: 16px;
+  $coa-kingdomhearts-total-width: 109px;
+  $coa-kingdomhearts-total-height: 85px;
+  $coa-kingdomhearts-image: 'img/icons.png';
+  $coa-kingdomhearts: 73px 40px -73px -40px 16px 16px 109px 85px 'img/icons.png';
+  $coa-masseffect-x: 0px;
+  $coa-masseffect-y: 69px;
+  $coa-masseffect-offset-x: 0px;
+  $coa-masseffect-offset-y: -69px;
+  $coa-masseffect-width: 22px;
+  $coa-masseffect-height: 16px;
+  $coa-masseffect-total-width: 109px;
+  $coa-masseffect-total-height: 85px;
+  $coa-masseffect-image: 'img/icons.png';
+  $coa-masseffect: 0px 69px 0px -69px 22px 16px 109px 85px 'img/icons.png';
+  $coa-neverwinter-x: 26px;
+  $coa-neverwinter-y: 69px;
+  $coa-neverwinter-offset-x: -26px;
+  $coa-neverwinter-offset-y: -69px;
+  $coa-neverwinter-width: 16px;
+  $coa-neverwinter-height: 16px;
+  $coa-neverwinter-total-width: 109px;
+  $coa-neverwinter-total-height: 85px;
+  $coa-neverwinter-image: 'img/icons.png';
+  $coa-neverwinter: 26px 69px -26px -69px 16px 16px 109px 85px 'img/icons.png';
+  $coa-risen-x: 46px;
+  $coa-risen-y: 69px;
+  $coa-risen-offset-x: -46px;
+  $coa-risen-offset-y: -69px;
+  $coa-risen-width: 16px;
+  $coa-risen-height: 16px;
+  $coa-risen-total-width: 109px;
+  $coa-risen-total-height: 85px;
+  $coa-risen-image: 'img/icons.png';
+  $coa-risen: 46px 69px -46px -69px 16px 16px 109px 85px 'img/icons.png';
+  $coa-sacred-x: 0px;
+  $coa-sacred-y: 25px;
+  $coa-sacred-offset-x: 0px;
+  $coa-sacred-offset-y: -25px;
+  $coa-sacred-width: 20px;
+  $coa-sacred-height: 20px;
+  $coa-sacred-total-width: 109px;
+  $coa-sacred-total-height: 85px;
+  $coa-sacred-image: 'img/icons.png';
+  $coa-sacred: 0px 25px 0px -25px 20px 20px 109px 85px 'img/icons.png';
+  $coa-starcraft-x: 93px;
+  $coa-starcraft-y: 0px;
+  $coa-starcraft-offset-x: -93px;
+  $coa-starcraft-offset-y: 0px;
+  $coa-starcraft-width: 16px;
+  $coa-starcraft-height: 16px;
+  $coa-starcraft-total-width: 109px;
+  $coa-starcraft-total-height: 85px;
+  $coa-starcraft-image: 'img/icons.png';
+  $coa-starcraft: 93px 0px -93px 0px 16px 16px 109px 85px 'img/icons.png';
+  $coa-starwars-x: 51px;
+  $coa-starwars-y: 23px;
+  $coa-starwars-offset-x: -51px;
+  $coa-starwars-offset-y: -23px;
+  $coa-starwars-width: 18px;
+  $coa-starwars-height: 18px;
+  $coa-starwars-total-width: 109px;
+  $coa-starwars-total-height: 85px;
+  $coa-starwars-image: 'img/icons.png';
+  $coa-starwars: 51px 23px -51px -23px 18px 18px 109px 85px 'img/icons.png';
+  $coa-tes-x: 24px;
+  $coa-tes-y: 25px;
+  $coa-tes-offset-x: -24px;
+  $coa-tes-offset-y: -25px;
+  $coa-tes-width: 20px;
+  $coa-tes-height: 20px;
+  $coa-tes-total-width: 109px;
+  $coa-tes-total-height: 85px;
+  $coa-tes-image: 'img/icons.png';
+  $coa-tes: 24px 25px -24px -25px 20px 20px 109px 85px 'img/icons.png';
+  $coa-thief-x: 93px;
+  $coa-thief-y: 60px;
+  $coa-thief-offset-x: -93px;
+  $coa-thief-offset-y: -60px;
+  $coa-thief-width: 16px;
+  $coa-thief-height: 16px;
+  $coa-thief-total-width: 109px;
+  $coa-thief-total-height: 85px;
+  $coa-thief-image: 'img/icons.png';
+  $coa-thief: 93px 60px -93px -60px 16px 16px 109px 85px 'img/icons.png';
+
+  @mixin sprite-width($sprite) {
+    width: nth($sprite, 5);
+  }
+
+  @mixin sprite-height($sprite) {
+    height: nth($sprite, 6);
+  }
+
+  @mixin sprite-position($sprite) {
+    $sprite-offset-x: nth($sprite, 3);
+    $sprite-offset-y: nth($sprite, 4);
+    background-position: $sprite-offset-x  $sprite-offset-y;
+  }
+
+  @mixin sprite-image($sprite) {
+    $sprite-image: nth($sprite, 9);
+    background-image: url(#{$sprite-image});
+  }
+
+  @mixin sprite($sprite) {
+    @include sprite-image($sprite);
+    @include sprite-position($sprite);
+    @include sprite-width($sprite);
+    @include sprite-height($sprite);
+  }
+
+  .coat-of-arm-assassinscreed {
+    @include sprite($coa-assassinscreed);
+    $name: "assassinscreed";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-cyberpunk {
+    @include sprite($coa-cyberpunk);
+    $name: "cyberpunk";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-demonicon {
+    @include sprite($coa-demonicon);
+    $name: "demonicon";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-diablo {
+    @include sprite($coa-diablo);
+    $name: "diablo";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-divinity {
+    @include sprite($coa-divinity);
+    $name: "divinity";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-dragonage {
+    @include sprite($coa-dragonage);
+    $name: "dragonage";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-drakensang {
+    @include sprite($coa-drakensang);
+    $name: "drakensang";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-dungeonlords {
+    @include sprite($coa-dungeonlords);
+    $name: "dungeonlords";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-gothic {
+    @include sprite($coa-gothic);
+    $name: "gothic";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-grotesque {
+    @include sprite($coa-grotesque);
+    $name: "grotesque";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-herrderringe {
+    @include sprite($coa-herrderringe);
+    $name: "herrderringe";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-kingdomhearts {
+    @include sprite($coa-kingdomhearts);
+    $name: "kingdomhearts";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-masseffect {
+    @include sprite($coa-masseffect);
+    $name: "masseffect";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-neverwinter {
+    @include sprite($coa-neverwinter);
+    $name: "neverwinter";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-risen {
+    @include sprite($coa-risen);
+    $name: "risen";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-sacred {
+    @include sprite($coa-sacred);
+    $name: "sacred";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-starcraft {
+    @include sprite($coa-starcraft);
+    $name: "starcraft";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-starwars {
+    @include sprite($coa-starwars);
+    $name: "starwars";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-tes {
+    @include sprite($coa-tes);
+    $name: "tes";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-thief {
+    @include sprite($coa-thief);
+    $name: "thief";
+    @if str-slice($name, 1, 1) != "_" {
+      &:hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }

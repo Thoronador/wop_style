@@ -47,6 +47,14 @@ module.exports = function (grunt) {
         destCSS: 'assets/css/_coat-of-arms.scss',
         algorithm: 'binary-tree',
         cssTemplate: 'assets/css/coat-of-arms.scss.mustache'
+      },
+      favicons: {
+        src: 'assets/favicons/*.*',
+        destImg: 'assets/css/img/favicons.png',
+        destCSS: 'assets/css/_favicons.scss',
+        algorithm: 'binary-tree',
+        padding: 4,
+        cssTemplate: 'assets/css/favicons.scss.mustache'
       }
     },
 		watch: {
@@ -73,4 +81,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', ['sass:dist', 'concat:dist']);
   grunt.registerTask('coat_of_arms', ['responsive_images:coat_of_arms', 'sprite:coat_of_arms', 'sass:dist']);
+  grunt.registerTask('favicons', ['sprite:favicons', 'sass:dist']);
+  grunt.registerTask('images', ['responsive_images:coat_of_arms', 'sprite:coat_of_arms', 'sprite:favicons', 'sass:dist']);
 }
