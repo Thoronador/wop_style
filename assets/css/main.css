@@ -6642,6 +6642,9 @@ span.copyright {
     width: 100%;
   }
 }
+.box .content p {
+  word-wrap: break-word;
+}
 .box .content.news {
   text-align: justify;
 }
@@ -6652,7 +6655,7 @@ span.copyright {
   text-overflow: ellipsis;
 }
 .box .content.news p img {
-  box-shadow: 0 0 5px #333;
+  box-shadow: 0 0 5px #000;
   margin: 15px 0;
 }
 .box .content.news p img[align="left"] {
@@ -7180,149 +7183,232 @@ have a fixed width and height (but it's not required).
 
 .favicon-_none {
   background-image: url(img/favicons.png);
-  background-position: -93px -40px;
+  background-position: -20px 0px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-assassinscreed {
   background-image: url(img/favicons.png);
-  background-position: -73px -20px;
+  background-position: -60px -40px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-cyberpunk {
   background-image: url(img/favicons.png);
-  background-position: -93px -60px;
+  background-position: 0px -20px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-demonicon {
   background-image: url(img/favicons.png);
-  background-position: -20px -49px;
+  background-position: -20px -20px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-diablo {
   background-image: url(img/favicons.png);
-  background-position: -93px 0px;
+  background-position: -40px 0px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-divinity {
   background-image: url(img/favicons.png);
-  background-position: -27px 0px;
-  width: 20px;
-  height: 20px;
+  background-position: -40px -20px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-dragonage {
   background-image: url(img/favicons.png);
-  background-position: 0px 0px;
-  width: 23px;
-  height: 21px;
+  background-position: 0px -40px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-drakensang {
   background-image: url(img/favicons.png);
-  background-position: -51px 0px;
-  width: 18px;
-  height: 19px;
+  background-position: -20px -40px;
+  width: 15px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-dungeonlords {
   background-image: url(img/favicons.png);
-  background-position: -40px -49px;
+  background-position: -39px -40px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-gothic {
   background-image: url(img/favicons.png);
-  background-position: -73px 0px;
+  background-position: -60px 0px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-grotesque {
   background-image: url(img/favicons.png);
-  background-position: 0px -49px;
+  background-position: -60px -20px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-herrderringe {
   background-image: url(img/favicons.png);
-  background-position: -73px -40px;
+  background-position: 0px 0px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-kingdomhearts {
   background-image: url(img/favicons.png);
-  background-position: 0px -69px;
+  background-position: 0px -60px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-masseffect {
   background-image: url(img/favicons.png);
-  background-position: -20px -69px;
-  width: 22px;
+  background-position: -20px -60px;
+  width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-neverwinter {
   background-image: url(img/favicons.png);
-  background-position: -46px -69px;
+  background-position: -40px -60px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-risen {
   background-image: url(img/favicons.png);
-  background-position: -66px -69px;
+  background-position: -60px -60px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-sacred {
   background-image: url(img/favicons.png);
-  background-position: 0px -25px;
-  width: 20px;
-  height: 20px;
+  background-position: -80px 0px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-starcraft {
   background-image: url(img/favicons.png);
-  background-position: -93px -20px;
+  background-position: -80px -20px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-starwars {
   background-image: url(img/favicons.png);
-  background-position: -51px -23px;
-  width: 18px;
-  height: 18px;
+  background-position: -80px -40px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-tes {
   background-image: url(img/favicons.png);
-  background-position: -24px -25px;
-  width: 20px;
-  height: 20px;
+  background-position: -80px -60px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 .favicon-thief {
   background-image: url(img/favicons.png);
-  background-position: 0px -89px;
+  background-position: 0px -80px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
+}
+
+.favicon-witcher {
+  background-image: url(img/favicons.png);
+  background-position: -20px -80px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
+}
+
+.favicon-wop {
+  background-image: url(img/favicons.png);
+  background-position: -40px -80px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
 }
 
 #imageviewer {

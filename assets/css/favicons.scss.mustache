@@ -47,5 +47,8 @@
 {{#items}}
   .favicon-{{name}} {
     @include sprite($favicon-{{name}});
+    display: inline-block;
+    vertical-align:middle;
+    line-height:  $favicon-{{name}}-height;
   }
 {{/items}}
