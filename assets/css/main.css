@@ -7183,7 +7183,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-_none {
   background-image: url(img/favicons.png);
-  background-position: -20px 0px;
+  background-position: -82px -20px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7193,7 +7193,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-assassinscreed {
   background-image: url(img/favicons.png);
-  background-position: -60px -40px;
+  background-position: -60px -43px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7203,7 +7203,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-cyberpunk {
   background-image: url(img/favicons.png);
-  background-position: 0px -20px;
+  background-position: -42px 0px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7213,7 +7213,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-demonicon {
   background-image: url(img/favicons.png);
-  background-position: -20px -20px;
+  background-position: 0px -23px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7223,7 +7223,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-diablo {
   background-image: url(img/favicons.png);
-  background-position: -40px 0px;
+  background-position: -20px -23px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7233,7 +7233,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-divinity {
   background-image: url(img/favicons.png);
-  background-position: -40px -20px;
+  background-position: -40px -23px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7243,7 +7243,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-dragonage {
   background-image: url(img/favicons.png);
-  background-position: 0px -40px;
+  background-position: -62px 0px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7253,7 +7253,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-drakensang {
   background-image: url(img/favicons.png);
-  background-position: -20px -40px;
+  background-position: -62px -20px;
   width: 15px;
   height: 16px;
   display: inline-block;
@@ -7263,7 +7263,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-dungeonlords {
   background-image: url(img/favicons.png);
-  background-position: -39px -40px;
+  background-position: 0px -43px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7273,7 +7273,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-gothic {
   background-image: url(img/favicons.png);
-  background-position: -60px 0px;
+  background-position: -20px -43px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7283,7 +7283,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-grotesque {
   background-image: url(img/favicons.png);
-  background-position: -60px -20px;
+  background-position: -40px -43px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7293,7 +7293,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-herrderringe {
   background-image: url(img/favicons.png);
-  background-position: 0px 0px;
+  background-position: -22px 0px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7303,7 +7303,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-kingdomhearts {
   background-image: url(img/favicons.png);
-  background-position: 0px -60px;
+  background-position: -82px 0px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7313,17 +7313,17 @@ have a fixed width and height (but it's not required).
 
 .favicon-masseffect {
   background-image: url(img/favicons.png);
-  background-position: -20px -60px;
-  width: 16px;
-  height: 16px;
+  background-position: 0px 0px;
+  width: 18px;
+  height: 19px;
   display: inline-block;
   vertical-align: middle;
-  line-height: 16px;
+  line-height: 19px;
 }
 
 .favicon-neverwinter {
   background-image: url(img/favicons.png);
-  background-position: -40px -60px;
+  background-position: -82px -40px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7333,7 +7333,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-risen {
   background-image: url(img/favicons.png);
-  background-position: -60px -60px;
+  background-position: 0px -63px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7343,7 +7343,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-sacred {
   background-image: url(img/favicons.png);
-  background-position: -80px 0px;
+  background-position: -20px -63px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7353,7 +7353,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-starcraft {
   background-image: url(img/favicons.png);
-  background-position: -80px -20px;
+  background-position: -40px -63px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7363,7 +7363,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-starwars {
   background-image: url(img/favicons.png);
-  background-position: -80px -40px;
+  background-position: -60px -63px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7373,7 +7373,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-tes {
   background-image: url(img/favicons.png);
-  background-position: -80px -60px;
+  background-position: -80px -63px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7383,7 +7383,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-thief {
   background-image: url(img/favicons.png);
-  background-position: 0px -80px;
+  background-position: -102px 0px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7393,7 +7393,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-witcher {
   background-image: url(img/favicons.png);
-  background-position: -20px -80px;
+  background-position: -102px -20px;
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -7403,7 +7403,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-wop {
   background-image: url(img/favicons.png);
-  background-position: -40px -80px;
+  background-position: -102px -40px;
   width: 16px;
   height: 16px;
   display: inline-block;
