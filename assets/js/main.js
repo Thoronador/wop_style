@@ -163,7 +163,6 @@ $(function() {
     $('.jcarousel')
         .jcarousel({
             wrap: 'circular',
-            //~ center: true,
             transitions: true,
             animation: {
                 duration: 1000,
@@ -185,9 +184,9 @@ $(function() {
         }
     );
     $('.jcarousel-prev').jcarouselControl({
-        target: '+=2'
+        target: '-=2'
     });
     $('.jcarousel-next').jcarouselControl({
-        target: '-=2'
+        target: '+=2'
     });
 });

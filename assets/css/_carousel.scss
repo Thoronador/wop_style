@@ -15,7 +15,7 @@
         background: none;
         position: absolute;
         top: 120px;
-        right: 32px;
+        right: 40px;
         width: $network-carousel-width * $network-carousel-num-sm3;
         margin: 0px;
         border: 0;
@@ -23,10 +23,10 @@
     @media (min-width: 820px) {
         width: $network-carousel-width * $network-carousel-num-sm4;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 920px) {
         width: $network-carousel-width * $network-carousel-num-sm5;
     }
-    @media (min-width: 1050px) {
+    @media (min-width: 1100px) {
         width: $network-carousel-width * $network-carousel-num-md;
     }
 }
@@ -41,28 +41,28 @@
 
     $pagination-size: 35px;
     $pagination-offset-mobile: 10px;
-    $pagination-offset-desktop: -12px;
+    $pagination-offset-desktop: -35px;
     .jcarousel-prev,
     .jcarousel-next {
         @extend .btn;
         @extend .fa;
 
-        background-color: rgba(#000, 0.3);
+        background-color: rgba(#000, 0.35);
         color: #CCC;
 
         &:hover, &:focus, &:active {
-            background-color: rgba(#000, 0.6);
+            background-color: rgba(#000, 0.8);
             color: #CCC;
             text-shadow: -1px 1px 5px #ffc, 1px -1px 5px #fff;
         }
 
         position: absolute;
-        top: ($network-carousel-height - $pagination-size) / 2;
+        padding: 0;
+        padding-top: ($network-carousel-height - $pagination-size) / 2;
 
         display: block;
-        width: $pagination-size;
-        height: $pagination-size;
-        padding: 0;
+        width: 45px;
+        height: 100%;
         text-align:center;
         font-size:30px;
         line-height:$pagination-size;
@@ -80,6 +80,18 @@
     }
 
     @media (min-width: $screen-sm-min) {
+        .jcarousel-prev,
+        .jcarousel-next {
+            top: ($network-carousel-height - $pagination-size) / 2;
+            width: $pagination-size;
+            height: $pagination-size;
+            padding-top: 0;
+            background-color: rgba(#000, 0.3);
+            &:hover, &:focus, &:active {
+                background-color: rgba(#000, 0.6);
+            }
+        }
+
         .jcarousel-prev {
             left: $pagination-offset-desktop;
         }

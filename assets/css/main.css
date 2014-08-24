@@ -6778,7 +6778,7 @@ footer .navbar {
     background: none;
     position: absolute;
     top: 120px;
-    right: 32px;
+    right: 40px;
     width: 240px;
     margin: 0px;
     border: 0;
@@ -6789,12 +6789,12 @@ footer .navbar {
     width: 320px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 920px) {
   .network-carousel {
     width: 400px;
   }
 }
-@media (min-width: 1050px) {
+@media (min-width: 1100px) {
   .network-carousel {
     width: 560px;
   }
@@ -6812,14 +6812,14 @@ footer .navbar {
 }
 .jcarousel-wrapper .jcarousel-prev,
 .jcarousel-wrapper .jcarousel-next {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.35);
   color: #CCC;
   position: absolute;
-  top: 32.5px;
-  display: block;
-  width: 35px;
-  height: 35px;
   padding: 0;
+  padding-top: 32.5px;
+  display: block;
+  width: 45px;
+  height: 100%;
   text-align: center;
   font-size: 30px;
   line-height: 35px;
@@ -6829,7 +6829,7 @@ footer .navbar {
 .jcarousel-wrapper .jcarousel-next:hover,
 .jcarousel-wrapper .jcarousel-next:focus,
 .jcarousel-wrapper .jcarousel-next:active {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #CCC;
   text-shadow: -1px 1px 5px #ffc, 1px -1px 5px #fff;
 }
@@ -6842,11 +6842,25 @@ footer .navbar {
   padding-left: 2px;
 }
 @media (min-width: 768px) {
+  .jcarousel-wrapper .jcarousel-prev,
+  .jcarousel-wrapper .jcarousel-next {
+    top: 32.5px;
+    width: 35px;
+    height: 35px;
+    padding-top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .jcarousel-wrapper .jcarousel-prev:hover, .jcarousel-wrapper .jcarousel-prev:focus, .jcarousel-wrapper .jcarousel-prev:active,
+  .jcarousel-wrapper .jcarousel-next:hover,
+  .jcarousel-wrapper .jcarousel-next:focus,
+  .jcarousel-wrapper .jcarousel-next:active {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
   .jcarousel-wrapper .jcarousel-prev {
-    left: -12px;
+    left: -35px;
   }
   .jcarousel-wrapper .jcarousel-next {
-    right: -12px;
+    right: -35px;
   }
 }
 
