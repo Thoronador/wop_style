@@ -117,14 +117,25 @@ span.copyright {
                 @include text-truncate;
             }
 
-            p img{
-                box-shadow: 0 0 5px #000;
-                margin: 15px 0;
-                &[align="left"] {
+            p {
+                img {
+                    box-shadow: 0 0 5px #000;
+                    margin: 15px 0;
                     margin-right: 15px;
+                    float: left;
+
+                    &[align="right"] {
+                        margin-left: 15px;
+                        float:left;
+                    }
+                    &:first-child {
+                        margin-top: 5px;
+                    }
                 }
-                &[align="right"] {
-                    margin-left: 15px;
+
+                &[align="center"] img {
+                    float:none;
+                    margin-top: 15px;
                 }
             }
         }
@@ -136,7 +147,7 @@ span.copyright {
     }
 
     img {
-        max-width:100%;
+        max-width: 350px;
         max-height: 250px;
     }
 }

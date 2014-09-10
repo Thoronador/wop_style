@@ -6656,18 +6656,25 @@ span.copyright {
 .box .content.news p img {
   box-shadow: 0 0 5px #000;
   margin: 15px 0;
-}
-.box .content.news p img[align="left"] {
   margin-right: 15px;
+  float: left;
 }
 .box .content.news p img[align="right"] {
   margin-left: 15px;
+  float: left;
+}
+.box .content.news p img:first-child {
+  margin-top: 5px;
+}
+.box .content.news p[align="center"] img {
+  float: none;
+  margin-top: 15px;
 }
 .box h2 {
   color: #FFF;
 }
 .box img {
-  max-width: 100%;
+  max-width: 350px;
   max-height: 250px;
 }
 
