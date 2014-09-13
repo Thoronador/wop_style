@@ -6677,6 +6677,17 @@ span.copyright {
   max-width: 350px;
   max-height: 250px;
 }
+.box ul {
+  padding-left: 0;
+}
+.box ul li {
+  list-style: none outside none;
+}
+.box ul li::before {
+  content: "\f0da";
+  font-family: "FontAwesome";
+  margin: 0 8px 0 5px;
+}
 
 .sidebar-content + .sidebar-content {
   margin-top: 30px;

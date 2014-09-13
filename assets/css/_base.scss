@@ -150,6 +150,21 @@ span.copyright {
         max-width: 350px;
         max-height: 250px;
     }
+
+    ul {
+        padding-left: 0;
+
+        li {
+            list-style: none outside none;
+            &::before {
+                content: "\f0da";
+                font-family: "FontAwesome";
+                margin: 0 8px 0 5px;
+            }
+        }
+
+    }
+
 }
 
 
