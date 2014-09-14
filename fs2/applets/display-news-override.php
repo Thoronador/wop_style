@@ -13,14 +13,20 @@ function display_news ($news_arr, $html_code, $fs_code, $para_handling)
     $index2 = $FD->sql()->conn()->query('SELECT cat_name FROM '.$FD->config('pref')."news_cat WHERE cat_id = '".$news_arr['cat_id']."'");
     $row = $index2->fetch(\PDO::FETCH_ASSOC);
     $news_arr['cat_name'] = $row['cat_name'];
-    $news_arr['cat_pic'] = image_url('images/cat/', 'news_'.$news_arr['cat_id']);
 
-
-    // Page URL
-    $index2 = $FD->sql()->conn()->query('SELECT url FROM wop_netzwerkseiten WHERE kuerzel = "'.$news_arr['cat_name'].'" OR name = "'.$news_arr['cat_name'].'"');
+    // Network Data
+    $index2 = $FD->sql()->conn()->query('SELECT name, url, sanitized, kuerzel FROM wop_netzwerkseiten WHERE cat_name = "'.$news_arr['cat_name'].'"');
     $row = $index2->fetch(\PDO::FETCH_ASSOC);
+    $news_arr['cat_pic'] = $row['sanitized'];
     $news_arr['user_name'] = $news_arr['cat_name'];
     $news_arr['user_url'] = $row['url'];
+
+    if (!$news_arr['cat_pic'] || !$news_arr['cat_name'] || !$news_arr['user_name'] || !$news_arr['user_url']) {
+        $news_arr['cat_name'] = 'World of Players';
+        $news_arr['cat_pic'] = 'wop';
+        $news_arr['user_name'] = $news_arr['cat_name'];
+        $news_arr['user_url'] = '//www.worldofplayers.de';
+    }
 
     // Direct URL
     $index2 = $FD->sql()->conn()->query('SELECT news_url FROM wop_news_list WHERE news_id = '.$news_arr['news_id'].'' );
