@@ -6614,7 +6614,7 @@ span.copyright {
 }
 .box .coat-of-arms {
   float: left;
-  min-height: 1px;
+  min-height: 220px;
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
@@ -6633,6 +6633,7 @@ span.copyright {
 .box .coat-of-arms .title {
   font-size: 17px;
   margin-top: -40px;
+  padding-left: 15px;
   position: absolute;
   transform: rotate(270deg) translateX(-100%) translateY(22px) translateZ(0.1px);
   transform-origin: left center 0;
@@ -7226,6 +7227,13 @@ have a fixed width and height (but it's not required).
   background-position: -595px -100px;
   width: 74px;
   height: 100px;
+}
+
+.coat-of-arm-wop {
+  background-image: url(img/schilde.png);
+  background-position: 0px -500px;
+  width: 80px;
+  height: 75px;
 }
 
 .favicon-_none {
