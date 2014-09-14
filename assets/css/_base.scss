@@ -85,14 +85,33 @@ span.copyright {
     color:#CCCCCC;
 
     .coat-of-arms {
+        @media (max-width: $screen-xs-max) {
+            display: none;
+        }
+
+        .coat-of-arm {
+            transform: scale3d(0.648, 0.648, 0.648);
+            transform-origin: left top 0;
+        }
+
+        .title {
+            font-size: 17px;
+            margin-top: -40px;
+            position: absolute;
+            transform: rotate(270deg) translateX(-100%) translateY(22px) translateZ(0.1px);
+            transform-origin: left center 0;
+            white-space: nowrap;
+        }
+
         float: left;
         min-height: 1px;
         padding-left: 15px;
         padding-right: 15px;
         position: relative;
         width: 78px;
-        @media (max-width: $screen-xs-max) {
-            display: none;
+        color: #FFF;
+        &:hover {
+            text-decoration:none;
         }
     }
     .content {

@@ -6619,11 +6619,27 @@ span.copyright {
   padding-right: 15px;
   position: relative;
   width: 78px;
+  color: #FFF;
 }
 @media (max-width: 767px) {
   .box .coat-of-arms {
     display: none;
   }
+}
+.box .coat-of-arms .coat-of-arm {
+  transform: scale3d(0.648, 0.648, 0.648);
+  transform-origin: left top 0;
+}
+.box .coat-of-arms .title {
+  font-size: 17px;
+  margin-top: -40px;
+  position: absolute;
+  transform: rotate(270deg) translateX(-100%) translateY(22px) translateZ(0.1px);
+  transform-origin: left center 0;
+  white-space: nowrap;
+}
+.box .coat-of-arms:hover {
+  text-decoration: none;
 }
 .box .content {
   float: left;
@@ -6918,147 +6934,147 @@ have a fixed width and height (but it's not required).
   margin: 0px 3px;
 }
 
-.coat-of-arm-_assassinscreed, .coat-of-arm-assassinscreed:hover {
+.coat-of-arm-_assassinscreed, .coat-of-arm-assassinscreed:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -74px 0px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_cyberpunk, .coat-of-arm-cyberpunk:hover {
+.coat-of-arm-_cyberpunk, .coat-of-arm-cyberpunk:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -222px -300px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_demonicon, .coat-of-arm-demonicon:hover {
+.coat-of-arm-_demonicon, .coat-of-arm-demonicon:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -148px 0px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_diablo, .coat-of-arm-diablo:hover {
+.coat-of-arm-_diablo, .coat-of-arm-diablo:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: 0px -100px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_divinity, .coat-of-arm-divinity:hover {
+.coat-of-arm-_divinity, .coat-of-arm-divinity:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -74px -100px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_dragonage, .coat-of-arm-dragonage:hover {
+.coat-of-arm-_dragonage, .coat-of-arm-dragonage:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -222px 0px;
   width: 77px;
   height: 100px;
 }
 
-.coat-of-arm-_drakensang, .coat-of-arm-drakensang:hover {
+.coat-of-arm-_drakensang, .coat-of-arm-drakensang:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -222px -100px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_dungeonlords, .coat-of-arm-dungeonlords:hover {
+.coat-of-arm-_dungeonlords, .coat-of-arm-dungeonlords:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -148px -100px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_gothic, .coat-of-arm-gothic:hover {
+.coat-of-arm-_gothic, .coat-of-arm-gothic:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -299px 0px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_grotesque, .coat-of-arm-grotesque:hover {
+.coat-of-arm-_grotesque, .coat-of-arm-grotesque:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -299px -100px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_herrderringe, .coat-of-arm-herrderringe:hover {
+.coat-of-arm-_herrderringe, .coat-of-arm-herrderringe:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: 0px -200px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_kingdomhearts, .coat-of-arm-kingdomhearts:hover {
+.coat-of-arm-_kingdomhearts, .coat-of-arm-kingdomhearts:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -74px -200px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_masseffect, .coat-of-arm-masseffect:hover {
+.coat-of-arm-_masseffect, .coat-of-arm-masseffect:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -148px -200px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_neverwinter, .coat-of-arm-neverwinter:hover {
+.coat-of-arm-_neverwinter, .coat-of-arm-neverwinter:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -222px -200px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_risen, .coat-of-arm-risen:hover {
+.coat-of-arm-_risen, .coat-of-arm-risen:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -296px -200px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_sacred, .coat-of-arm-sacred:hover {
+.coat-of-arm-_sacred, .coat-of-arm-sacred:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -373px 0px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_starcraft, .coat-of-arm-starcraft:hover {
+.coat-of-arm-_starcraft, .coat-of-arm-starcraft:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -373px -100px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_starwars, .coat-of-arm-starwars:hover {
+.coat-of-arm-_starwars, .coat-of-arm-starwars:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -373px -200px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_tes, .coat-of-arm-tes:hover {
+.coat-of-arm-_tes, .coat-of-arm-tes:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: 0px -300px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_thief, .coat-of-arm-thief:hover {
+.coat-of-arm-_thief, .coat-of-arm-thief:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -74px -300px;
   width: 74px;
   height: 100px;
 }
 
-.coat-of-arm-_witcher, .coat-of-arm-witcher:hover {
+.coat-of-arm-_witcher, .coat-of-arm-witcher:not(.no-hover):hover {
   background-image: url(img/schilde.png);
   background-position: -148px -300px;
   width: 74px;

@@ -449,7 +449,7 @@
     @include sprite($coa-_assassinscreed);
     $name: "_assassinscreed";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -458,7 +458,7 @@
     @include sprite($coa-_cyberpunk);
     $name: "_cyberpunk";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -467,7 +467,7 @@
     @include sprite($coa-_demonicon);
     $name: "_demonicon";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -476,7 +476,7 @@
     @include sprite($coa-_diablo);
     $name: "_diablo";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -485,7 +485,7 @@
     @include sprite($coa-_divinity);
     $name: "_divinity";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -494,7 +494,7 @@
     @include sprite($coa-_dragonage);
     $name: "_dragonage";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -503,7 +503,7 @@
     @include sprite($coa-_drakensang);
     $name: "_drakensang";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -512,7 +512,7 @@
     @include sprite($coa-_dungeonlords);
     $name: "_dungeonlords";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -521,7 +521,7 @@
     @include sprite($coa-_gothic);
     $name: "_gothic";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -530,7 +530,7 @@
     @include sprite($coa-_grotesque);
     $name: "_grotesque";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -539,7 +539,7 @@
     @include sprite($coa-_herrderringe);
     $name: "_herrderringe";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -548,7 +548,7 @@
     @include sprite($coa-_kingdomhearts);
     $name: "_kingdomhearts";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -557,7 +557,7 @@
     @include sprite($coa-_masseffect);
     $name: "_masseffect";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -566,7 +566,7 @@
     @include sprite($coa-_neverwinter);
     $name: "_neverwinter";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -575,7 +575,7 @@
     @include sprite($coa-_risen);
     $name: "_risen";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -584,7 +584,7 @@
     @include sprite($coa-_sacred);
     $name: "_sacred";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -593,7 +593,7 @@
     @include sprite($coa-_starcraft);
     $name: "_starcraft";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -602,7 +602,7 @@
     @include sprite($coa-_starwars);
     $name: "_starwars";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -611,7 +611,7 @@
     @include sprite($coa-_tes);
     $name: "_tes";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -620,7 +620,7 @@
     @include sprite($coa-_thief);
     $name: "_thief";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -629,7 +629,7 @@
     @include sprite($coa-_witcher);
     $name: "_witcher";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -638,7 +638,7 @@
     @include sprite($coa-assassinscreed);
     $name: "assassinscreed";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -647,7 +647,7 @@
     @include sprite($coa-cyberpunk);
     $name: "cyberpunk";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -656,7 +656,7 @@
     @include sprite($coa-demonicon);
     $name: "demonicon";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -665,7 +665,7 @@
     @include sprite($coa-diablo);
     $name: "diablo";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -674,7 +674,7 @@
     @include sprite($coa-divinity);
     $name: "divinity";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -683,7 +683,7 @@
     @include sprite($coa-dragonage);
     $name: "dragonage";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -692,7 +692,7 @@
     @include sprite($coa-drakensang);
     $name: "drakensang";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -701,7 +701,7 @@
     @include sprite($coa-dungeonlords);
     $name: "dungeonlords";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -710,7 +710,7 @@
     @include sprite($coa-gothic);
     $name: "gothic";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -719,7 +719,7 @@
     @include sprite($coa-grotesque);
     $name: "grotesque";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -728,7 +728,7 @@
     @include sprite($coa-herrderringe);
     $name: "herrderringe";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -737,7 +737,7 @@
     @include sprite($coa-kingdomhearts);
     $name: "kingdomhearts";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -746,7 +746,7 @@
     @include sprite($coa-masseffect);
     $name: "masseffect";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -755,7 +755,7 @@
     @include sprite($coa-neverwinter);
     $name: "neverwinter";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -764,7 +764,7 @@
     @include sprite($coa-risen);
     $name: "risen";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -773,7 +773,7 @@
     @include sprite($coa-sacred);
     $name: "sacred";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -782,7 +782,7 @@
     @include sprite($coa-starcraft);
     $name: "starcraft";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -791,7 +791,7 @@
     @include sprite($coa-starwars);
     $name: "starwars";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -800,7 +800,7 @@
     @include sprite($coa-tes);
     $name: "tes";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -809,7 +809,7 @@
     @include sprite($coa-thief);
     $name: "thief";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
@@ -818,7 +818,7 @@
     @include sprite($coa-witcher);
     $name: "witcher";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }

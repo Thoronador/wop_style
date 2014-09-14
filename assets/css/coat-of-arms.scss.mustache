@@ -49,7 +49,7 @@
     @include sprite($coa-{{name}});
     $name: "{{name}}";
     @if str-slice($name, 1, 1) != "_" {
-      &:hover {
+      &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
       }
     }
