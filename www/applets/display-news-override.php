@@ -15,7 +15,11 @@ function display_news ($news_arr, $html_code, $fs_code, $para_handling)
     $news_arr['cat_name'] = $row['cat_name'];
 
     // Network Data
-    $index2 = $FD->sql()->conn()->query('SELECT name, url, sanitized, kuerzel FROM wop_netzwerkseiten WHERE cat_name = "'.$news_arr['cat_name'].'"');
+    $index2 = $FD->sql()->conn()->query('SELECT name, url, sanitized, kuerzel
+      FROM wop_netzwerkseiten S
+      JOIN wop_networkinfo I
+      ON S.id = I.id
+      WHERE I.cat_name = "'.$news_arr['cat_name'].'"');
     $row = $index2->fetch(\PDO::FETCH_ASSOC);
     $news_arr['cat_pic'] = $row['sanitized'];
     $news_arr['user_name'] = $news_arr['cat_name'];
