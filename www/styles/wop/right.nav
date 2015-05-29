@@ -1,0 +1,42 @@
+<div class="sidebar-content">
+  <h4><span class="fa fa-search"></span> Im Netzwerk suchen</h4>
+  $APP(mini-search.php)  
+</div>
+
+<div class="sidebar-content">
+  <h4><span class="fa fa-twitter" style="color:#55acee;"></span> WoP @ Twitter</h4>
+  <p class="sub-line small text-muted">Tweets aus der World of Players</p>
+  <div style="min-height:400px;">
+    [%twitter-widget%]
+  </div>
+</div>
+
+<!--
+<div class="sidebar-content">
+  <h4><span class="fa fa-cloud-download"></span> Downloads</h4>
+  <div class="list-group list-group-condensed">
+    <a href="#" class="list-group-item">
+      <span class="badge">21</span>
+      Demos
+    </a>
+    <a href="#" class="list-group-item">
+      <span class="badge">11</span>
+      Patches
+    </a>
+    <a href="#" class="list-group-item">
+      <span class="badge">13</span>
+      Videos
+    </a>
+    <a href="#" class="list-group-item">
+      <span class="badge">55</span>
+      Sonstiges
+    </a>
+  </div>
+</div>
+-->
+
+<div class="sidebar-content">
+  <h4><span class="fa fa-bar-chart-o"></span> Statistik</h4>
+  <p class="sub-line small text-muted">Online seit Dezember 2004</p>
+  $APP(mini-statistics.php)
+</div>

@@ -1,0 +1,52 @@
+<ul class="nav navbar-nav navbar-left">
+  <li class="$APP(active-nav.php[news])">
+    <a href="$URL(news)">News</a>
+  </li>
+  
+  <li class="$APP(active-nav.php[newsletter])">
+    <a href="$URL(newsletter)">Newsletter</a>
+  </li>
+
+  <li class="dropdown $APP(active-nav.php[download dlfile])">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      Downloads <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="$URL(download[cat_id=1])">Demos</a></li>
+      <li><a href="$URL(download[cat_id=2])">Patches</a></li>
+      <li><a href="$URL(download[cat_id=4])">Videos</a></li>
+      <li><a href="$URL(download[cat_id=3])">Sonstiges</a></li>
+    </ul>
+  </li>  
+  
+  <li class="dropdown $APP(active-nav.php[netzwerk hosting])">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      Netzwerk <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li class="$APP(active-nav.php[netzwerk])">
+        <a href="$URL(netzwerk)">Netzwerkseiten</a>
+      </li>
+      <li class="$APP(active-nav.php[hosting])">
+        <a href="$URL(hosting)">Hosting</a>
+      </li>
+    </ul>
+  </li>
+  
+  <li class="dropdown dropdown-forum">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      Forum <b class="caret"></b>
+    </a>
+    $NAV(forum.nav)
+  </li>
+</ul>
+
+<ul class="nav navbar-nav navbar-right">
+  <li>
+    <a href="http://forenarchiv.worldofplayers.de/" target="_blank">
+      Medis Forenarchiv</a>
+  </li>
+  <li class="$APP(active-nav.php[kontakt])">
+    <a href="$URL(kontakt)">Kontakt</a>
+  </li>
+</ul>

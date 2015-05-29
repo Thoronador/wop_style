@@ -10,7 +10,7 @@ module.exports = function (grunt) {
                     'assets/js/bootstrap/dropdown.js',
                     'assets/js/frogsystem.js'
                 ],
-                dest: 'assets/js/main.js'
+                dest: 'www/styles/wop/main.js'
             }
         },
         sass: {
@@ -19,7 +19,7 @@ module.exports = function (grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'assets/css/main.css': 'assets/css/main.scss'
+                    'www/styles/wop/main.css': 'assets/css/main.scss'
                 }
             }
         },
@@ -43,14 +43,14 @@ module.exports = function (grunt) {
         sprite: {
             coat_of_arms: {
                 src: 'assets/schilde/small/*.*',
-                dest: 'assets/css/img/schilde.png',
+                dest: 'www/styles/wop/img/schilde.png',
                 destCss: 'assets/css/_coat-of-arms.scss',
                 cssTemplate: 'assets/css/coat-of-arms.scss.mustache'
             },
             favicons: {
                 engine: 'gmsmith',
                 src: 'assets/favicons/*.*',
-                dest: 'assets/css/img/favicons.png',
+                dest: 'www/styles/wop/img/favicons.png',
                 destCss: 'assets/css/_favicons.scss',
                 padding: 4,
                 cssTemplate: 'assets/css/favicons.scss.mustache'
