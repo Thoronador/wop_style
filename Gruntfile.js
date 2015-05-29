@@ -45,7 +45,8 @@ module.exports = function (grunt) {
                 src: 'assets/schilde/small/*.*',
                 dest: 'www/styles/wop/img/schilde.png',
                 destCss: 'assets/css/_coat-of-arms.scss',
-                cssTemplate: 'assets/css/coat-of-arms.scss.mustache'
+                cssTemplate: 'assets/css/coat-of-arms.scss.mustache',
+                imgPath: 'img/schilde.png'
             },
             favicons: {
                 engine: 'gmsmith',
@@ -53,7 +54,8 @@ module.exports = function (grunt) {
                 dest: 'www/styles/wop/img/favicons.png',
                 destCss: 'assets/css/_favicons.scss',
                 padding: 4,
-                cssTemplate: 'assets/css/favicons.scss.mustache'
+                cssTemplate: 'assets/css/favicons.scss.mustache',
+                imgPath: 'img/favicons.png'
             }
         },
         watch: {
