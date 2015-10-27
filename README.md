@@ -67,3 +67,7 @@ Für eine neue Netzwerkseite ist daher das folgende nötig:
 3. Neue Seite ins Karussell einfügen: `www\styles\wop\network-carousel.nav` 
 4. Neues Forum hinzufügen `www\styles\wop\forum.nav`
 5. Den Ordner `www` auf den Server hochladen
+
+## Newsslider und Newsletter
+Für Newsslider und Newsletter muss das Schild noch in zwei weiteren Varianten hochgeladen werden. Die Dateinamen können im Webmaster-CP selbst gewählt werden. Beim Slider ist es der Wert `Slidericon` und die Datei muss unter `layouts/slider` auf dem Forenserver abgelegt sein; der Newsletter nutzt den Wert `Portalseitenicon` und den Ordner `www/ico` auf dem Webseiten-Server. Die Newsletter-Grafik muss leider noch manuell erstellt werden, man kann aber recht leicht einen Screenshot von der Portalseite dazu hernehmen.
+
