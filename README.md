@@ -29,7 +29,9 @@ Der Portalseiten-Style setzt auf einen Prozess bei dem die JS, CSS und Bild-Date
 
 ## Style ändern (Templates, CSS, JS, etc.)
 Wenn Änderungen am Style notwendig sind, sollten dise *nicht* auf dem Server durchgeführt werden, sondern hier im Projekt und dann anschließend wieder auf GitHub geladen werden.
+
 Alle Frogsystem-Templates befinden sich in `www\styles\wop` und können einfach angepasst werden.
+
 CSS (bzw. Sass) und JS müssen in den jeweiligen Dateien im `assets`-Ordner geändert werden. Die optimierten Dateien (komprimiert, minifiziert) werden mit dem folgendem Kommando erzeugt:
 ```
 grunt default
@@ -38,6 +40,7 @@ Es kopiert die erzeugten Dateien auch automatisch nach `www\styles\wop`, so dass
 
 ## Schilde und Favicons
 Die Quelldateien für die Schilde und Favicons sind in `assets\schilde` bzw. `assets\favicons`. Neue Bilder oder Änderungen einfach in diesen Ordnern platzieren. Die Dateinamen bilden später die Namen der CSS-Klassen.
+
 Um aus den (geänderten) Originalen die optmierten Dateien zu erzeugen, kann das entsprechende Kommando genutzt werden:
 ```
 grunt coat_of_arms
@@ -58,6 +61,7 @@ Beide Bilder-Typen können über die Klassen `coat-of-arm-DATEINAME` bzw. `favicon
 
 ## Neue Netzwerkseite
 Für eine neue Netzwerkseite ist daher das folgende nötig:
+
 1. Bild-Dateien in `assets\schilde` und `assets\favicons` ablegen
 2. Mit `grunt images` die aktualisierten Dateien generieren
 3. Neue Seite ins Karussell einfügen: `www\styles\wop\network-carousel.nav` 
