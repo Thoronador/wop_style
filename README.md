@@ -73,10 +73,10 @@ Für eine neue Netzwerkseite ist daher das folgende nötig:
 Im Admin-CP unter `Inhalt > News > Kategorien` eine neue Kategorie hinzugefügen. Damit News auch in diese einsortiert werden, muss leider noch von Hand ein Eintrag in die Datenbank eingefügt werden. Und zwar in die Tabelle `wop_networkinfo`:
 
 ```
- | id                          | sanitized                 | cat_name                            |
- | --------------------------- | ------------------------- | ----------------------------------- |
- | ID aus `wop_netzwerkseiten` | Dateiname/ und CSS-Klasse | Name der soeben erstellen Kategorie |
- | 1                           | gothic                    | World of Gothic                     |
+ | id                          | sanitized            | cat_name                 |
+ | --------------------------- | -------------------- | -------------------------|
+ | ID aus `wop_netzwerkseiten` | Dateiname/CSS-Klasse | Name der neuen Kategorie |
+ | 1                           | gothic               | World of Gothic          |
 ```
  
 ## Newsslider und Newsletter
