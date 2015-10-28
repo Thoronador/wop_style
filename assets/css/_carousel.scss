@@ -3,12 +3,17 @@
     border-left:0;
     border-right:0;
     width: 100%;
-    padding: 5px 0px;
+    padding: 5px 0;
     margin-bottom: 20px;
 
     a {
         display: block;
         font-size:0;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     }
 
     @media (min-width: $screen-sm-min) {
@@ -33,7 +38,7 @@
 .jcarousel-wrapper {
     position: relative;
     width:100%;
-    margin: 0px auto;
+    margin: 0 auto;
 
     @media (min-width: $screen-sm-min) {
         width: auto;
@@ -136,5 +141,5 @@ have a fixed width and height (but it's not required).
     float: left;
     width:$network-carousel-width - 6px;
     height:$network-carousel-height;
-    margin:0px 3px;
+    margin:0 3px;
 }

@@ -6663,6 +6663,7 @@ span.copyright {
 .box .coat-of-arms .coat-of-arm {
   transform: scale3d(0.648, 0.648, 0.648);
   transform-origin: left top 0;
+  min-height: 90px;
 }
 .box .coat-of-arms .title {
   font-size: 17px;
@@ -6834,12 +6835,17 @@ footer .navbar {
   border-left: 0;
   border-right: 0;
   width: 100%;
-  padding: 5px 0px;
+  padding: 5px 0;
   margin-bottom: 20px;
 }
 .network-carousel a {
   display: block;
   font-size: 0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 @media (min-width: 768px) {
   .network-carousel {
@@ -6871,7 +6877,7 @@ footer .navbar {
 .jcarousel-wrapper {
   position: relative;
   width: 100%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .jcarousel-wrapper {
@@ -6966,7 +6972,7 @@ have a fixed width and height (but it's not required).
   float: left;
   width: 74px;
   height: 100px;
-  margin: 0px 3px;
+  margin: 0 3px;
 }
 
 .coat-of-arm-_assassinscreed, .coat-of-arm-assassinscreed:not(.no-hover):hover {
