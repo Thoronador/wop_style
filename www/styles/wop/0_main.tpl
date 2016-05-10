@@ -3,7 +3,7 @@
     <span class="fa fa-bars fa-lg"></span>
     <span>Menü</span>
   </a>
-  <a class="brand-link" href="http://forum.worldofplayers.de/">World of Players</a>
+  <a class="brand-link" href="https://forum.worldofplayers.de/">World of Players</a>
 </div>
 
 <div class="network-carousel">
