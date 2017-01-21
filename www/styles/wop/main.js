@@ -161,6 +161,9 @@ return d||(f=$b[b],$b[b]=e,e=null!=c(a,b,d)?b.toLowerCase():null,$b[b]=f),e}});v
 
 $(function () {
     $('.jcarousel')
+        .on('jcarousel:createend', function () {
+            $(this).jcarousel('scroll', Math.floor(Math.random() * $('.jcarousel ul li').length), false);
+        })
         .jcarousel({
             wrap: 'circular',
             transitions: true,
@@ -169,7 +172,6 @@ $(function () {
                 easing: 'swing'
             }
         })
-        .jcarousel('scroll', '+=' + Math.floor(Math.random() * $('.jcarousel ul li').length), false)
         .jcarouselAutoscroll({
             interval: 2000,
             target: '+=1',
