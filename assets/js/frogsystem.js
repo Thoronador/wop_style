@@ -1,5 +1,8 @@
 $(function () {
     $('.jcarousel')
+        .on('jcarousel:createend', function () {
+            $(this).jcarousel('scroll', Math.floor(Math.random() * $('.jcarousel ul li').length), false);
+        })
         .jcarousel({
             wrap: 'circular',
             transitions: true,
