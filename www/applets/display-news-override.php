@@ -2,74 +2,92 @@
 /* monkey patching display News function */
 namespace Frogsystem;
 
-function display_news ($news_arr, $html_code, $fs_code, $para_handling)
+function display_news($news_arr, $html_code, $fs_code, $para_handling)
 {
     global $FD;
 
 
-    $news_arr['news_date'] = date_loc( $FD->config('datetime') , $news_arr['news_date']);
+    $news_arr['news_date'] = date_loc($FD->config('datetime'), $news_arr['news_date']);
 
     // Website category
-    $index2 = $FD->sql()->conn()->query('SELECT cat_name FROM '.$FD->config('pref')."news_cat WHERE cat_id = '".$news_arr['cat_id']."'");
-    $row = $index2->fetch(\PDO::FETCH_ASSOC);
+    $index2               = $FD->sql()->conn()->query('SELECT cat_name FROM ' . $FD->config('pref') . "news_cat WHERE cat_id = '" . $news_arr['cat_id'] . "'");
+    $row                  = $index2->fetch(\PDO::FETCH_ASSOC);
     $news_arr['cat_name'] = $row['cat_name'];
 
     // Network Data
-    $index2 = $FD->sql()->conn()->query('SELECT name, url, sanitized, kuerzel
+    $index2                = $FD->sql()->conn()->query('SELECT name, url, sanitized, kuerzel
       FROM wop_netzwerkseiten S
       JOIN wop_networkinfo I
       ON S.id = I.id
-      WHERE I.cat_name = "'.$news_arr['cat_name'].'"');
-    $row = $index2->fetch(\PDO::FETCH_ASSOC);
-    $news_arr['cat_pic'] = $row['sanitized'];
+      WHERE I.cat_name = "' . $news_arr['cat_name'] . '"');
+    $row                   = $index2->fetch(\PDO::FETCH_ASSOC);
+    $news_arr['cat_pic']   = $row['sanitized'];
     $news_arr['user_name'] = $news_arr['cat_name'];
-    $news_arr['user_url'] = $row['url'];
+    $news_arr['user_url']  = $row['url'];
 
     if (!$news_arr['cat_pic'] || !$news_arr['cat_name'] || !$news_arr['user_name'] || !$news_arr['user_url']) {
-        $news_arr['cat_name'] = 'World of Players';
-        $news_arr['cat_pic'] = 'wop';
+        $news_arr['cat_name']  = 'World of Players';
+        $news_arr['cat_pic']   = 'wop';
         $news_arr['user_name'] = $news_arr['cat_name'];
-        $news_arr['user_url'] = '//www.worldofplayers.de';
+        $news_arr['user_url']  = '//www.worldofplayers.de';
     }
 
     // Direct URL
-    $index2 = $FD->sql()->conn()->query('SELECT news_url FROM wop_news_list WHERE news_id = '.$news_arr['news_id'].'' );
-    $row = $index2->fetch(\PDO::FETCH_ASSOC);
-    $news_arr['comment_url'] =  $row['news_url'];
+    $index2                  = $FD->sql()->conn()->query('SELECT news_url FROM wop_news_list WHERE news_id = ' . $news_arr['news_id'] . '');
+    $row                     = $index2->fetch(\PDO::FETCH_ASSOC);
+    $news_arr['comment_url'] = $row['news_url'];
+
+    // Featured image
+    $featured_url = null;
+    if ($news_arr['news_image']) {
+        $featured_image = $FD->sql()->conn()->query('SELECT * FROM ' . $FD->config('pref') . 'cimg WHERE id = ' . $news_arr['news_image']);
+        $featured_image = $featured_image->fetchObject();
+        if ($featured_image) {
+            $featured_url = $FD->cfg('virtualhost') . 'media/content/' . $featured_image->name . '.' . $featured_image->type;
+        }
+    }
 
     // Text formatieren
-    $flags = array();
-    $to_html = array('b', 'i', 'center', 'img', 'url', 'email', 'quote', 'list', 'numlist');
-    $to_text = array('u', 's', 'font', 'color', 'size', 'smilies');
+    $flags     = array();
+    $to_html   = array('b', 'i', 'center', 'img', 'url', 'email', 'quote', 'list', 'numlist');
+    $to_text   = array('u', 's', 'font', 'color', 'size', 'smilies');
     $to_bbcode = array();
-    $remove = array('home', 'code', 'video', 'nofscode', 'fscode','html', 'nohtml');
+    $remove    = array('home', 'code', 'video', 'nofscode', 'fscode', 'html', 'nohtml');
+    if ($featured_url) {
+        $to_html = array('url', 'email', 'quote', 'list', 'numlist');
+        $to_text = array('b', 'i', 'u', 's', 'center', 'font', 'color', 'size', 'smilies');
+        $remove  = array('img', 'home', 'code', 'video', 'nofscode', 'fscode', 'html', 'nohtml');
+    }
 
-    $news_arr['news_text'] = \StringCutter::truncate(trim($news_arr['news_text']), 600, '...', array('word' => true, 'bbcode' => true));
+    $news_arr['news_text'] = \StringCutter::truncate(trim($news_arr['news_text']), ($featured_url ? 800 : 600), '...', array('word' => true, 'bbcode' => true));
     $news_arr['news_text'] = parse_fscode($news_arr['news_text'], $flags, $to_html, $to_text, $to_bbcode, $remove);
 
     // title
-    $news_arr['news_title'] = killhtml ( $news_arr['news_title'] );
-
+    $news_arr['news_title'] = killhtml($news_arr['news_title']);
 
     // Template lesen und füllen
     $template = new \template();
     $template->setFile('0_news.tpl');
-    $template->load('NEWS_BODY');
+    if ($featured_url) {
+        $template->load('NEWS_BODY_FEATURED');
+        $template->tag('featured_image', $featured_url);
+    } else {
+        $template->load('NEWS_BODY');
+    }
 
-    $template->tag('news_id', $news_arr['news_id'] );
-    $template->tag('titel', $news_arr['news_title'] );
-    $template->tag('date', $news_arr['news_date'] );
-    $template->tag('text', $news_arr['news_text'] );
-    $template->tag('user_name', $news_arr['user_name'] );
-    $template->tag('user_url', $news_arr['user_url'] );
-    $template->tag('cat_name', $news_arr['cat_name'] );
-    $template->tag('cat_image', $news_arr['cat_pic'] );
-    $template->tag('comments_url', $news_arr['comment_url'] );
-    $template->tag('comments_number', '' );
-    $template->tag('related_links', '' );
+    $template->tag('news_id', $news_arr['news_id']);
+    $template->tag('titel', $news_arr['news_title']);
+    $template->tag('date', $news_arr['news_date']);
+    $template->tag('text', $news_arr['news_text']);
+    $template->tag('user_name', $news_arr['user_name']);
+    $template->tag('user_url', $news_arr['user_url']);
+    $template->tag('cat_name', $news_arr['cat_name']);
+    $template->tag('cat_image', $news_arr['cat_pic']);
+    $template->tag('comments_url', $news_arr['comment_url']);
+    $template->tag('comments_number', '');
+    $template->tag('related_links', '');
 
-    $template = $template->display ();
+    $template      = $template->display();
     $news_template = $template;
     return $news_template;
 }
-?>
