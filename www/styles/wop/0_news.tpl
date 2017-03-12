@@ -48,27 +48,24 @@
 <!--section-end::NEWS_BODY-->
 
 <!--section-start::NEWS_BODY_FEATURED-->
-<div class="box" style="padding-top: 0">
+<div class="box featured">
     <div class="row">
-        <div class="featured-image"
-             style="background-image: url({..featured_image..});height: 220px;padding-top: 154px;background-size: cover;background-position: top center;">
-            <div class="headline" style="background-color: rgba(15, 15, 15, 0.85);height: 66px;">
-                <div class="coat-of-arm coat-of-arm-{..cat_image..} no-hover"
-                     style="zoom: 0.6; float: left; margin: 5px; margin-right: 15px; margin-left: 10px;"></div>
-                <h2 title="{..titel..}"
-                    style="white-space: nowrap;width: auto;overflow: hidden;text-overflow: ellipsis;margin-top: 0px;line-height: 21px;padding-top: 12.49px;padding-right: 15px;">{..titel..}</h2>
+        <div class="featured-image" style="background-image: url({..featured_image..});">
+            <a href="{..comments_url..}" target="_blank" class="headline">
+                <div class="coat-of-arm coat-of-arm-{..cat_image..} no-hover"></div>
+                <h2 title="{..titel..}">{..titel..}</h2>
                 <p class="sub-line">
-                    <span class="small text-muted" style="line-height: 9px;">{..cat_name..} • {..date..}</span>
+                    <span class="small text-muted">{..cat_name..} • {..date..}</span>
                 </p>
-            </div>
+            </a>
         </div>
-        <div class="content news" style="padding-left: 15px; padding-top: 15px; width: 100%;">
+        <div class="content news">
 
             {..text..}
 
             <div class="clearfix"></div>
             <p class="text-right">
-                <a href="{..comments_url..}" target="_blank" class="btn btn-default">Weiterlesen</a>
+                <a href="{..comments_url..}" class="btn btn-default">Weiterlesen</a>
             </p>
 
         </div>

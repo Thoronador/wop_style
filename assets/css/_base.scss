@@ -1,5 +1,5 @@
-html,body {
-  height: 100%;
+html, body {
+    height: 100%;
 }
 
 body {
@@ -8,14 +8,14 @@ body {
     background-size: 100px 220px, auto;
     background-repeat: repeat-x, repeat;
     background-image: linear-gradient(to bottom, $bg-gradiant-color 155px, $bg-color 100%), none;
-    margin:0px;
+    margin: 0px;
 }
 
 .header {
     display: block;
-    width:100%;
+    width: 100%;
     margin: 10px 0;
-    z-index:5;
+    z-index: 5;
 
     a.brand-link {
         display: block;
@@ -26,11 +26,11 @@ body {
         background-repeat: no-repeat;
         background-image: url($bg-image-sm);
         background-size: contain;
-        font-size:0px;
+        font-size: 0px;
     }
 
     @media (min-width: $screen-sm-min) {
-        height:240px;
+        height: 240px;
         background-image: url($bg-image);
         background-position: -2px top;
         background-repeat: no-repeat;
@@ -43,19 +43,18 @@ body {
             top: 60px;
             width: 355px;
             height: 165px;
-            background:transparent;
+            background: transparent;
         }
     }
 }
 
-
 .sponsor {
-    text-align:center;
+    text-align: center;
     margin: 0px 0px 20px;
-    width:100%;
-    height:90px;
-    max-height:90px;
-    overflow:hidden;
+    width: 100%;
+    height: 90px;
+    max-height: 90px;
+    overflow: hidden;
 
     @media (min-width: $screen-sm-min) {
         position: absolute;
@@ -68,21 +67,31 @@ body {
 
 span.copyright {
     font-size: $font-size-small;
-    color:#CCCCCC;
+    color: #CCCCCC;
     padding-bottom: 20px;
 }
 
-
-
-
 .box {
-    margin-bottom:$grid-gutter-width;
-
-    background-color:#383E34;
-    border:1px solid #000000;
+    margin-bottom: $grid-gutter-width;
+    background-color: #383E34;
+    border: 1px solid #000000;
     box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.6);
-    padding:15px;
-    color:#CCCCCC;
+    padding: 15px;
+    color: #CCCCCC;
+
+    &.featured {
+        padding-top: 0;
+    }
+
+    h2 {
+        @extend h4;
+        color: #FFF;
+    }
+
+    img {
+        max-width: 350px;
+        max-height: 250px;
+    }
 
     .coat-of-arms {
         @media (max-width: $screen-xs-max) {
@@ -98,7 +107,7 @@ span.copyright {
         .title {
             font-size: 17px;
             margin-top: -40px;
-            padding-left:15px;
+            padding-left: 15px;
             position: absolute;
             transform: rotate(270deg) translateX(-100%) translateY(22px) translateZ(0.1px);
             transform-origin: left center 0;
@@ -113,9 +122,52 @@ span.copyright {
         width: 78px;
         color: #FFF;
         &:hover {
-            text-decoration:none;
+            text-decoration: none;
         }
     }
+
+    .featured-image {
+        height: 220px;
+        padding-top: 154px;
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .headline {
+        display: block;
+        height: 66px;
+        background-color: rgba(15, 15, 15, 0.8);
+        transition: background-color 0.5s;
+        &:hover {
+            color: inherit;
+            background-color: rgba(15, 15, 15, 0.95);
+            text-decoration: none;
+        }
+
+        .coat-of-arm {
+            zoom: 0.6;
+            float: left;
+            margin: 5px;
+            margin-right: 15px;
+            margin-left: 10px;
+        }
+
+        h2 {
+            white-space: nowrap;
+            width: auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 0px;
+            line-height: 21px;
+            padding-top: 12.49px;
+            padding-right: 15px;
+        }
+
+        .sub-line span {
+            line-height: 9px;
+        }
+    }
+
     .content {
         float: left;
         min-height: 1px;
@@ -129,11 +181,11 @@ span.copyright {
         }
 
         p {
-            word-wrap:break-word;
+            word-wrap: break-word;
         }
 
         &.news {
-            text-align:justify;
+            text-align: justify;
             h2 {
                 @include text-truncate;
             }
@@ -147,7 +199,7 @@ span.copyright {
 
                     &[align="right"] {
                         margin-left: 15px;
-                        float:left;
+                        float: left;
                     }
                     &:first-child {
                         margin-top: 5px;
@@ -155,7 +207,7 @@ span.copyright {
                 }
 
                 &[align="center"] img {
-                    float:none;
+                    float: none;
                     margin-top: 15px;
                 }
             }
@@ -177,18 +229,12 @@ span.copyright {
 
     }
 
-    h2 {
-        @extend h4;
-        color:#FFF;
+    .featured-image + .content {
+        padding-left: 15px;
+        padding-top: 15px;
+        width: 100%;
     }
-
-    img {
-        max-width: 350px;
-        max-height: 250px;
-    }
-
 }
-
 
 .sidebar-content + .sidebar-content {
     margin-top: $grid-gutter-width;

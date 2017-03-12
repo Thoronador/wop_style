@@ -168,6 +168,7 @@ $(function () {
                 easing: 'swing'
             }
         })
+        .jcarousel('scroll', '+=' + Math.floor(Math.random() * $('.jcarousel ul li').length), false)
         .jcarouselAutoscroll({
             interval: 2000,
             target: '+=1',
