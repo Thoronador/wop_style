@@ -24,24 +24,24 @@
 <!--section-end::LINKS_BODY-->
 
 <!--section-start::NEWS_BODY-->
-<div class="box">
+<div class="box featured">
     <div class="row">
-        <a class="coat-of-arms" target="_blank" href="{..user_url..}">
+        <a href="{..comments_url..}" target="_blank" class="headline">
             <div class="coat-of-arm coat-of-arm-{..cat_image..} no-hover"></div>
-            <div class="title">{..cat_name..}</div>
+            <h2 title="{..titel..}">{..titel..}</h2>
+            <p class="sub-line text-muted">
+                <span class="small">{..cat_name..} • {..date..}</span>
+            </p>
         </a>
         <div class="content news">
-            <h2 title="{..titel..}">{..titel..}</h2>
-            <p class="sub-line">
-                <span class="small text-muted">{..cat_name..} • {..date..}</span>
-            </p>
 
             {..text..}
 
             <div class="clearfix"></div>
             <p class="text-right">
-                <a href="{..comments_url..}" target="_blank" class="btn btn-default">Weiterlesen</a>
+                <a href="{..comments_url..}" class="btn btn-default">Weiterlesen</a>
             </p>
+
         </div>
     </div>
 </div>
@@ -54,8 +54,8 @@
             <a href="{..comments_url..}" target="_blank" class="headline">
                 <div class="coat-of-arm coat-of-arm-{..cat_image..} no-hover"></div>
                 <h2 title="{..titel..}">{..titel..}</h2>
-                <p class="sub-line">
-                    <span class="small text-muted">{..cat_name..} • {..date..}</span>
+                <p class="sub-line text-muted">
+                    <span class="small">{..cat_name..} • {..date..}</span>
                 </p>
             </a>
         </div>
