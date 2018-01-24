@@ -126,6 +126,7 @@
 
         for (var i = 0, max = children.length; i < max; i++) {
             var child = children[i];
+            // child.firstChild.classList.add('do-hover');
 
             points.push(new Point(child, i, children.length));
 
