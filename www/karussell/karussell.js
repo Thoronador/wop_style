@@ -95,11 +95,12 @@
         }
     }
 
-    var carousel, k, sqrtK, kStar, breakAngle, maxSpeed, speed, acceleration,
+    var carousel, children, k, sqrtK, kStar, breakAngle, maxSpeed, speed, acceleration,
         rotationDirection, interval, lastInterval, points, ellipse, pointCache, descriptionTag;
 
-    window.run = function (id) {
-        carousel = document.getElementById(id);
+    window.run = function (element) {
+        carousel = element;
+        children = carousel.querySelectorAll('ul > li > a');
         k = 1 * carousel.dataset.ratio;
         sqrtK = Math.sqrt(k);
         kStar = (k + 1) / (k - 1);
@@ -120,11 +121,11 @@
             }
         };
 
-        for (var i = 0, max = carousel.children.length; i < max; i++) {
-            var child = carousel.children[i];
+        for (var i = 0, max = children.length; i < max; i++) {
+            var child = children[i];
 
             if (!child.classList.contains('skip')) {
-                points.push(new Point(child, i, carousel.children.length - 1));
+                points.push(new Point(child, i, children.length - 1));
 
                 child.addEventListener('mouseover', function (event) {
                     descriptionTag.innerHTML = event.target.innerHTML;
@@ -134,10 +135,6 @@
                 child.addEventListener('mouseout', function () {
                     descriptionTag.classList.remove('show');
                 });
-            }
-            else if (child.classList.contains('description')) {
-                descriptionTag = child;
-                child.classList.add('show');
             }
         }
 
@@ -186,4 +183,4 @@
     }
 })(window);
 
-run('carrousel');
+run(document.getElementById('network-carousel'));
