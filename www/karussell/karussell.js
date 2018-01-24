@@ -90,8 +90,8 @@
     function addInterval() {
         if (interval !== lastInterval) {
             interval = window.setInterval(function () {
-                rotate(.05);
-            }, 50);
+                rotate(.01);
+            }, 10);
 
             lastInterval = interval;
         }
