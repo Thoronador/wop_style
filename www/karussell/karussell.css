@@ -1,124 +1,347 @@
 body, html {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
+
 .carousel {
-    height: 100vh;
-    width: 100vw;
-}
+  height: 100vh;
+  width: 100vw; }
 
 .carousel ul {
-    display: inline-block;
-    list-style-type: none;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 0;
-}
+  display: inline-block;
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0; }
+
+.carousel li {
+  position: absolute;
+  display: inline-block;
+  font-size: 0; }
 
 .carousel a {
-    position: absolute;
-    background-image: url('schilde.png');
-    background-size: 904% 595%;
-    display: inline-block;
-    font-size: 0;
-    height: 115px;
-    /*transition-property: margin, width, height;
-    transition-duration: 0.05s;
-    transition-timing-function: linear;*/
-    width: 84px;
-}
+  display: inline-block;
+  transform: scale(1);
+  transform-origin: 0 0; }
 
 .carousel .description.show {
-    display: inline-block;
-}
+  display: inline-block; }
 
 .carousel .description {
-    display: none;
-    color: #ebd9ad;
-    font-family: times, serif;
-    font-size: 16px;
-    font-weight: bold;
-    position: absolute;
-    text-align: center;
-    text-shadow: 2px 1px 2px black;
-    width: 100%;
-    z-index: 1000;
-}
+  display: none;
+  color: #ebd9ad;
+  font-family: times, serif;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 1px 2px black;
+  width: 100%;
+  z-index: 1000; }
 
-.coat-of-arm-gothic {
-    background-position: -699.5% 0;
-}
+.coat-of-arm-_assassinscreed {
+  background-image: url(schilde.png);
+  background-position: -158px -105px;
+  width: 74px;
+  height: 100px; }
 
-.coat-of-arm-dungeonlords {
-    background-position: -399.5% -400%;
-}
+.coat-of-arm-_cyberpunk {
+  background-image: url(schilde.png);
+  background-position: -480px -105px;
+  width: 74px;
+  height: 100px; }
 
-.coat-of-arm-tes {
-    background-position: 0 -500.5%;
-}
+.coat-of-arm-_demonicon {
+  background-image: url(schilde.png);
+  background-position: -158px -420px;
+  width: 74px;
+  height: 100px; }
 
-.coat-of-arm-neverwinter {
-    background-position: -799.5% 0;
-}
+.coat-of-arm-_diablo {
+  background-image: url(schilde.png);
+  background-position: 0px -105px;
+  width: 74px;
+  height: 100px; }
 
-.coat-of-arm-grotesque {
-    background-position: -700% -100%;
-}
+.coat-of-arm-_divinity {
+  background-image: url(schilde.png);
+  background-position: -79px -105px;
+  width: 74px;
+  height: 100px; }
 
-.coat-of-arm-witcher {
-    background-position: -599.45% 0;
-}
+.coat-of-arm-_dragonage {
+  background-image: url(schilde.png);
+  background-position: 0px 0px;
+  width: 77px;
+  height: 100px; }
 
-.coat-of-arm-thief {
-    background-position: -100% -500.5%;
-}
+.coat-of-arm-_drakensang {
+  background-image: url(schilde.png);
+  background-position: -243px 0px;
+  width: 74px;
+  height: 100px; }
 
-.coat-of-arm-drakensang {
-    background-position: -299.5% -400%;
-}
+.coat-of-arm-_dungeonlords {
+  background-image: url(schilde.png);
+  background-position: -243px -105px;
+  width: 74px;
+  height: 100px; }
 
-.coat-of-arm-demonicon {
-    background-position: -599.4% -300%;
-}
+.coat-of-arm-_elex {
+  background-image: url(schilde.png);
+  background-position: -638px -170px;
+  width: 80px;
+  height: 80px; }
 
-.coat-of-arm-sacred {
-    background-position: -799.5% -200%;
-}
+.coat-of-arm-_fallout {
+  background-image: url(schilde.png);
+  background-position: -638px -85px;
+  width: 80px;
+  height: 80px; }
 
-.coat-of-arm-dragonage {
-    background-position: -100% 0;
-}
+.coat-of-arm-_gothic {
+  background-image: url(schilde.png);
+  background-position: -158px -210px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_grotesque {
+  background-image: url(schilde.png);
+  background-position: -237px -210px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_herrderringe {
+  background-image: url(schilde.png);
+  background-position: -322px 0px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_kingdomhearts {
+  background-image: url(schilde.png);
+  background-position: -322px -105px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_masseffect {
+  background-image: url(schilde.png);
+  background-position: -322px -210px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_neverwinter {
+  background-image: url(schilde.png);
+  background-position: -401px 0px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_risen {
+  background-image: url(schilde.png);
+  background-position: -401px -105px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_sacred {
+  background-image: url(schilde.png);
+  background-position: -401px -210px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_starcraft {
+  background-image: url(schilde.png);
+  background-position: 0px -315px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_starwars {
+  background-image: url(schilde.png);
+  background-position: -79px -315px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_tes {
+  background-image: url(schilde.png);
+  background-position: -158px -315px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_thief {
+  background-image: url(schilde.png);
+  background-position: -237px -315px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_torment {
+  background-image: url(schilde.png);
+  background-position: -316px -315px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_unbended {
+  background-image: url(schilde.png);
+  background-position: -395px -315px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-_witcher {
+  background-image: url(schilde.png);
+  background-position: -480px 0px;
+  width: 74px;
+  height: 100px; }
 
 .coat-of-arm-assassinscreed {
-    background-position: -200% 0;
-}
-
-.coat-of-arm-risen {
-    background-position: -799.5% -100%;
-}
-
-.coat-of-arm-masseffect {
-    background-position: -699.5% -400%;
-}
-
-.coat-of-arm-diablo {
-    background-position: 0 -400.5%;
-}
-
-.coat-of-arm-herrderringe {
-    background-position: -699.4% -200%;
-}
+  background-image: url(schilde.png);
+  background-position: -164px 0px;
+  width: 74px;
+  height: 100px; }
 
 .coat-of-arm-cyberpunk {
-    background-position: -599.4% -200%;
-}
+  background-image: url(schilde.png);
+  background-position: -480px -210px;
+  width: 74px;
+  height: 100px; }
 
-.coat-of-arm-fallout {
-    background-position: -299% -500.5%;
-}
+.coat-of-arm-demonicon {
+  background-image: url(schilde.png);
+  background-position: -480px -315px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-diablo {
+  background-image: url(schilde.png);
+  background-position: 0px -420px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-divinity {
+  background-image: url(schilde.png);
+  background-position: -79px -420px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-dragonage {
+  background-image: url(schilde.png);
+  background-position: -82px 0px;
+  width: 77px;
+  height: 100px; }
+
+.coat-of-arm-drakensang {
+  background-image: url(schilde.png);
+  background-position: -237px -420px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-dungeonlords {
+  background-image: url(schilde.png);
+  background-position: -316px -420px;
+  width: 74px;
+  height: 100px; }
 
 .coat-of-arm-elex {
-    background-position: -499% -400.5%;
-}
+  background-image: url(schilde.png);
+  background-position: -395px -420px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-fallout {
+  background-image: url(schilde.png);
+  background-position: -638px 0px;
+  width: 80px;
+  height: 80px; }
+
+.coat-of-arm-gothic {
+  background-image: url(schilde.png);
+  background-position: -559px 0px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-grotesque {
+  background-image: url(schilde.png);
+  background-position: -559px -105px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-herrderringe {
+  background-image: url(schilde.png);
+  background-position: -559px -210px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-kingdomhearts {
+  background-image: url(schilde.png);
+  background-position: -559px -315px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-masseffect {
+  background-image: url(schilde.png);
+  background-position: -559px -420px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-neverwinter {
+  background-image: url(schilde.png);
+  background-position: 0px -525px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-risen {
+  background-image: url(schilde.png);
+  background-position: -79px -525px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-sacred {
+  background-image: url(schilde.png);
+  background-position: -158px -525px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-starcraft {
+  background-image: url(schilde.png);
+  background-position: -237px -525px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-starwars {
+  background-image: url(schilde.png);
+  background-position: -316px -525px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-tes {
+  background-image: url(schilde.png);
+  background-position: -395px -525px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-thief {
+  background-image: url(schilde.png);
+  background-position: -474px -525px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-torment {
+  background-image: url(schilde.png);
+  background-position: -474px -420px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-unbended {
+  background-image: url(schilde.png);
+  background-position: -79px -210px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-witcher {
+  background-image: url(schilde.png);
+  background-position: 0px -210px;
+  width: 74px;
+  height: 100px; }
+
+.coat-of-arm-wop {
+  background-image: url(schilde.png);
+  background-position: -553px -525px;
+  width: 80px;
+  height: 92px; }

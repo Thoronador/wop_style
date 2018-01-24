@@ -61,8 +61,10 @@
             point.element.style.height = height + 'px';
             point.element.style.marginTop = ellipse.center.y + y - height / 2 + 'px';
             point.element.style.marginLeft = ellipse.center.x + x - width / 2 + 'px';
-
             point.element.style.zIndex = pointCache[angle][3];
+            point.element.dataset.size = size;
+
+            point.element.firstChild.style.transform = 'scale(' + size + ')';
         }
     }
 
@@ -100,7 +102,7 @@
 
     window.run = function (element) {
         carousel = element;
-        children = carousel.querySelectorAll('ul > li > a');
+        children = carousel.querySelectorAll('ul > li');
         descriptionTag = carousel.querySelector('.description');
         k = 1 * carousel.dataset.ratio;
         sqrtK = Math.sqrt(k);
@@ -125,18 +127,16 @@
         for (var i = 0, max = children.length; i < max; i++) {
             var child = children[i];
 
-            if (!child.classList.contains('skip')) {
-                points.push(new Point(child, i, children.length - 1));
+            points.push(new Point(child, i, children.length));
 
-                child.addEventListener('mouseover', function (event) {
-                    descriptionTag.innerHTML = event.target.innerHTML;
-                    descriptionTag.classList.add('show');
-                });
+            child.firstChild.addEventListener('mouseover', function (event) {
+                descriptionTag.innerHTML = event.target.innerHTML;
+                descriptionTag.classList.add('show');
+            });
 
-                child.addEventListener('mouseout', function () {
-                    descriptionTag.classList.remove('show');
-                });
-            }
+            child.firstChild.addEventListener('mouseout', function () {
+                descriptionTag.classList.remove('show');
+            });
         }
 
         var pi = Math.ceil(100 * Math.PI), angle, x;

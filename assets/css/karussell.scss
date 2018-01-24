@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    height: 100vh;
+    width: 100vw;
+}
+
+.carousel ul {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+.carousel li {
+    position: absolute;
+    display: inline-block;
+    font-size: 0;
+}
+
+.carousel a {
+    display: inline-block;
+    transform: scale(1);
+    transform-origin: 0 0;
+}
+
+.carousel .description.show {
+    display: inline-block;
+}
+
+.carousel .description {
+    display: none;
+    color: #ebd9ad;
+    font-family: times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 1px 2px black;
+    width: 100%;
+    z-index: 1000;
+}
+
+@import "_karussell.scss";
