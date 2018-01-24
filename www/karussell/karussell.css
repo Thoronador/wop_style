@@ -1,0 +1,146 @@
+#carrousel, #carrousel.js a
+{
+    position: absolute;
+}
+
+#carrousel a
+{
+    background-image: url('https://www.assassins-creed.de/karussell/3/schilde.png');
+    background-size: 904% 595%;
+    display: inline-block;
+    font-size: 0;
+    height: 115px;
+    /*transition-property: margin, width, height;
+    transition-duration: 0.05s;
+    transition-timing-function: linear;*/
+    width: 84px;
+}
+
+#carrousel
+{
+    background-color: #aaaaaa;
+    top: 50px;
+    left: 50%;
+    height: 165px;
+    overflow-x: auto;
+    width: 468px;
+}
+
+#carrousel .description:not(.show)
+{
+    display: none;
+}
+
+#carrousel .description.show
+{
+    color: #ebd9ad;
+    display: inline-block;
+    font-family: times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 1px 2px black;
+    width: 100%;
+    z-index: 1000;
+}
+
+.assassinscreed
+{
+    background-position: -200% 0%;
+}
+
+.cyberpunk
+{
+    background-position: -599.4% -200%;
+}
+
+.demonicon
+{
+    background-position: -599.4% -300%;
+}
+
+.diablo
+{
+    background-position: 0% -400.5%;
+}
+
+.divinity
+{
+    background-position: -599.5% -100%;
+}
+
+.dragonage
+{
+    background-position: -100% 0%;
+}
+
+.drakensang
+{
+    background-position: -299.5% -400%;
+}
+
+.dungeonlords
+{
+    background-position: -399.5% -400%;
+}
+
+.elex
+{
+    background-position: -499% -400.5%;
+}
+
+.fallout
+{
+    background-position: -299% -500.5%;
+}
+
+.gothic
+{
+    background-position: -699.5% 0%;
+}
+
+.grotesque
+{
+    background-position: -700% -100%;
+}
+
+.herrderringe
+{
+    background-position: -699.4% -200%;
+}
+
+.masseffect
+{
+    background-position: -699.5% -400%;
+}
+
+.neverwinter
+{
+    background-position: -799.5% 0%;
+}
+
+.risen
+{
+    background-position: -799.5% -100%;
+}
+
+.sacred
+{
+    background-position: -799.5% -200%;
+}
+
+.tes
+{
+    background-position: 0% -500.5%;
+}
+
+.thief
+{
+    background-position: -100% -500.5%;
+}
+
+.witcher
+{
+    background-position: -599.45% 0%;
+}
