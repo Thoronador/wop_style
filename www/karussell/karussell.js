@@ -101,6 +101,7 @@
     window.run = function (element) {
         carousel = element;
         children = carousel.querySelectorAll('ul > li > a');
+        descriptionTag = carousel.querySelector('.description');
         k = 1 * carousel.dataset.ratio;
         sqrtK = Math.sqrt(k);
         kStar = (k + 1) / (k - 1);
@@ -174,13 +175,9 @@
             acceleration = 1 * carousel.dataset.acceleration;
         });
 
-        carousel.classList.add('js');
-
         descriptionTag.classList.remove('show');
 
         updatePoints();
         addInterval();
     }
 })(window);
-
-run(document.getElementById('network-carousel'));

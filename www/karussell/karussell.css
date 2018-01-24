@@ -1,11 +1,25 @@
-#carrousel, #carrousel a
-{
-    position: absolute;
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.carousel {
+    height: 100vh;
+    width: 100vw;
 }
 
-#carrousel a
-{
-    background-image: url('https://www.assassins-creed.de/karussell/3/schilde.png');
+.carousel ul {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+.carousel a {
+    position: absolute;
+    background-image: url('schilde.png');
     background-size: 904% 595%;
     display: inline-block;
     font-size: 0;
@@ -16,25 +30,13 @@
     width: 84px;
 }
 
-#carrousel
-{
-    background-color: #aaaaaa;
-    top: 50px;
-    left: 50%;
-    height: 165px;
-    overflow-x: auto;
-    width: 468px;
-}
-
-#carrousel .description:not(.show)
-{
-    display: none;
-}
-
-#carrousel .description.show
-{
-    color: #ebd9ad;
+.carousel .description.show {
     display: inline-block;
+}
+
+.carousel .description {
+    display: none;
+    color: #ebd9ad;
     font-family: times, serif;
     font-size: 16px;
     font-weight: bold;
@@ -45,102 +47,78 @@
     z-index: 1000;
 }
 
-.assassinscreed
-{
-    background-position: -200% 0%;
+.coat-of-arm-gothic {
+    background-position: -699.5% 0;
 }
 
-.cyberpunk
-{
-    background-position: -599.4% -200%;
-}
-
-.demonicon
-{
-    background-position: -599.4% -300%;
-}
-
-.diablo
-{
-    background-position: 0% -400.5%;
-}
-
-.divinity
-{
-    background-position: -599.5% -100%;
-}
-
-.dragonage
-{
-    background-position: -100% 0%;
-}
-
-.drakensang
-{
-    background-position: -299.5% -400%;
-}
-
-.dungeonlords
-{
+.coat-of-arm-dungeonlords {
     background-position: -399.5% -400%;
 }
 
-.elex
-{
-    background-position: -499% -400.5%;
+.coat-of-arm-tes {
+    background-position: 0 -500.5%;
 }
 
-.fallout
-{
-    background-position: -299% -500.5%;
+.coat-of-arm-neverwinter {
+    background-position: -799.5% 0;
 }
 
-.gothic
-{
-    background-position: -699.5% 0%;
-}
-
-.grotesque
-{
+.coat-of-arm-grotesque {
     background-position: -700% -100%;
 }
 
-.herrderringe
-{
-    background-position: -699.4% -200%;
+.coat-of-arm-witcher {
+    background-position: -599.45% 0;
 }
 
-.masseffect
-{
-    background-position: -699.5% -400%;
-}
-
-.neverwinter
-{
-    background-position: -799.5% 0%;
-}
-
-.risen
-{
-    background-position: -799.5% -100%;
-}
-
-.sacred
-{
-    background-position: -799.5% -200%;
-}
-
-.tes
-{
-    background-position: 0% -500.5%;
-}
-
-.thief
-{
+.coat-of-arm-thief {
     background-position: -100% -500.5%;
 }
 
-.witcher
-{
-    background-position: -599.45% 0%;
+.coat-of-arm-drakensang {
+    background-position: -299.5% -400%;
+}
+
+.coat-of-arm-demonicon {
+    background-position: -599.4% -300%;
+}
+
+.coat-of-arm-sacred {
+    background-position: -799.5% -200%;
+}
+
+.coat-of-arm-dragonage {
+    background-position: -100% 0;
+}
+
+.coat-of-arm-assassinscreed {
+    background-position: -200% 0;
+}
+
+.coat-of-arm-risen {
+    background-position: -799.5% -100%;
+}
+
+.coat-of-arm-masseffect {
+    background-position: -699.5% -400%;
+}
+
+.coat-of-arm-diablo {
+    background-position: 0 -400.5%;
+}
+
+.coat-of-arm-herrderringe {
+    background-position: -699.4% -200%;
+}
+
+.coat-of-arm-cyberpunk {
+    background-position: -599.4% -200%;
+}
+
+.coat-of-arm-fallout {
+    background-position: -299% -500.5%;
+}
+
+.coat-of-arm-elex {
+    background-position: -499% -400.5%;
 }
