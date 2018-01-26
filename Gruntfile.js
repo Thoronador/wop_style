@@ -71,7 +71,7 @@ module.exports = function (grunt) {
                 imgPath: 'img/schilde.png'
             },
             karussell: {
-                src: 'assets/schilde/small/*.*',
+                src: ['assets/schilde/*.*', '!assets/schilde/_*.*'],
                 dest: 'www/karussell/schilde.png',
                 destCss: 'assets/css/_karussell.scss',
                 padding: 5,
@@ -112,7 +112,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', ['sass:dist', 'concat:dist']);
     grunt.registerTask('coat_of_arms', ['responsive_images:coat_of_arms', 'sprite:coat_of_arms', 'sass:dist']);
-    grunt.registerTask('karussell', ['responsive_images:karussell', 'sprite:karussell', 'sass:karussell']);
+    grunt.registerTask('karussell', ['sprite:karussell', 'sass:karussell']);
     grunt.registerTask('favicons', ['sprite:favicons', 'sass:dist']);
     grunt.registerTask('images', ['responsive_images:coat_of_arms', 'sprite:coat_of_arms', 'sprite:favicons', 'sass:dist']);
 };
