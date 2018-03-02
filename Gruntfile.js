@@ -20,6 +20,14 @@ module.exports = function (grunt) {
                 files: {
                     'www/styles/wop/main.css': 'assets/css/main.scss'
                 }
+            },
+            karussell: {
+                options: {
+                    style: 'expanded'
+                },
+                files: {
+                    'www/karussell/karussell.css': 'assets/css/karussell.scss'
+                }
             }
         },
         responsive_images: {
@@ -37,6 +45,21 @@ module.exports = function (grunt) {
                     src: ['*.{jpg,gif,png}'],
                     custom_dest: 'assets/schilde/small/'
                 }]
+            },
+            karussell: {
+                options: {
+                    sizes: [{
+                        width: 92,
+                        height: 115,
+                        quality: 100
+                    }]
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'assets/schilde/',
+                    src: ['*.{jpg,gif,png}'],
+                    custom_dest: 'assets/schilde/medium/'
+                }]
             }
         },
         sprite: {
@@ -46,6 +69,14 @@ module.exports = function (grunt) {
                 destCss: 'assets/css/_coat-of-arms.scss',
                 cssTemplate: 'assets/css/coat-of-arms.scss.mustache',
                 imgPath: 'img/schilde.png'
+            },
+            karussell: {
+                src: ['assets/schilde/*.*', '!assets/schilde/_*.*'],
+                dest: 'www/karussell/schilde.png',
+                destCss: 'assets/css/_karussell.scss',
+                padding: 5,
+                cssTemplate: 'assets/css/karussell.scss.mustache',
+                imgPath: 'schilde.png'
             },
             favicons: {
                 engine: 'gmsmith',
@@ -81,6 +112,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', ['sass:dist', 'concat:dist']);
     grunt.registerTask('coat_of_arms', ['responsive_images:coat_of_arms', 'sprite:coat_of_arms', 'sass:dist']);
+    grunt.registerTask('karussell', ['sprite:karussell', 'sass:karussell']);
     grunt.registerTask('favicons', ['sprite:favicons', 'sass:dist']);
     grunt.registerTask('images', ['responsive_images:coat_of_arms', 'sprite:coat_of_arms', 'sprite:favicons', 'sass:dist']);
 };
