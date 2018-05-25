@@ -46,7 +46,19 @@
     <a href="http://forenarchiv.worldofplayers.de/" target="_blank">
       Medis Forenarchiv</a>
   </li>
-  <li class="$APP(active-nav.php[kontakt])">
-    <a href="$URL(kontakt)">Kontakt</a>
+
+  <li class="dropdown $APP(active-nav.php[kontakt datenschutz])">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+      Kontakt <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li class="$APP(active-nav.php[kontakt])">
+        <a href="$URL(kontakt)">Kontakt &amp; Impressum</a>
+      </li>
+      <li class="$APP(active-nav.php[datenschutz])">
+        <a href="$URL(datenschutz)">Datenschutz</a>
+      </li>
+    </ul>
   </li>
+
 </ul>
