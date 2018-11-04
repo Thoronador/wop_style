@@ -68,7 +68,7 @@ Für eine neue Netzwerkseite ist daher das folgende nötig:
 3. Neue Seite in den Slider auf der Portalseite einfügen: `www\styles\wop\network-carousel.nav` 
 4. Neues Forum hinzufügen `www\styles\wop\forum.nav`
 5. Neue Seite ins Foren Karussell einfügen: `www\karussell\index.html`
-6. Karussell scripte aktualisieren: `grunt karussell`
+6. Karussell Scripte aktualisieren: `grunt karussell`
 7. Den Ordner `www` auf den Server hochladen
 8. Newskategorie einrichten (siehe unten)
 
