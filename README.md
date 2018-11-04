@@ -4,8 +4,8 @@ Der Portalseiten-Style setzt auf einen Prozess bei dem die JS, CSS und Bild-Date
 ### Vorbereitung
 1. Die node.js Laufzeitumgebung [herunterladen](https://nodejs.org/en/
 ) und installieren
-2. Über die Kommandozeile Grunt installieren: `npm install -g grunt-cli`
-3. Projekt-Abhängigkeiten installieren, dazu im Wurzel-Verzeichnis (Ordner mit der `packages.json`) des Projekts  `npm install` ausführen 
+2. Ãœber die Kommandozeile Grunt installieren: `npm install -g grunt-cli`
+3. Projekt-AbhÃ¤ngigkeiten installieren, dazu im Wurzel-Verzeichnis (Ordner mit der `packages.json`) des Projekts  `npm install` ausfÃ¼hren 
 
 ### Struktur
 ```
@@ -17,60 +17,61 @@ Der Portalseiten-Style setzt auf einen Prozess bei dem die JS, CSS und Bild-Date
    |- schilde (Die Schild-Quelldateien in normal und hover)
       |- small (Automatisch generierte kleine Versionen der Schilde)
 |- www (Dieser Ordner kann so direkt auf den Server geladen werden)
-   |- applets (Applets für die Portalseite) 
+   |- applets (Applets fÃ¼r die Portalseite) 
    |- styles 
-      |- fonts (Ordner für die Portalseiten-Fonts)
-      |- wop (Der eigentliche Style-Ordner, enthält die FS-Templates und generierte Dateien)
+      |- fonts (Ordner fÃ¼r die Portalseiten-Fonts)
+      |- wop (Der eigentliche Style-Ordner, enthÃ¤lt die FS-Templates und generierte Dateien)
          |- icons
-         |- img (Bild-Dateien, enthält die erzeugten Spritemaps für Favicons und Schilde) 
+         |- img (Bild-Dateien, enthÃ¤lt die erzeugten Spritemaps fÃ¼r Favicons und Schilde) 
          |- main.css (Die generierte CSS-Datei. NICHT manuell anpassen)
          |- main.js (Die generierte JS-Datei. NICHT manuell anpassen)
 ```
 
-## Style ändern (Templates, CSS, JS, etc.)
-Wenn Änderungen am Style notwendig sind, sollten dise *nicht* auf dem Server durchgeführt werden, sondern hier im Projekt und dann anschließend wieder auf GitHub geladen werden.
+## Style Ã¤ndern (Templates, CSS, JS, etc.)
+Wenn Ã„nderungen am Style notwendig sind, sollten dise *nicht* auf dem Server durchgefÃ¼hrt werden, sondern hier im Projekt und dann anschlieÃŸend wieder auf GitHub geladen werden.
 
-Alle Frogsystem-Templates befinden sich in `www\styles\wop` und können einfach angepasst werden.
+Alle Frogsystem-Templates befinden sich in `www\styles\wop` und kÃ¶nnen einfach angepasst werden.
 
-CSS (bzw. Sass) und JS müssen in den jeweiligen Dateien im `assets`-Ordner geändert werden. Die optimierten Dateien (komprimiert, minifiziert) werden mit dem folgendem Kommando erzeugt:
+CSS (bzw. Sass) und JS mÃ¼ssen in den jeweiligen Dateien im `assets`-Ordner geÃ¤ndert werden. Die optimierten Dateien (komprimiert, minifiziert) werden mit dem folgendem Kommando erzeugt:
 ```
 grunt default
 ```
 Es kopiert die erzeugten Dateien auch automatisch nach `www\styles\wop`, so dass der Ordner einfach nur hochgeladen werden muss.
 
 ## Schilde und Favicons
-Die Quelldateien für die Schilde und Favicons sind in `assets\schilde` bzw. `assets\favicons`. Neue Bilder oder Änderungen einfach in diesen Ordnern platzieren. Die Dateinamen bilden später die Namen der CSS-Klassen.
+Die Quelldateien fÃ¼r die Schilde und Favicons sind in `assets\schilde` bzw. `assets\favicons`. Neue Bilder oder Ã„nderungen einfach in diesen Ordnern platzieren. Die Dateinamen bilden spÃ¤ter die Namen der CSS-Klassen.
 
-Um aus den (geänderten) Originalen die optmierten Dateien zu erzeugen, kann das entsprechende Kommando genutzt werden:
+Um aus den (geÃ¤nderten) Originalen die optmierten Dateien zu erzeugen, kann das entsprechende Kommando genutzt werden:
 ```
 grunt coat_of_arms
 grunt favicons
 grunt images
 ```
-(Wobei `grunt images` nur eine Abkürzung für die ersten beiden ist.)
+(Wobei `grunt images` nur eine AbkÃ¼rzung fÃ¼r die ersten beiden ist.)
 
 Dabei werden neue Bild- und CSS-Dateien erzeugt und nach `www\styles\wop` kopiert.
 
 ### Abmessungen und Dateinamen
-* Favicons müssen `16x16px` groß sein, Dateiformat ist egal.
-* Schilde können beliebig groß sein; sie werden im Prozess automatisch auf max. `80x100px` verkleinert (im Ordner `assets\schilde\small`).
-* Schilde *müssen* als normale Version `SCHILDNAME.png` und als hover-Version `_SCHILDNAME.png` abgelegt werden.
+* Favicons mÃ¼ssen `16x16px` groÃŸ sein, Dateiformat ist egal.
+* Schilde kÃ¶nnen beliebig groÃŸ sein; sie werden im Prozess automatisch auf max. `80x100px` verkleinert (im Ordner `assets\schilde\small`).
+* Schilde *mÃ¼ssen* als normale Version `SCHILDNAME.png` und als hover-Version `_SCHILDNAME.png` abgelegt werden.
 
 ### CSS-Klassen
-Beide Bilder-Typen können über die Klassen `coat-of-arm-DATEINAME` bzw. `favicon-DATEINAME` im Style verwendet werden.
+Beide Bilder-Typen kÃ¶nnen Ã¼ber die Klassen `coat-of-arm-DATEINAME` bzw. `favicon-DATEINAME` im Style verwendet werden.
 
 ## Neue Netzwerkseite
-Für eine neue Netzwerkseite ist daher das folgende nötig:
+FÃ¼r eine neue Netzwerkseite ist daher das folgende nÃ¶tig:
 
 1. Bild-Dateien in `assets\schilde` und `assets\favicons` ablegen
 2. Mit `grunt images` die aktualisierten Dateien generieren
-3. Neue Seite ins Karussell einfügen: `www\styles\wop\network-carousel.nav` 
-4. Neues Forum hinzufügen `www\styles\wop\forum.nav`
-5. Den Ordner `www` auf den Server hochladen
-6. Newskategorie einrichten (siehe unten)
+3. Neue Seite in den Slider auf der Portalseite einfÃ¼gen: `www\styles\wop\network-carousel.nav` 
+4. Neue Seite ins Foren Karussell einfÃ¼gen: `www\karussell\index.html` 
+5. Neues Forum hinzufÃ¼gen `www\styles\wop\forum.nav`
+6. Den Ordner `www` auf den Server hochladen
+7. Newskategorie einrichten (siehe unten)
 
 ## Newskategorie
-Im Admin-CP unter `Inhalt > News > Kategorien` eine neue Kategorie hinzugefügen. Damit News auch in diese einsortiert werden, muss leider noch von Hand ein Eintrag in die Datenbank eingefügt werden. Und zwar in die Tabelle `wop_networkinfo`:
+Im Admin-CP unter `Inhalt > News > Kategorien` eine neue Kategorie hinzugefÃ¼gen. Damit News auch in diese einsortiert werden, muss leider noch von Hand ein Eintrag in die Datenbank eingefÃ¼gt werden. Und zwar in die Tabelle `wop_networkinfo`:
 
 ```
  | id                          | sanitized            | cat_name                 |
@@ -80,4 +81,4 @@ Im Admin-CP unter `Inhalt > News > Kategorien` eine neue Kategorie hinzugefügen.
 ```
  
 ## Newsslider und Newsletter
-Für Newsslider und Newsletter muss das Schild noch in zwei weiteren Varianten hochgeladen werden. Die Dateinamen können im Webmaster-CP selbst gewählt werden. Beim Slider ist es der Wert `Slidericon` und die Datei muss unter `layouts/slider` auf dem Forenserver abgelegt sein; der Newsletter nutzt den Wert `Portalseitenicon` und den Ordner `www/ico` auf dem Webseiten-Server. Die Newsletter-Grafik muss leider noch manuell erstellt werden, man kann aber recht leicht einen Screenshot von der Portalseite dazu hernehmen.
+FÃ¼r Newsslider und Newsletter muss das Schild noch in zwei weiteren Varianten hochgeladen werden. Die Dateinamen kÃ¶nnen im Webmaster-CP selbst gewÃ¤hlt werden. Beim Slider ist es der Wert `Slidericon` und die Datei muss unter `layouts/slider` auf dem Forenserver abgelegt sein; der Newsletter nutzt den Wert `Portalseitenicon` und den Ordner `www/ico` auf dem Webseiten-Server. Die Newsletter-Grafik muss leider noch manuell erstellt werden, man kann aber recht leicht einen Screenshot von der Portalseite dazu hernehmen.
