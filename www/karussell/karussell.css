@@ -45,15 +45,21 @@ body, html {
   width: 100%;
   z-index: 1000; }
 
+.coat-of-arm-amalur {
+  background-image: url(schilde.png);
+  background-position: -105px -420px;
+  width: 100px;
+  height: 128px; }
+
 .coat-of-arm-assassinscreed {
   background-image: url(schilde.png);
-  background-position: -105px 0px;
+  background-position: -210px -280px;
   width: 100px;
   height: 135px; }
 
 .coat-of-arm-cyberpunk {
   background-image: url(schilde.png);
-  background-position: -210px -280px;
+  background-position: -105px -280px;
   width: 100px;
   height: 135px; }
 
@@ -95,19 +101,19 @@ body, html {
 
 .coat-of-arm-fallout {
   background-image: url(schilde.png);
-  background-position: -105px -420px;
+  background-position: -210px -420px;
   width: 100px;
   height: 100px; }
 
 .coat-of-arm-gothic {
   background-image: url(schilde.png);
-  background-position: -105px -280px;
+  background-position: 0px 0px;
   width: 100px;
   height: 135px; }
 
 .coat-of-arm-grotesque {
   background-image: url(schilde.png);
-  background-position: 0px 0px;
+  background-position: -105px 0px;
   width: 100px;
   height: 135px; }
 
@@ -149,24 +155,24 @@ body, html {
 
 .coat-of-arm-tes {
   background-image: url(schilde.png);
-  background-position: -525px -280px;
+  background-position: -105px -140px;
   width: 100px;
   height: 135px; }
 
 .coat-of-arm-thief {
   background-image: url(schilde.png);
-  background-position: 0px -280px;
+  background-position: -525px -280px;
   width: 100px;
   height: 135px; }
 
 .coat-of-arm-witcher {
   background-image: url(schilde.png);
-  background-position: -105px -140px;
+  background-position: 0px -280px;
   width: 100px;
   height: 135px; }
 
 .coat-of-arm-wop {
   background-image: url(schilde.png);
-  background-position: -210px -420px;
+  background-position: -315px -420px;
   width: 48px;
   height: 55px; }

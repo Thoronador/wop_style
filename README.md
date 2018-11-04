@@ -5,7 +5,8 @@ Der Portalseiten-Style setzt auf einen Prozess bei dem die JS, CSS und Bild-Date
 1. Die node.js Laufzeitumgebung [herunterladen](https://nodejs.org/en/
 ) und installieren
 2. Über die Kommandozeile Grunt installieren: `npm install -g grunt-cli`
-3. Projekt-Abhängigkeiten installieren, dazu im Wurzel-Verzeichnis (Ordner mit der `packages.json`) des Projekts  `npm install` ausführen 
+3. `graphicsmagick` installieren
+4. `node.js` Projekt-Abhängigkeiten installieren, dazu im Wurzel-Verzeichnis (Ordner mit der `packages.json`) des Projekts  `npm install` ausführen 
 
 ### Struktur
 ```
@@ -65,10 +66,11 @@ Für eine neue Netzwerkseite ist daher das folgende nötig:
 1. Bild-Dateien in `assets\schilde` und `assets\favicons` ablegen
 2. Mit `grunt images` die aktualisierten Dateien generieren
 3. Neue Seite in den Slider auf der Portalseite einfügen: `www\styles\wop\network-carousel.nav` 
-4. Neue Seite ins Foren Karussell einfügen: `www\karussell\index.html` 
-5. Neues Forum hinzufügen `www\styles\wop\forum.nav`
-6. Den Ordner `www` auf den Server hochladen
-7. Newskategorie einrichten (siehe unten)
+4. Neues Forum hinzufügen `www\styles\wop\forum.nav`
+5. Den Ordner `www` auf den Server hochladen
+6. Neue Seite ins Foren Karussell einfügen: `www\karussell\index.html`
+7. Karussell scripte aktualisieren: `grunt karussell`
+8. Newskategorie einrichten (siehe unten)
 
 ## Newskategorie
 Im Admin-CP unter `Inhalt > News > Kategorien` eine neue Kategorie hinzugefügen. Damit News auch in diese einsortiert werden, muss leider noch von Hand ein Eintrag in die Datenbank eingefügt werden. Und zwar in die Tabelle `wop_networkinfo`:
