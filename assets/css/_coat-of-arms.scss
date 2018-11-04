@@ -1,513 +1,433 @@
-  $coa-_assassinscreed-x: 148px;
-  $coa-_assassinscreed-y: 100px;
-  $coa-_assassinscreed-offset-x: -148px;
-  $coa-_assassinscreed-offset-y: -100px;
+  $coa-_amalur-x: 78px;
+  $coa-_amalur-y: 0px;
+  $coa-_amalur-offset-x: -78px;
+  $coa-_amalur-offset-y: 0px;
+  $coa-_amalur-width: 78px;
+  $coa-_amalur-height: 100px;
+  $coa-_amalur-total-width: 603px;
+  $coa-_amalur-total-height: 580px;
+  $coa-_amalur-image: 'img/schilde.png';
+  $coa-_amalur: 78px 0px -78px 0px 78px 100px 603px 580px 'img/schilde.png';
+  $coa-_assassinscreed-x: 222px;
+  $coa-_assassinscreed-y: 300px;
+  $coa-_assassinscreed-offset-x: -222px;
+  $coa-_assassinscreed-offset-y: -300px;
   $coa-_assassinscreed-width: 74px;
   $coa-_assassinscreed-height: 100px;
-  $coa-_assassinscreed-total-width: 672px;
-  $coa-_assassinscreed-total-height: 600px;
+  $coa-_assassinscreed-total-width: 603px;
+  $coa-_assassinscreed-total-height: 580px;
   $coa-_assassinscreed-image: 'img/schilde.png';
-  $coa-_assassinscreed: 148px 100px -148px -100px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_cyberpunk-x: 450px;
+  $coa-_assassinscreed: 222px 300px -222px -300px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_cyberpunk-x: 151px;
   $coa-_cyberpunk-y: 100px;
-  $coa-_cyberpunk-offset-x: -450px;
+  $coa-_cyberpunk-offset-x: -151px;
   $coa-_cyberpunk-offset-y: -100px;
   $coa-_cyberpunk-width: 74px;
   $coa-_cyberpunk-height: 100px;
-  $coa-_cyberpunk-total-width: 672px;
-  $coa-_cyberpunk-total-height: 600px;
+  $coa-_cyberpunk-total-width: 603px;
+  $coa-_cyberpunk-total-height: 580px;
   $coa-_cyberpunk-image: 'img/schilde.png';
-  $coa-_cyberpunk: 450px 100px -450px -100px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_demonicon-x: 148px;
-  $coa-_demonicon-y: 400px;
-  $coa-_demonicon-offset-x: -148px;
-  $coa-_demonicon-offset-y: -400px;
+  $coa-_cyberpunk: 151px 100px -151px -100px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_demonicon-x: 296px;
+  $coa-_demonicon-y: 300px;
+  $coa-_demonicon-offset-x: -296px;
+  $coa-_demonicon-offset-y: -300px;
   $coa-_demonicon-width: 74px;
   $coa-_demonicon-height: 100px;
-  $coa-_demonicon-total-width: 672px;
-  $coa-_demonicon-total-height: 600px;
+  $coa-_demonicon-total-width: 603px;
+  $coa-_demonicon-total-height: 580px;
   $coa-_demonicon-image: 'img/schilde.png';
-  $coa-_demonicon: 148px 400px -148px -400px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_diablo-x: 0px;
-  $coa-_diablo-y: 100px;
-  $coa-_diablo-offset-x: 0px;
-  $coa-_diablo-offset-y: -100px;
+  $coa-_demonicon: 296px 300px -296px -300px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_diablo-x: 455px;
+  $coa-_diablo-y: 200px;
+  $coa-_diablo-offset-x: -455px;
+  $coa-_diablo-offset-y: -200px;
   $coa-_diablo-width: 74px;
   $coa-_diablo-height: 100px;
-  $coa-_diablo-total-width: 672px;
-  $coa-_diablo-total-height: 600px;
+  $coa-_diablo-total-width: 603px;
+  $coa-_diablo-total-height: 580px;
   $coa-_diablo-image: 'img/schilde.png';
-  $coa-_diablo: 0px 100px 0px -100px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_divinity-x: 74px;
-  $coa-_divinity-y: 100px;
-  $coa-_divinity-offset-x: -74px;
-  $coa-_divinity-offset-y: -100px;
-  $coa-_divinity-width: 74px;
-  $coa-_divinity-height: 100px;
-  $coa-_divinity-total-width: 672px;
-  $coa-_divinity-total-height: 600px;
-  $coa-_divinity-image: 'img/schilde.png';
-  $coa-_divinity: 74px 100px -74px -100px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_dragonage-x: 0px;
+  $coa-_diablo: 455px 200px -455px -200px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_dragonage-x: 156px;
   $coa-_dragonage-y: 0px;
-  $coa-_dragonage-offset-x: 0px;
+  $coa-_dragonage-offset-x: -156px;
   $coa-_dragonage-offset-y: 0px;
   $coa-_dragonage-width: 77px;
   $coa-_dragonage-height: 100px;
-  $coa-_dragonage-total-width: 672px;
-  $coa-_dragonage-total-height: 600px;
+  $coa-_dragonage-total-width: 603px;
+  $coa-_dragonage-total-height: 580px;
   $coa-_dragonage-image: 'img/schilde.png';
-  $coa-_dragonage: 0px 0px 0px 0px 77px 100px 672px 600px 'img/schilde.png';
-  $coa-_drakensang-x: 228px;
+  $coa-_dragonage: 156px 0px -156px 0px 77px 100px 603px 580px 'img/schilde.png';
+  $coa-_drakensang-x: 233px;
   $coa-_drakensang-y: 0px;
-  $coa-_drakensang-offset-x: -228px;
+  $coa-_drakensang-offset-x: -233px;
   $coa-_drakensang-offset-y: 0px;
   $coa-_drakensang-width: 74px;
   $coa-_drakensang-height: 100px;
-  $coa-_drakensang-total-width: 672px;
-  $coa-_drakensang-total-height: 600px;
+  $coa-_drakensang-total-width: 603px;
+  $coa-_drakensang-total-height: 580px;
   $coa-_drakensang-image: 'img/schilde.png';
-  $coa-_drakensang: 228px 0px -228px 0px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_dungeonlords-x: 228px;
+  $coa-_drakensang: 233px 0px -233px 0px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_dungeonlords-x: 233px;
   $coa-_dungeonlords-y: 100px;
-  $coa-_dungeonlords-offset-x: -228px;
+  $coa-_dungeonlords-offset-x: -233px;
   $coa-_dungeonlords-offset-y: -100px;
   $coa-_dungeonlords-width: 74px;
   $coa-_dungeonlords-height: 100px;
-  $coa-_dungeonlords-total-width: 672px;
-  $coa-_dungeonlords-total-height: 600px;
+  $coa-_dungeonlords-total-width: 603px;
+  $coa-_dungeonlords-total-height: 580px;
   $coa-_dungeonlords-image: 'img/schilde.png';
-  $coa-_dungeonlords: 228px 100px -228px -100px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_elex-x: 388px;
+  $coa-_dungeonlords: 233px 100px -233px -100px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_elex-x: 160px;
   $coa-_elex-y: 500px;
-  $coa-_elex-offset-x: -388px;
+  $coa-_elex-offset-x: -160px;
   $coa-_elex-offset-y: -500px;
   $coa-_elex-width: 80px;
   $coa-_elex-height: 80px;
-  $coa-_elex-total-width: 672px;
-  $coa-_elex-total-height: 600px;
+  $coa-_elex-total-width: 603px;
+  $coa-_elex-total-height: 580px;
   $coa-_elex-image: 'img/schilde.png';
-  $coa-_elex: 388px 500px -388px -500px 80px 80px 672px 600px 'img/schilde.png';
-  $coa-_fallout-x: 308px;
+  $coa-_elex: 160px 500px -160px -500px 80px 80px 603px 580px 'img/schilde.png';
+  $coa-_fallout-x: 80px;
   $coa-_fallout-y: 500px;
-  $coa-_fallout-offset-x: -308px;
+  $coa-_fallout-offset-x: -80px;
   $coa-_fallout-offset-y: -500px;
   $coa-_fallout-width: 80px;
   $coa-_fallout-height: 80px;
-  $coa-_fallout-total-width: 672px;
-  $coa-_fallout-total-height: 600px;
+  $coa-_fallout-total-width: 603px;
+  $coa-_fallout-total-height: 580px;
   $coa-_fallout-image: 'img/schilde.png';
-  $coa-_fallout: 308px 500px -308px -500px 80px 80px 672px 600px 'img/schilde.png';
+  $coa-_fallout: 80px 500px -80px -500px 80px 80px 603px 580px 'img/schilde.png';
   $coa-_gothic-x: 148px;
   $coa-_gothic-y: 200px;
   $coa-_gothic-offset-x: -148px;
   $coa-_gothic-offset-y: -200px;
   $coa-_gothic-width: 74px;
   $coa-_gothic-height: 100px;
-  $coa-_gothic-total-width: 672px;
-  $coa-_gothic-total-height: 600px;
+  $coa-_gothic-total-width: 603px;
+  $coa-_gothic-total-height: 580px;
   $coa-_gothic-image: 'img/schilde.png';
-  $coa-_gothic: 148px 200px -148px -200px 74px 100px 672px 600px 'img/schilde.png';
+  $coa-_gothic: 148px 200px -148px -200px 74px 100px 603px 580px 'img/schilde.png';
   $coa-_grotesque-x: 222px;
   $coa-_grotesque-y: 200px;
   $coa-_grotesque-offset-x: -222px;
   $coa-_grotesque-offset-y: -200px;
   $coa-_grotesque-width: 74px;
   $coa-_grotesque-height: 100px;
-  $coa-_grotesque-total-width: 672px;
-  $coa-_grotesque-total-height: 600px;
+  $coa-_grotesque-total-width: 603px;
+  $coa-_grotesque-total-height: 580px;
   $coa-_grotesque-image: 'img/schilde.png';
-  $coa-_grotesque: 222px 200px -222px -200px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_herrderringe-x: 302px;
+  $coa-_grotesque: 222px 200px -222px -200px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_herrderringe-x: 307px;
   $coa-_herrderringe-y: 0px;
-  $coa-_herrderringe-offset-x: -302px;
+  $coa-_herrderringe-offset-x: -307px;
   $coa-_herrderringe-offset-y: 0px;
   $coa-_herrderringe-width: 74px;
   $coa-_herrderringe-height: 100px;
-  $coa-_herrderringe-total-width: 672px;
-  $coa-_herrderringe-total-height: 600px;
+  $coa-_herrderringe-total-width: 603px;
+  $coa-_herrderringe-total-height: 580px;
   $coa-_herrderringe-image: 'img/schilde.png';
-  $coa-_herrderringe: 302px 0px -302px 0px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_kingdomhearts-x: 302px;
-  $coa-_kingdomhearts-y: 100px;
-  $coa-_kingdomhearts-offset-x: -302px;
-  $coa-_kingdomhearts-offset-y: -100px;
-  $coa-_kingdomhearts-width: 74px;
-  $coa-_kingdomhearts-height: 100px;
-  $coa-_kingdomhearts-total-width: 672px;
-  $coa-_kingdomhearts-total-height: 600px;
-  $coa-_kingdomhearts-image: 'img/schilde.png';
-  $coa-_kingdomhearts: 302px 100px -302px -100px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_masseffect-x: 302px;
-  $coa-_masseffect-y: 200px;
-  $coa-_masseffect-offset-x: -302px;
-  $coa-_masseffect-offset-y: -200px;
+  $coa-_herrderringe: 307px 0px -307px 0px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_masseffect-x: 307px;
+  $coa-_masseffect-y: 100px;
+  $coa-_masseffect-offset-x: -307px;
+  $coa-_masseffect-offset-y: -100px;
   $coa-_masseffect-width: 74px;
   $coa-_masseffect-height: 100px;
-  $coa-_masseffect-total-width: 672px;
-  $coa-_masseffect-total-height: 600px;
+  $coa-_masseffect-total-width: 603px;
+  $coa-_masseffect-total-height: 580px;
   $coa-_masseffect-image: 'img/schilde.png';
-  $coa-_masseffect: 302px 200px -302px -200px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_neverwinter-x: 376px;
-  $coa-_neverwinter-y: 0px;
-  $coa-_neverwinter-offset-x: -376px;
-  $coa-_neverwinter-offset-y: 0px;
+  $coa-_masseffect: 307px 100px -307px -100px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_neverwinter-x: 307px;
+  $coa-_neverwinter-y: 200px;
+  $coa-_neverwinter-offset-x: -307px;
+  $coa-_neverwinter-offset-y: -200px;
   $coa-_neverwinter-width: 74px;
   $coa-_neverwinter-height: 100px;
-  $coa-_neverwinter-total-width: 672px;
-  $coa-_neverwinter-total-height: 600px;
+  $coa-_neverwinter-total-width: 603px;
+  $coa-_neverwinter-total-height: 580px;
   $coa-_neverwinter-image: 'img/schilde.png';
-  $coa-_neverwinter: 376px 0px -376px 0px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_risen-x: 376px;
-  $coa-_risen-y: 100px;
-  $coa-_risen-offset-x: -376px;
-  $coa-_risen-offset-y: -100px;
+  $coa-_neverwinter: 307px 200px -307px -200px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_risen-x: 381px;
+  $coa-_risen-y: 0px;
+  $coa-_risen-offset-x: -381px;
+  $coa-_risen-offset-y: 0px;
   $coa-_risen-width: 74px;
   $coa-_risen-height: 100px;
-  $coa-_risen-total-width: 672px;
-  $coa-_risen-total-height: 600px;
+  $coa-_risen-total-width: 603px;
+  $coa-_risen-total-height: 580px;
   $coa-_risen-image: 'img/schilde.png';
-  $coa-_risen: 376px 100px -376px -100px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_sacred-x: 376px;
-  $coa-_sacred-y: 200px;
-  $coa-_sacred-offset-x: -376px;
-  $coa-_sacred-offset-y: -200px;
+  $coa-_risen: 381px 0px -381px 0px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_sacred-x: 381px;
+  $coa-_sacred-y: 100px;
+  $coa-_sacred-offset-x: -381px;
+  $coa-_sacred-offset-y: -100px;
   $coa-_sacred-width: 74px;
   $coa-_sacred-height: 100px;
-  $coa-_sacred-total-width: 672px;
-  $coa-_sacred-total-height: 600px;
+  $coa-_sacred-total-width: 603px;
+  $coa-_sacred-total-height: 580px;
   $coa-_sacred-image: 'img/schilde.png';
-  $coa-_sacred: 376px 200px -376px -200px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_starcraft-x: 0px;
-  $coa-_starcraft-y: 300px;
-  $coa-_starcraft-offset-x: 0px;
-  $coa-_starcraft-offset-y: -300px;
+  $coa-_sacred: 381px 100px -381px -100px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_starcraft-x: 381px;
+  $coa-_starcraft-y: 200px;
+  $coa-_starcraft-offset-x: -381px;
+  $coa-_starcraft-offset-y: -200px;
   $coa-_starcraft-width: 74px;
   $coa-_starcraft-height: 100px;
-  $coa-_starcraft-total-width: 672px;
-  $coa-_starcraft-total-height: 600px;
+  $coa-_starcraft-total-width: 603px;
+  $coa-_starcraft-total-height: 580px;
   $coa-_starcraft-image: 'img/schilde.png';
-  $coa-_starcraft: 0px 300px 0px -300px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_starwars-x: 74px;
-  $coa-_starwars-y: 300px;
-  $coa-_starwars-offset-x: -74px;
-  $coa-_starwars-offset-y: -300px;
-  $coa-_starwars-width: 74px;
-  $coa-_starwars-height: 100px;
-  $coa-_starwars-total-width: 672px;
-  $coa-_starwars-total-height: 600px;
-  $coa-_starwars-image: 'img/schilde.png';
-  $coa-_starwars: 74px 300px -74px -300px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_tes-x: 148px;
+  $coa-_starcraft: 381px 200px -381px -200px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_tes-x: 0px;
   $coa-_tes-y: 300px;
-  $coa-_tes-offset-x: -148px;
+  $coa-_tes-offset-x: 0px;
   $coa-_tes-offset-y: -300px;
   $coa-_tes-width: 74px;
   $coa-_tes-height: 100px;
-  $coa-_tes-total-width: 672px;
-  $coa-_tes-total-height: 600px;
+  $coa-_tes-total-width: 603px;
+  $coa-_tes-total-height: 580px;
   $coa-_tes-image: 'img/schilde.png';
-  $coa-_tes: 148px 300px -148px -300px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_thief-x: 222px;
+  $coa-_tes: 0px 300px 0px -300px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_thief-x: 74px;
   $coa-_thief-y: 300px;
-  $coa-_thief-offset-x: -222px;
+  $coa-_thief-offset-x: -74px;
   $coa-_thief-offset-y: -300px;
   $coa-_thief-width: 74px;
   $coa-_thief-height: 100px;
-  $coa-_thief-total-width: 672px;
-  $coa-_thief-total-height: 600px;
+  $coa-_thief-total-width: 603px;
+  $coa-_thief-total-height: 580px;
   $coa-_thief-image: 'img/schilde.png';
-  $coa-_thief: 222px 300px -222px -300px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_torment-x: 296px;
-  $coa-_torment-y: 300px;
-  $coa-_torment-offset-x: -296px;
-  $coa-_torment-offset-y: -300px;
-  $coa-_torment-width: 74px;
-  $coa-_torment-height: 100px;
-  $coa-_torment-total-width: 672px;
-  $coa-_torment-total-height: 600px;
-  $coa-_torment-image: 'img/schilde.png';
-  $coa-_torment: 296px 300px -296px -300px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_unbended-x: 370px;
-  $coa-_unbended-y: 300px;
-  $coa-_unbended-offset-x: -370px;
-  $coa-_unbended-offset-y: -300px;
-  $coa-_unbended-width: 74px;
-  $coa-_unbended-height: 100px;
-  $coa-_unbended-total-width: 672px;
-  $coa-_unbended-total-height: 600px;
-  $coa-_unbended-image: 'img/schilde.png';
-  $coa-_unbended: 370px 300px -370px -300px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-_witcher-x: 450px;
-  $coa-_witcher-y: 0px;
-  $coa-_witcher-offset-x: -450px;
-  $coa-_witcher-offset-y: 0px;
+  $coa-_thief: 74px 300px -74px -300px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-_witcher-x: 148px;
+  $coa-_witcher-y: 300px;
+  $coa-_witcher-offset-x: -148px;
+  $coa-_witcher-offset-y: -300px;
   $coa-_witcher-width: 74px;
   $coa-_witcher-height: 100px;
-  $coa-_witcher-total-width: 672px;
-  $coa-_witcher-total-height: 600px;
+  $coa-_witcher-total-width: 603px;
+  $coa-_witcher-total-height: 580px;
   $coa-_witcher-image: 'img/schilde.png';
-  $coa-_witcher: 450px 0px -450px 0px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-assassinscreed-x: 154px;
-  $coa-assassinscreed-y: 0px;
-  $coa-assassinscreed-offset-x: -154px;
-  $coa-assassinscreed-offset-y: 0px;
+  $coa-_witcher: 148px 300px -148px -300px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-amalur-x: 0px;
+  $coa-amalur-y: 0px;
+  $coa-amalur-offset-x: 0px;
+  $coa-amalur-offset-y: 0px;
+  $coa-amalur-width: 78px;
+  $coa-amalur-height: 100px;
+  $coa-amalur-total-width: 603px;
+  $coa-amalur-total-height: 580px;
+  $coa-amalur-image: 'img/schilde.png';
+  $coa-amalur: 0px 0px 0px 0px 78px 100px 603px 580px 'img/schilde.png';
+  $coa-assassinscreed-x: 77px;
+  $coa-assassinscreed-y: 100px;
+  $coa-assassinscreed-offset-x: -77px;
+  $coa-assassinscreed-offset-y: -100px;
   $coa-assassinscreed-width: 74px;
   $coa-assassinscreed-height: 100px;
-  $coa-assassinscreed-total-width: 672px;
-  $coa-assassinscreed-total-height: 600px;
+  $coa-assassinscreed-total-width: 603px;
+  $coa-assassinscreed-total-height: 580px;
   $coa-assassinscreed-image: 'img/schilde.png';
-  $coa-assassinscreed: 154px 0px -154px 0px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-cyberpunk-x: 450px;
-  $coa-cyberpunk-y: 200px;
-  $coa-cyberpunk-offset-x: -450px;
-  $coa-cyberpunk-offset-y: -200px;
+  $coa-assassinscreed: 77px 100px -77px -100px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-cyberpunk-x: 370px;
+  $coa-cyberpunk-y: 300px;
+  $coa-cyberpunk-offset-x: -370px;
+  $coa-cyberpunk-offset-y: -300px;
   $coa-cyberpunk-width: 74px;
   $coa-cyberpunk-height: 100px;
-  $coa-cyberpunk-total-width: 672px;
-  $coa-cyberpunk-total-height: 600px;
+  $coa-cyberpunk-total-width: 603px;
+  $coa-cyberpunk-total-height: 580px;
   $coa-cyberpunk-image: 'img/schilde.png';
-  $coa-cyberpunk: 450px 200px -450px -200px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-demonicon-x: 450px;
-  $coa-demonicon-y: 300px;
-  $coa-demonicon-offset-x: -450px;
-  $coa-demonicon-offset-y: -300px;
+  $coa-cyberpunk: 370px 300px -370px -300px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-demonicon-x: 455px;
+  $coa-demonicon-y: 0px;
+  $coa-demonicon-offset-x: -455px;
+  $coa-demonicon-offset-y: 0px;
   $coa-demonicon-width: 74px;
   $coa-demonicon-height: 100px;
-  $coa-demonicon-total-width: 672px;
-  $coa-demonicon-total-height: 600px;
+  $coa-demonicon-total-width: 603px;
+  $coa-demonicon-total-height: 580px;
   $coa-demonicon-image: 'img/schilde.png';
-  $coa-demonicon: 450px 300px -450px -300px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-diablo-x: 0px;
-  $coa-diablo-y: 400px;
-  $coa-diablo-offset-x: 0px;
-  $coa-diablo-offset-y: -400px;
+  $coa-demonicon: 455px 0px -455px 0px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-diablo-x: 455px;
+  $coa-diablo-y: 100px;
+  $coa-diablo-offset-x: -455px;
+  $coa-diablo-offset-y: -100px;
   $coa-diablo-width: 74px;
   $coa-diablo-height: 100px;
-  $coa-diablo-total-width: 672px;
-  $coa-diablo-total-height: 600px;
+  $coa-diablo-total-width: 603px;
+  $coa-diablo-total-height: 580px;
   $coa-diablo-image: 'img/schilde.png';
-  $coa-diablo: 0px 400px 0px -400px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-divinity-x: 74px;
-  $coa-divinity-y: 400px;
-  $coa-divinity-offset-x: -74px;
-  $coa-divinity-offset-y: -400px;
-  $coa-divinity-width: 74px;
-  $coa-divinity-height: 100px;
-  $coa-divinity-total-width: 672px;
-  $coa-divinity-total-height: 600px;
-  $coa-divinity-image: 'img/schilde.png';
-  $coa-divinity: 74px 400px -74px -400px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-dragonage-x: 77px;
-  $coa-dragonage-y: 0px;
-  $coa-dragonage-offset-x: -77px;
-  $coa-dragonage-offset-y: 0px;
+  $coa-diablo: 455px 100px -455px -100px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-dragonage-x: 0px;
+  $coa-dragonage-y: 100px;
+  $coa-dragonage-offset-x: 0px;
+  $coa-dragonage-offset-y: -100px;
   $coa-dragonage-width: 77px;
   $coa-dragonage-height: 100px;
-  $coa-dragonage-total-width: 672px;
-  $coa-dragonage-total-height: 600px;
+  $coa-dragonage-total-width: 603px;
+  $coa-dragonage-total-height: 580px;
   $coa-dragonage-image: 'img/schilde.png';
-  $coa-dragonage: 77px 0px -77px 0px 77px 100px 672px 600px 'img/schilde.png';
-  $coa-drakensang-x: 222px;
-  $coa-drakensang-y: 400px;
-  $coa-drakensang-offset-x: -222px;
-  $coa-drakensang-offset-y: -400px;
+  $coa-dragonage: 0px 100px 0px -100px 77px 100px 603px 580px 'img/schilde.png';
+  $coa-drakensang-x: 455px;
+  $coa-drakensang-y: 300px;
+  $coa-drakensang-offset-x: -455px;
+  $coa-drakensang-offset-y: -300px;
   $coa-drakensang-width: 74px;
   $coa-drakensang-height: 100px;
-  $coa-drakensang-total-width: 672px;
-  $coa-drakensang-total-height: 600px;
+  $coa-drakensang-total-width: 603px;
+  $coa-drakensang-total-height: 580px;
   $coa-drakensang-image: 'img/schilde.png';
-  $coa-drakensang: 222px 400px -222px -400px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-dungeonlords-x: 296px;
+  $coa-drakensang: 455px 300px -455px -300px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-dungeonlords-x: 0px;
   $coa-dungeonlords-y: 400px;
-  $coa-dungeonlords-offset-x: -296px;
+  $coa-dungeonlords-offset-x: 0px;
   $coa-dungeonlords-offset-y: -400px;
   $coa-dungeonlords-width: 74px;
   $coa-dungeonlords-height: 100px;
-  $coa-dungeonlords-total-width: 672px;
-  $coa-dungeonlords-total-height: 600px;
+  $coa-dungeonlords-total-width: 603px;
+  $coa-dungeonlords-total-height: 580px;
   $coa-dungeonlords-image: 'img/schilde.png';
-  $coa-dungeonlords: 296px 400px -296px -400px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-elex-x: 370px;
+  $coa-dungeonlords: 0px 400px 0px -400px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-elex-x: 74px;
   $coa-elex-y: 400px;
-  $coa-elex-offset-x: -370px;
+  $coa-elex-offset-x: -74px;
   $coa-elex-offset-y: -400px;
   $coa-elex-width: 74px;
   $coa-elex-height: 100px;
-  $coa-elex-total-width: 672px;
-  $coa-elex-total-height: 600px;
+  $coa-elex-total-width: 603px;
+  $coa-elex-total-height: 580px;
   $coa-elex-image: 'img/schilde.png';
-  $coa-elex: 370px 400px -370px -400px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-fallout-x: 228px;
+  $coa-elex: 74px 400px -74px -400px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-fallout-x: 0px;
   $coa-fallout-y: 500px;
-  $coa-fallout-offset-x: -228px;
+  $coa-fallout-offset-x: 0px;
   $coa-fallout-offset-y: -500px;
   $coa-fallout-width: 80px;
   $coa-fallout-height: 80px;
-  $coa-fallout-total-width: 672px;
-  $coa-fallout-total-height: 600px;
+  $coa-fallout-total-width: 603px;
+  $coa-fallout-total-height: 580px;
   $coa-fallout-image: 'img/schilde.png';
-  $coa-fallout: 228px 500px -228px -500px 80px 80px 672px 600px 'img/schilde.png';
-  $coa-gothic-x: 524px;
-  $coa-gothic-y: 0px;
-  $coa-gothic-offset-x: -524px;
-  $coa-gothic-offset-y: 0px;
+  $coa-fallout: 0px 500px 0px -500px 80px 80px 603px 580px 'img/schilde.png';
+  $coa-gothic-x: 222px;
+  $coa-gothic-y: 400px;
+  $coa-gothic-offset-x: -222px;
+  $coa-gothic-offset-y: -400px;
   $coa-gothic-width: 74px;
   $coa-gothic-height: 100px;
-  $coa-gothic-total-width: 672px;
-  $coa-gothic-total-height: 600px;
+  $coa-gothic-total-width: 603px;
+  $coa-gothic-total-height: 580px;
   $coa-gothic-image: 'img/schilde.png';
-  $coa-gothic: 524px 0px -524px 0px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-grotesque-x: 524px;
-  $coa-grotesque-y: 100px;
-  $coa-grotesque-offset-x: -524px;
-  $coa-grotesque-offset-y: -100px;
+  $coa-gothic: 222px 400px -222px -400px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-grotesque-x: 296px;
+  $coa-grotesque-y: 400px;
+  $coa-grotesque-offset-x: -296px;
+  $coa-grotesque-offset-y: -400px;
   $coa-grotesque-width: 74px;
   $coa-grotesque-height: 100px;
-  $coa-grotesque-total-width: 672px;
-  $coa-grotesque-total-height: 600px;
+  $coa-grotesque-total-width: 603px;
+  $coa-grotesque-total-height: 580px;
   $coa-grotesque-image: 'img/schilde.png';
-  $coa-grotesque: 524px 100px -524px -100px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-herrderringe-x: 524px;
-  $coa-herrderringe-y: 200px;
-  $coa-herrderringe-offset-x: -524px;
-  $coa-herrderringe-offset-y: -200px;
+  $coa-grotesque: 296px 400px -296px -400px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-herrderringe-x: 370px;
+  $coa-herrderringe-y: 400px;
+  $coa-herrderringe-offset-x: -370px;
+  $coa-herrderringe-offset-y: -400px;
   $coa-herrderringe-width: 74px;
   $coa-herrderringe-height: 100px;
-  $coa-herrderringe-total-width: 672px;
-  $coa-herrderringe-total-height: 600px;
+  $coa-herrderringe-total-width: 603px;
+  $coa-herrderringe-total-height: 580px;
   $coa-herrderringe-image: 'img/schilde.png';
-  $coa-herrderringe: 524px 200px -524px -200px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-kingdomhearts-x: 524px;
-  $coa-kingdomhearts-y: 300px;
-  $coa-kingdomhearts-offset-x: -524px;
-  $coa-kingdomhearts-offset-y: -300px;
-  $coa-kingdomhearts-width: 74px;
-  $coa-kingdomhearts-height: 100px;
-  $coa-kingdomhearts-total-width: 672px;
-  $coa-kingdomhearts-total-height: 600px;
-  $coa-kingdomhearts-image: 'img/schilde.png';
-  $coa-kingdomhearts: 524px 300px -524px -300px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-masseffect-x: 524px;
+  $coa-herrderringe: 370px 400px -370px -400px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-masseffect-x: 444px;
   $coa-masseffect-y: 400px;
-  $coa-masseffect-offset-x: -524px;
+  $coa-masseffect-offset-x: -444px;
   $coa-masseffect-offset-y: -400px;
   $coa-masseffect-width: 74px;
   $coa-masseffect-height: 100px;
-  $coa-masseffect-total-width: 672px;
-  $coa-masseffect-total-height: 600px;
+  $coa-masseffect-total-width: 603px;
+  $coa-masseffect-total-height: 580px;
   $coa-masseffect-image: 'img/schilde.png';
-  $coa-masseffect: 524px 400px -524px -400px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-neverwinter-x: 598px;
+  $coa-masseffect: 444px 400px -444px -400px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-neverwinter-x: 529px;
   $coa-neverwinter-y: 0px;
-  $coa-neverwinter-offset-x: -598px;
+  $coa-neverwinter-offset-x: -529px;
   $coa-neverwinter-offset-y: 0px;
   $coa-neverwinter-width: 74px;
   $coa-neverwinter-height: 100px;
-  $coa-neverwinter-total-width: 672px;
-  $coa-neverwinter-total-height: 600px;
+  $coa-neverwinter-total-width: 603px;
+  $coa-neverwinter-total-height: 580px;
   $coa-neverwinter-image: 'img/schilde.png';
-  $coa-neverwinter: 598px 0px -598px 0px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-risen-x: 598px;
+  $coa-neverwinter: 529px 0px -529px 0px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-risen-x: 529px;
   $coa-risen-y: 100px;
-  $coa-risen-offset-x: -598px;
+  $coa-risen-offset-x: -529px;
   $coa-risen-offset-y: -100px;
   $coa-risen-width: 74px;
   $coa-risen-height: 100px;
-  $coa-risen-total-width: 672px;
-  $coa-risen-total-height: 600px;
+  $coa-risen-total-width: 603px;
+  $coa-risen-total-height: 580px;
   $coa-risen-image: 'img/schilde.png';
-  $coa-risen: 598px 100px -598px -100px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-sacred-x: 598px;
+  $coa-risen: 529px 100px -529px -100px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-sacred-x: 529px;
   $coa-sacred-y: 200px;
-  $coa-sacred-offset-x: -598px;
+  $coa-sacred-offset-x: -529px;
   $coa-sacred-offset-y: -200px;
   $coa-sacred-width: 74px;
   $coa-sacred-height: 100px;
-  $coa-sacred-total-width: 672px;
-  $coa-sacred-total-height: 600px;
+  $coa-sacred-total-width: 603px;
+  $coa-sacred-total-height: 580px;
   $coa-sacred-image: 'img/schilde.png';
-  $coa-sacred: 598px 200px -598px -200px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-starcraft-x: 598px;
+  $coa-sacred: 529px 200px -529px -200px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-starcraft-x: 529px;
   $coa-starcraft-y: 300px;
-  $coa-starcraft-offset-x: -598px;
+  $coa-starcraft-offset-x: -529px;
   $coa-starcraft-offset-y: -300px;
   $coa-starcraft-width: 74px;
   $coa-starcraft-height: 100px;
-  $coa-starcraft-total-width: 672px;
-  $coa-starcraft-total-height: 600px;
+  $coa-starcraft-total-width: 603px;
+  $coa-starcraft-total-height: 580px;
   $coa-starcraft-image: 'img/schilde.png';
-  $coa-starcraft: 598px 300px -598px -300px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-starwars-x: 598px;
-  $coa-starwars-y: 400px;
-  $coa-starwars-offset-x: -598px;
-  $coa-starwars-offset-y: -400px;
-  $coa-starwars-width: 74px;
-  $coa-starwars-height: 100px;
-  $coa-starwars-total-width: 672px;
-  $coa-starwars-total-height: 600px;
-  $coa-starwars-image: 'img/schilde.png';
-  $coa-starwars: 598px 400px -598px -400px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-tes-x: 0px;
-  $coa-tes-y: 500px;
-  $coa-tes-offset-x: 0px;
-  $coa-tes-offset-y: -500px;
+  $coa-starcraft: 529px 300px -529px -300px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-tes-x: 148px;
+  $coa-tes-y: 400px;
+  $coa-tes-offset-x: -148px;
+  $coa-tes-offset-y: -400px;
   $coa-tes-width: 74px;
   $coa-tes-height: 100px;
-  $coa-tes-total-width: 672px;
-  $coa-tes-total-height: 600px;
+  $coa-tes-total-width: 603px;
+  $coa-tes-total-height: 580px;
   $coa-tes-image: 'img/schilde.png';
-  $coa-tes: 0px 500px 0px -500px 74px 100px 672px 600px 'img/schilde.png';
+  $coa-tes: 148px 400px -148px -400px 74px 100px 603px 580px 'img/schilde.png';
   $coa-thief-x: 74px;
-  $coa-thief-y: 500px;
+  $coa-thief-y: 200px;
   $coa-thief-offset-x: -74px;
-  $coa-thief-offset-y: -500px;
+  $coa-thief-offset-y: -200px;
   $coa-thief-width: 74px;
   $coa-thief-height: 100px;
-  $coa-thief-total-width: 672px;
-  $coa-thief-total-height: 600px;
+  $coa-thief-total-width: 603px;
+  $coa-thief-total-height: 580px;
   $coa-thief-image: 'img/schilde.png';
-  $coa-thief: 74px 500px -74px -500px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-torment-x: 444px;
-  $coa-torment-y: 400px;
-  $coa-torment-offset-x: -444px;
-  $coa-torment-offset-y: -400px;
-  $coa-torment-width: 74px;
-  $coa-torment-height: 100px;
-  $coa-torment-total-width: 672px;
-  $coa-torment-total-height: 600px;
-  $coa-torment-image: 'img/schilde.png';
-  $coa-torment: 444px 400px -444px -400px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-unbended-x: 74px;
-  $coa-unbended-y: 200px;
-  $coa-unbended-offset-x: -74px;
-  $coa-unbended-offset-y: -200px;
-  $coa-unbended-width: 74px;
-  $coa-unbended-height: 100px;
-  $coa-unbended-total-width: 672px;
-  $coa-unbended-total-height: 600px;
-  $coa-unbended-image: 'img/schilde.png';
-  $coa-unbended: 74px 200px -74px -200px 74px 100px 672px 600px 'img/schilde.png';
+  $coa-thief: 74px 200px -74px -200px 74px 100px 603px 580px 'img/schilde.png';
   $coa-witcher-x: 0px;
   $coa-witcher-y: 200px;
   $coa-witcher-offset-x: 0px;
   $coa-witcher-offset-y: -200px;
   $coa-witcher-width: 74px;
   $coa-witcher-height: 100px;
-  $coa-witcher-total-width: 672px;
-  $coa-witcher-total-height: 600px;
+  $coa-witcher-total-width: 603px;
+  $coa-witcher-total-height: 580px;
   $coa-witcher-image: 'img/schilde.png';
-  $coa-witcher: 0px 200px 0px -200px 74px 100px 672px 600px 'img/schilde.png';
-  $coa-wop-x: 148px;
-  $coa-wop-y: 500px;
-  $coa-wop-offset-x: -148px;
-  $coa-wop-offset-y: -500px;
-  $coa-wop-width: 80px;
-  $coa-wop-height: 92px;
-  $coa-wop-total-width: 672px;
-  $coa-wop-total-height: 600px;
+  $coa-witcher: 0px 200px 0px -200px 74px 100px 603px 580px 'img/schilde.png';
+  $coa-wop-x: 529px;
+  $coa-wop-y: 400px;
+  $coa-wop-offset-x: -529px;
+  $coa-wop-offset-y: -400px;
+  $coa-wop-width: 48px;
+  $coa-wop-height: 55px;
+  $coa-wop-total-width: 603px;
+  $coa-wop-total-height: 580px;
   $coa-wop-image: 'img/schilde.png';
-  $coa-wop: 148px 500px -148px -500px 80px 92px 672px 600px 'img/schilde.png';
+  $coa-wop: 529px 400px -529px -400px 48px 55px 603px 580px 'img/schilde.png';
 
   @mixin sprite-width($sprite) {
     width: nth($sprite, 5);
@@ -535,6 +455,15 @@
     @include sprite-height($sprite);
   }
 
+  .coat-of-arm-_amalur {
+    @include sprite($coa-_amalur);
+    $name: "_amalur";
+    @if str-slice($name, 1, 1) != "_" {
+      &:not(.no-hover):hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
   .coat-of-arm-_assassinscreed {
     @include sprite($coa-_assassinscreed);
     $name: "_assassinscreed";
@@ -565,15 +494,6 @@
   .coat-of-arm-_diablo {
     @include sprite($coa-_diablo);
     $name: "_diablo";
-    @if str-slice($name, 1, 1) != "_" {
-      &:not(.no-hover):hover {
-        @extend .coat-of-arm-_#{$name} !optional;
-      }
-    }
-  }
-  .coat-of-arm-_divinity {
-    @include sprite($coa-_divinity);
-    $name: "_divinity";
     @if str-slice($name, 1, 1) != "_" {
       &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
@@ -652,15 +572,6 @@
       }
     }
   }
-  .coat-of-arm-_kingdomhearts {
-    @include sprite($coa-_kingdomhearts);
-    $name: "_kingdomhearts";
-    @if str-slice($name, 1, 1) != "_" {
-      &:not(.no-hover):hover {
-        @extend .coat-of-arm-_#{$name} !optional;
-      }
-    }
-  }
   .coat-of-arm-_masseffect {
     @include sprite($coa-_masseffect);
     $name: "_masseffect";
@@ -706,15 +617,6 @@
       }
     }
   }
-  .coat-of-arm-_starwars {
-    @include sprite($coa-_starwars);
-    $name: "_starwars";
-    @if str-slice($name, 1, 1) != "_" {
-      &:not(.no-hover):hover {
-        @extend .coat-of-arm-_#{$name} !optional;
-      }
-    }
-  }
   .coat-of-arm-_tes {
     @include sprite($coa-_tes);
     $name: "_tes";
@@ -733,27 +635,18 @@
       }
     }
   }
-  .coat-of-arm-_torment {
-    @include sprite($coa-_torment);
-    $name: "_torment";
-    @if str-slice($name, 1, 1) != "_" {
-      &:not(.no-hover):hover {
-        @extend .coat-of-arm-_#{$name} !optional;
-      }
-    }
-  }
-  .coat-of-arm-_unbended {
-    @include sprite($coa-_unbended);
-    $name: "_unbended";
-    @if str-slice($name, 1, 1) != "_" {
-      &:not(.no-hover):hover {
-        @extend .coat-of-arm-_#{$name} !optional;
-      }
-    }
-  }
   .coat-of-arm-_witcher {
     @include sprite($coa-_witcher);
     $name: "_witcher";
+    @if str-slice($name, 1, 1) != "_" {
+      &:not(.no-hover):hover {
+        @extend .coat-of-arm-_#{$name} !optional;
+      }
+    }
+  }
+  .coat-of-arm-amalur {
+    @include sprite($coa-amalur);
+    $name: "amalur";
     @if str-slice($name, 1, 1) != "_" {
       &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
@@ -790,15 +683,6 @@
   .coat-of-arm-diablo {
     @include sprite($coa-diablo);
     $name: "diablo";
-    @if str-slice($name, 1, 1) != "_" {
-      &:not(.no-hover):hover {
-        @extend .coat-of-arm-_#{$name} !optional;
-      }
-    }
-  }
-  .coat-of-arm-divinity {
-    @include sprite($coa-divinity);
-    $name: "divinity";
     @if str-slice($name, 1, 1) != "_" {
       &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
@@ -877,15 +761,6 @@
       }
     }
   }
-  .coat-of-arm-kingdomhearts {
-    @include sprite($coa-kingdomhearts);
-    $name: "kingdomhearts";
-    @if str-slice($name, 1, 1) != "_" {
-      &:not(.no-hover):hover {
-        @extend .coat-of-arm-_#{$name} !optional;
-      }
-    }
-  }
   .coat-of-arm-masseffect {
     @include sprite($coa-masseffect);
     $name: "masseffect";
@@ -931,15 +806,6 @@
       }
     }
   }
-  .coat-of-arm-starwars {
-    @include sprite($coa-starwars);
-    $name: "starwars";
-    @if str-slice($name, 1, 1) != "_" {
-      &:not(.no-hover):hover {
-        @extend .coat-of-arm-_#{$name} !optional;
-      }
-    }
-  }
   .coat-of-arm-tes {
     @include sprite($coa-tes);
     $name: "tes";
@@ -952,24 +818,6 @@
   .coat-of-arm-thief {
     @include sprite($coa-thief);
     $name: "thief";
-    @if str-slice($name, 1, 1) != "_" {
-      &:not(.no-hover):hover {
-        @extend .coat-of-arm-_#{$name} !optional;
-      }
-    }
-  }
-  .coat-of-arm-torment {
-    @include sprite($coa-torment);
-    $name: "torment";
-    @if str-slice($name, 1, 1) != "_" {
-      &:not(.no-hover):hover {
-        @extend .coat-of-arm-_#{$name} !optional;
-      }
-    }
-  }
-  .coat-of-arm-unbended {
-    @include sprite($coa-unbended);
-    $name: "unbended";
     @if str-slice($name, 1, 1) != "_" {
       &:not(.no-hover):hover {
         @extend .coat-of-arm-_#{$name} !optional;
