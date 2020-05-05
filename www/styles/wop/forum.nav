@@ -1,6 +1,6 @@
 <ul class="dropdown-menu">
   <li role="presentation" class="dropdown-header">Allgemeine Foren</li>
-  <li><a href="https://forum.worldofplayers.de/">Forenübersicht</a></li>
+  <li><a href="https://forum.worldofplayers.de/">Forenï¿½bersicht</a></li>
   <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=2">Feedback</a></li>
   <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=146">Infoforum</a></li>
   <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=222">CT-Forum</a></li>
@@ -10,7 +10,7 @@
   <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=152">Kino</a></li>
   <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=210">Anime &amp; Manga</a></li>
   <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=149">Literatur</a></li>
-  <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=178">Schülerforum</a></li>
+  <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=178">Schï¿½lerforum</a></li>
   <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=155">Sport</a></li>
   <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=156">Musik</a></li>
   <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=161">Politik und Gesellschaft</a></li>
@@ -72,8 +72,5 @@
   </a></li>
   <li><a href="https://forum.worldofplayers.de/forum/forumdisplay.php?f=873">
     <span class="favicon-elex"></span> World of Elex
-  </a></li>
-  <li><a href="https://forum.worldofplayers.de/forum/forums/908-WorldofAmalur">
-    <span class="favicon-amalur"></span> World of Amalur
   </a></li>
 </ul>
