@@ -29,7 +29,7 @@ Der Portalseiten-Style setzt auf einen Prozess bei dem die JS, CSS und Bild-Date
 ```
 
 ## Style ändern (Templates, CSS, JS, etc.)
-Wenn Änderungen am Style notwendig sind, sollten dise *nicht* auf dem Server durchgeführt werden, sondern hier im Projekt und dann anschließend wieder auf GitHub geladen werden.
+Wenn Änderungen am Style notwendig sind, sollten diese *nicht* auf dem Server durchgeführt werden, sondern hier im Projekt und dann anschließend wieder auf GitHub geladen werden.
 
 Alle Frogsystem-Templates befinden sich in `www\styles\wop` und können einfach angepasst werden.
 
