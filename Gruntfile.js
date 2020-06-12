@@ -1,4 +1,6 @@
 module.exports = function (grunt) {
+    const sassImpl = require('node-sass');
+
     // Configure grunt
     grunt.initConfig({
         concat: {
@@ -15,6 +17,7 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 options: {
+                    implementation: sassImpl,
                     style: 'expanded'
                 },
                 files: {
