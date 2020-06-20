@@ -26,6 +26,7 @@ module.exports = function (grunt) {
             },
             karussell: {
                 options: {
+                    implementation: sassImpl,
                     style: 'expanded'
                 },
                 files: {
