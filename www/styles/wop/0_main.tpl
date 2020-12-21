@@ -78,12 +78,13 @@
   <body>
     {..body..}
     {..javascript..}
-    <script type="text/javascript" id="cookiebanner"
-            src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookiebanner.min.js"
-            data-message="Wir verwenden Cookies um dir den Besuch dieser Webseite zu ermöglichen (Werbung, Social Media). Dabei werden Informationen über die Nutzung teils weitergegeben. Durch Deinen Besuch stimmst Du dem zu."
-            data-linkmsg="Weitere Informationen"
-            data-moreinfo="$URL(datenschutz)"
-    ></script>
+    <script type="text/javascript">
+      const cb = new Cookiebanner({
+        message: "Wir verwenden Cookies um Dir den Besuch dieser Webseite zu ermöglichen (Werbung, Social Media). Dabei werden Informationen über die Nutzung teils weitergegeben. Durch Deinen Besuch stimmst Du dem zu.",
+        linkmsg: "Weitere Informationen",
+        moreinfo: "$URL(datenschutz)"
+      }); cb.run();
+</script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   </body>
