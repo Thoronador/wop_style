@@ -9,6 +9,7 @@ module.exports = function (grunt) {
                     'assets/js/jquery-2.1.0.min.js',
                     'assets/js/jquery.jcarousel.min.js',
                     'assets/js/bootstrap/dropdown.js',
+                    'assets/js/js.cookie.js',
                     'assets/js/frogsystem.js'
                 ],
                 dest: 'www/styles/wop/main.js'
