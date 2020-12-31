@@ -1,83 +1,79 @@
 .navbar-default {
-    @extend .border-panel;
-    border-left:0px;
-    border-right:0px;
-    width:100%;
-    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.6);
-    margin-bottom:40px;
-    color:#CCC;
+  @extend .border-panel;
+  border-left: 0px;
+  border-right: 0px;
+  width: 100%;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+  color: #ccc;
 
-    .navbar-nav {
+  .navbar-nav {
+    & > li {
+      & > a {
+        font-weight: 600;
+      }
 
-        & > li {
-
-            & > a {
-                font-weight:600;
-            }
-
-            & > .dropdown-menu {
-                margin-top: 2px;
-                border-top: 1px solid $dropdown-fallback-border; // IE8 fallback
-                border-top: 1px solid $dropdown-top-border;
-                border-radius: 0;
-                box-shadow: 4px 4px 4px -1px rgba(0, 0, 0, 0.6)
-            }
-        }
+      & > .dropdown-menu {
+        margin-top: 2px;
+        border-top: 1px solid $dropdown-fallback-border; // IE8 fallback
+        border-top: 1px solid $dropdown-top-border;
+        border-radius: 0;
+        box-shadow: 4px 4px 4px -1px rgba(0, 0, 0, 0.6);
+      }
     }
+  }
 }
 footer .navbar {
-    display: none;
+  display: none;
 }
 
 .navbar-toggle {
-    @include button-variant(#CCC, $btn-default-bg, $btn-default-border);
-    background:transparent;
+  @include button-variant(#ccc, $btn-default-bg, $btn-default-border);
+  background: transparent;
 }
 
 $dropdown-forum-width: 230px;
 $dropdown-forum-number: 20;
 @media (min-width: $screen-sm-min) {
-    .dropdown.dropdown-forum {
-        & > .dropdown-menu {
-            width: $dropdown-forum-width;
-            height:2* (1px + 5px) + 23px + 26px * $dropdown-forum-number;
+  .dropdown.dropdown-forum {
+    & > .dropdown-menu {
+      width: $dropdown-forum-width;
+      height: 2 * (1px + 5px) + 23px + 26px * $dropdown-forum-number;
 
-            &:last-child {
-                margin-left: $dropdown-forum-width - 1px;
-                border-left: 0px;
-            }
+      &:last-child {
+        margin-left: $dropdown-forum-width - 2px;
+        border-left: 0px;
+      }
 
-            & > li > a {
-                padding: 2px 20px 4px;
-                & > img {
-                    vertical-align: top;
-                    padding-top: 3px;
-                }
-            }
+      & > li > a {
+        padding: 2px 20px 4px;
+        & > img {
+          vertical-align: top;
+          padding-top: 3px;
         }
-
+      }
     }
+  }
 }
 
 @media (max-width: $screen-xs-max) {
+  .navbar {
+    display: none;
+  }
+  footer {
     .navbar {
-        display:none;
-    }
-    footer {
-        .navbar {
-            display:block;
-            margin: 0 0 15px;
+      display: block;
+      margin: 0 0 15px;
 
-            .navbar-nav {
-                & > li {
-                    & > .dropdown-menu {
-                        margin-top:0px;
-                        margin-bottom:5px;
-                        border-bottom: 1px solid #032200;
-                    }
-                }
-            }
-
+      .navbar-nav {
+        & > li {
+          & > .dropdown-menu {
+            margin-top: 0px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #032200;
+          }
         }
+      }
     }
+  }
 }
