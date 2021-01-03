@@ -7,5 +7,5 @@
   <br>
 </td><!--section-end::WALLPAPER-->
 
-<!--section-start::SIZE--><br>- <a href="{..url..}" target="_blank">{..size..}</a><!--section-end::SIZE-->
+<!--section-start::SIZE--><br>- <a href="{..url..}" target="_blank rel="noopener">{..size..}</a><!--section-end::SIZE-->
 

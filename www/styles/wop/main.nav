@@ -43,7 +43,7 @@
 
 <ul class="nav navbar-nav navbar-right">
   <li>
-    <a href="http://forenarchiv.worldofplayers.de/" target="_blank">
+    <a href="http://forenarchiv.worldofplayers.de/" target="_blank" rel="noopener">
       Medis Forenarchiv</a>
   </li>
 

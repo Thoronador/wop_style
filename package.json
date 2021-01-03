@@ -14,7 +14,8 @@
     "build": "grunt default",
     "coat_of_arms": "grunt coat_of_arms",
     "favicons": "grunt favicons",
-    "images": "grunt images"
+    "images": "grunt images",
+    "karussell": "grunt karussell"
   },
   "devDependencies": {
     "gmsmith": "^1.2.0",

@@ -1,9 +1,9 @@
 <!--section-start::APPLET_ITEM--><p align="center">
-  <a href="{..item_url..}" target="_blank">
+  <a href="{..item_url..}" target="_blank" rel="noopener">
     {..item_small_image..}
   </a><br>
   <span class="small">
-    <a class="small" href="{..item_url..}" target="_blank">
+    <a class="small" href="{..item_url..}" target="_blank" rel="noopener">
       <b>{..item_titel..}</b>
     </a><br>
     Preis: <b>{..item_price..}</b>
@@ -18,7 +18,7 @@
 
 <!--section-start::SHOP_ITEM-->  <tr align="left">
     <td colspan="2">
-      <a style="font-size:150%; font-weight:bold;" href="{..item_url..}" target="_blank">
+      <a style="font-size:150%; font-weight:bold;" href="{..item_url..}" target="_blank" rel="noopener">
         {..item_titel..}
       </a>
     </td>
@@ -39,7 +39,7 @@
     </td>
     <td valign="top">
       {..item_text..}
-      <a href="{..item_url..}" target="_blank">Jetzt kaufen!</a>
+      <a href="{..item_url..}" target="_blank" rel="noopener">Jetzt kaufen!</a>
     </td>
   </tr>
   <tr><td>&nbsp;</td></tr><!--section-end::SHOP_ITEM-->

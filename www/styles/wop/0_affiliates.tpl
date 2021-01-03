@@ -1,5 +1,5 @@
 <!--section-start::APPLET_ENTRY--><div align="center">
-  <a href="{..url..}" target="_blank">
+  <a href="{..url..}" target="_blank" rel="noopener">
     <img src="{..button_url..}" border="0" alt="{..name..}"  title="{..name..}">
   </a>
 </div><!--section-end::APPLET_ENTRY-->
@@ -20,7 +20,7 @@
 
 <!--section-start::ENTRY--><p align="center">
   <b>{..name..}</b><br>
-  <a href="{..url..}" target="_blank">
+  <a href="{..url..}" target="_blank" rel="noopener">
     <img src="{..img_url..}" border="0" alt="{..name..}"  title="{..name..}">
   </a><br>
   {..text..}

@@ -16,7 +16,7 @@
 
 <!--section-start::ENTRY_BODY-->  <tr valign="top">
     <td>
-      <a href="{..url..}" target="_blank">
+      <a href="{..url..}" target="_blank" rel="noopener">
         <b>{..title..}</b>
       </a><br>
       {..date..}<br>

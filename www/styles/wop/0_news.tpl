@@ -26,7 +26,7 @@
 <!--section-start::NEWS_BODY-->
 <div class="box featured">
     <div class="row">
-        <a href="{..comments_url..}" target="_blank" class="headline">
+        <a href="{..comments_url..}" target="_blank" rel="noopener" class="headline">
             <div class="coat-of-arm coat-of-arm-{..cat_image..} no-hover"></div>
             <h2 title="{..titel..}">{..titel..}</h2>
             <p class="sub-line text-muted">
@@ -51,7 +51,7 @@
 <div class="box featured">
     <div class="row">
         <div class="featured-image" style="background-image: url({..featured_image..});">
-            <a href="{..comments_url..}" target="_blank" class="headline">
+            <a href="{..comments_url..}" target="_blank" rel="noopener" class="headline">
                 <div class="coat-of-arm coat-of-arm-{..cat_image..} no-hover"></div>
                 <h2 title="{..titel..}">{..titel..}</h2>
                 <p class="sub-line text-muted">
