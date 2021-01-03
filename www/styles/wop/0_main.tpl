@@ -74,7 +74,6 @@
     {..favicon_link..}
     {..feed_link..}
     [%app-icons%]
-    [%analytics%]
   </head>
   <body>
     {..body..}
