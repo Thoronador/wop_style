@@ -24,14 +24,14 @@ body {
         margin-left: 5px;
         background-position: left center;
         background-repeat: no-repeat;
-        background-image: url($bg-image-sm);
+        @include bgImage($bg-image-sm);
         background-size: contain;
         font-size: 0px;
     }
 
     @media (min-width: $screen-sm-min) {
         height: 240px;
-        background-image: url($bg-image);
+        @include bgImage($bg-image);
         background-position: -2px top;
         background-repeat: no-repeat;
         background-size: auto;

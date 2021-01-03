@@ -4952,22 +4952,28 @@ a.list-group-item-danger {
   border-image: url(img/border.png) 8 repeat;
   background-color: #053C03; }
 
-h1 + .sub-line, .h1 + .sub-line {
+h1 + .sub-line,
+.h1 + .sub-line {
   margin-top: -10px; }
 
-h2 + .sub-line, .h2 + .sub-line {
+h2 + .sub-line,
+.h2 + .sub-line {
   margin-top: -10px; }
 
-h3 + .sub-line, .h3 + .sub-line {
+h3 + .sub-line,
+.h3 + .sub-line {
   margin-top: -10px; }
 
-h4 + .sub-line, .box h2 + .sub-line, .h4 + .sub-line {
+h4 + .sub-line, .box h2 + .sub-line,
+.h4 + .sub-line {
   margin-top: -10px; }
 
-h5 + .sub-line, .h5 + .sub-line {
+h5 + .sub-line,
+.h5 + .sub-line {
   margin-top: -10px; }
 
-h6 + .sub-line, .h6 + .sub-line {
+h6 + .sub-line,
+.h6 + .sub-line {
   margin-top: -10px; }
 
 .list-group.list-group-condensed .list-group-item {
@@ -5093,13 +5099,15 @@ body {
     margin-left: 5px;
     background-position: left center;
     background-repeat: no-repeat;
-    background-image: url("img/header_sm.png");
+    background-image: url(img/header_sm.png);
+    background-image: -webkit-image-set(url("img/header_sm.webp") 1x);
     background-size: contain;
     font-size: 0px; }
   @media (min-width: 768px) {
     .header {
       height: 240px;
-      background-image: url("img/header.png");
+      background-image: url(img/header.png);
+      background-image: -webkit-image-set(url("img/header.webp") 1x);
       background-position: -2px top;
       background-repeat: no-repeat;
       background-size: auto;
@@ -5424,264 +5432,308 @@ have a fixed width and height (but it's not required).
 
 .coat-of-arm-_amalur, .coat-of-arm-amalur:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: 0px 0px;
   width: 78px;
   height: 100px; }
 
 .coat-of-arm-_assassinscreed, .coat-of-arm-assassinscreed:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -77px -100px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_cyberpunk, .coat-of-arm-cyberpunk:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -151px -100px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_demonicon, .coat-of-arm-demonicon:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -233px 0px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_diablo, .coat-of-arm-diablo:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -233px -100px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_dragonage, .coat-of-arm-dragonage:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -156px 0px;
   width: 77px;
   height: 100px; }
 
 .coat-of-arm-_drakensang, .coat-of-arm-drakensang:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: 0px -200px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_dungeonlords, .coat-of-arm-dungeonlords:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -74px -200px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_elex, .coat-of-arm-elex:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: 0px -500px;
   width: 80px;
   height: 80px; }
 
 .coat-of-arm-_fallout, .coat-of-arm-fallout:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -80px -500px;
   width: 80px;
   height: 80px; }
 
 .coat-of-arm-_gothic, .coat-of-arm-gothic:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -148px -200px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_grotesque, .coat-of-arm-grotesque:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -222px -200px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_herrderringe, .coat-of-arm-herrderringe:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -307px 0px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_masseffect, .coat-of-arm-masseffect:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -307px -100px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_neverwinter, .coat-of-arm-neverwinter:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -307px -200px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_risen, .coat-of-arm-risen:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -381px 0px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_sacred, .coat-of-arm-sacred:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -381px -100px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_starcraft, .coat-of-arm-starcraft:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -381px -200px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_tes, .coat-of-arm-tes:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: 0px -300px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_thief, .coat-of-arm-thief:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -74px -300px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-_witcher, .coat-of-arm-witcher:not(.no-hover):hover {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -148px -300px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-amalur {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -78px 0px;
   width: 78px;
   height: 100px; }
 
 .coat-of-arm-assassinscreed {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -222px -300px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-cyberpunk {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -296px -300px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-demonicon {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -370px -300px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-diablo {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -455px 0px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-dragonage {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: 0px -100px;
   width: 77px;
   height: 100px; }
 
 .coat-of-arm-drakensang {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -455px -100px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-dungeonlords {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -455px -200px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-elex {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -455px -300px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-fallout {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -160px -500px;
   width: 80px;
   height: 80px; }
 
 .coat-of-arm-gothic {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: 0px -400px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-grotesque {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -74px -400px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-herrderringe {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -148px -400px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-masseffect {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -222px -400px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-neverwinter {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -296px -400px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-risen {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -370px -400px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-sacred {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -444px -400px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-starcraft {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -529px 0px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-tes {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -529px -100px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-thief {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -529px -200px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-witcher {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -529px -300px;
   width: 74px;
   height: 100px; }
 
 .coat-of-arm-wop {
   background-image: url(img/schilde.png);
+  background-image: -webkit-image-set(url("img/schilde.webp") 1x);
   background-position: -529px -400px;
   width: 48px;
   height: 55px; }
 
 .favicon-_none {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: 0px -24px;
   width: 16px;
   height: 16px;
@@ -5691,6 +5743,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-amalur {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -20px -24px;
   width: 16px;
   height: 16px;
@@ -5700,6 +5753,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-assassinscreed {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -48px 0px;
   width: 16px;
   height: 16px;
@@ -5709,6 +5763,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-cyberpunk {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -48px -20px;
   width: 16px;
   height: 16px;
@@ -5718,6 +5773,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-demonicon {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: 0px -44px;
   width: 16px;
   height: 16px;
@@ -5727,6 +5783,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-diablo {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -20px -44px;
   width: 16px;
   height: 16px;
@@ -5736,6 +5793,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-divinity {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -40px -44px;
   width: 16px;
   height: 16px;
@@ -5745,6 +5803,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-dragonage {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -68px 0px;
   width: 16px;
   height: 16px;
@@ -5754,6 +5813,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-drakensang {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -108px 0px;
   width: 15px;
   height: 16px;
@@ -5763,6 +5823,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-dungeonlords {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -68px -20px;
   width: 16px;
   height: 16px;
@@ -5772,6 +5833,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-elex {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -68px -40px;
   width: 16px;
   height: 16px;
@@ -5781,6 +5843,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-fallout {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: 0px 0px;
   width: 20px;
   height: 20px;
@@ -5790,6 +5853,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-gothic {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: 0px -64px;
   width: 16px;
   height: 16px;
@@ -5799,6 +5863,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-herrderringe {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -20px -64px;
   width: 16px;
   height: 16px;
@@ -5808,6 +5873,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-kingdomhearts {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -40px -64px;
   width: 16px;
   height: 16px;
@@ -5817,6 +5883,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-masseffect {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -60px -64px;
   width: 16px;
   height: 16px;
@@ -5826,6 +5893,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-neverwinter {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -88px 0px;
   width: 16px;
   height: 16px;
@@ -5835,6 +5903,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-risen {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -88px -20px;
   width: 16px;
   height: 16px;
@@ -5844,6 +5913,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-sacred {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -88px -40px;
   width: 16px;
   height: 16px;
@@ -5853,6 +5923,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-starcraft {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -88px -60px;
   width: 16px;
   height: 16px;
@@ -5862,6 +5933,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-starwars {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: 0px -84px;
   width: 16px;
   height: 16px;
@@ -5871,6 +5943,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-tes {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -20px -84px;
   width: 16px;
   height: 16px;
@@ -5880,6 +5953,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-thief {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -40px -84px;
   width: 16px;
   height: 16px;
@@ -5889,6 +5963,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-unbended {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -24px 0px;
   width: 20px;
   height: 20px;
@@ -5898,6 +5973,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-witcher {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -60px -84px;
   width: 16px;
   height: 16px;
@@ -5907,6 +5983,7 @@ have a fixed width and height (but it's not required).
 
 .favicon-wop {
   background-image: url(img/favicons.png);
+  background-image: -webkit-image-set(url("img/favicons.webp") 1x);
   background-position: -80px -84px;
   width: 16px;
   height: 16px;

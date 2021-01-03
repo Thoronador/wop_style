@@ -93,6 +93,31 @@ module.exports = function (grunt) {
                 imgPath: 'img/favicons.png'
             }
         },
+        cwebp: {
+            coat_of_arms: {
+                files: {
+                    'www/styles/wop/img/schilde.webp': 'www/styles/wop/img/schilde.png'
+                }
+            },
+            favicons: {
+                files: {
+                    'www/styles/wop/img/favicons.webp': 'www/styles/wop/img/favicons.png'
+                }
+            },
+            karussell: {
+                files: {
+                    'www/karussell/schilde.webp': 'www/karussell/schilde.png'
+                }
+            },
+            images: {
+                files: [{
+                    expand: true,
+                    cwd: 'www/styles/wop/img/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'www/styles/wop/img/'
+                }]
+            }
+        },
         watch: {
             options: {
                 spawn: false,
@@ -113,11 +138,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-spritesmith');
+    grunt.loadNpmTasks('grunt-cwebp');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['sass:dist', 'concat:dist']);
-    grunt.registerTask('coat_of_arms', ['responsive_images:coat_of_arms', 'sprite:coat_of_arms', 'sass:dist']);
-    grunt.registerTask('karussell', ['sprite:karussell', 'sass:karussell']);
-    grunt.registerTask('favicons', ['sprite:favicons', 'sass:dist']);
-    grunt.registerTask('images', ['responsive_images:coat_of_arms', 'sprite:coat_of_arms', 'sprite:favicons', 'sass:dist']);
+    grunt.registerTask('coat_of_arms', ['responsive_images:coat_of_arms', 'sprite:coat_of_arms', 'cwebp:coat_of_arms', 'sass:dist']);
+    grunt.registerTask('karussell', ['sprite:karussell', 'cwebp:karussell', 'sass:karussell']);
+    grunt.registerTask('favicons', ['sprite:favicons', 'cwebp:favicons', 'sass:dist']);
+    grunt.registerTask('images', ['responsive_images:coat_of_arms', 'sprite:coat_of_arms', 'sprite:favicons', 'cwebp:images', 'sass:dist']);
 };
