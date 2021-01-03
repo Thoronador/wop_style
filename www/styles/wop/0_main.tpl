@@ -1,4 +1,4 @@
-<!--section-start::MAIN--><div class="header">
+<!--section-start::MAIN--><div class="header" id="top">
   <a class="btn btn-default navbar-toggle" href="#nav-footer">
     <span class="fa fa-bars fa-lg"></span>
     <span>Menü</span>
@@ -51,6 +51,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 text-center">
+        $NAV(bottom.nav)
         <p>
           {..copyright..}
         </p>

@@ -1,0 +1,7 @@
+<ul class="list-inline">
+  <li><a href="$URL(news)">Startseite</a></li>
+  <li><a href="$URL(kontakt)">Impressum</a></li>
+  <li><a href="$URL(datenschutz)">Datenschutz</a></li>
+  <li><a href="https://forum.worldofplayers.de/">Forum</a></li>
+  <li><a href="#top">Nach oben</a></li>
+</ul>
