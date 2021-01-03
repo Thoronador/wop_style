@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         concat: {
             dist: {
                 src: [
-                    'assets/js/jquery-2.2.4.min.js',
+                    'assets/js/jquery-3.5.1.min.js',
                     'assets/js/jquery.jcarousel.min.js',
                     'assets/js/bootstrap/dropdown.js',
                     'assets/js/js.cookie.js',
