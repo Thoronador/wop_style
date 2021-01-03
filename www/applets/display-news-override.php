@@ -2,10 +2,39 @@
 /* monkey patching display News function */
 namespace Frogsystem;
 
+function assetProxy($url, $key, $safelist = array(), $baseUrl = "https://assets.worldofplayers.de/") {
+    $urlbits = parse_url($url);
+
+    // skip relative URLs
+    if (!$urlbits['host']) {
+      return $url;
+    }
+  
+    // Safelisted URLs just need to be secure
+    if (in_array($urlbits['host'], $safelist)) {
+      if ($urlbits['scheme'] != 'https') {
+        return preg_replace("/^http:/i", "https:", $url);
+      }
+      return $url;
+    }
+  
+    $b64digest = rtrim(base64_encode(hash_hmac("sha1", $url, $key, true)), "=");
+    $b64url = rtrim(base64_encode($url), "=");
+
+    return $baseUrl.$b64digest."/".$b64url;
+}
+
+function replaceImgTags($text, $replacer)
+{
+    return preg_replace_callback('#(\[img.*\])([^\s]+)(\[\/img\])#', function($matches) use ($replacer) {
+        return $matches[1].$replacer($matches[2]).$matches[3];
+    }, $text);
+}
+
 function display_news($news_arr, $html_code, $fs_code, $para_handling)
 {
-    global $FD;
-
+    global $FD, $proxyKey;
+    require_once("asset_proxy.php");
 
     $news_arr['news_date'] = date_loc($FD->config('datetime'), $news_arr['news_date']);
 
@@ -60,12 +89,15 @@ function display_news($news_arr, $html_code, $fs_code, $para_handling)
     }
 
     $news_arr['news_text'] = \StringCutter::truncate(trim($news_arr['news_text']), ($featured_url ? 800 : 600), '...', array('word' => true, 'bbcode' => true));
+    $news_arr['news_text'] = replaceImgTags($news_arr['news_text'], function($url) use ($proxyKey) {
+        return assetProxy($url, $proxyKey, array('worldofplayers.de', 'www.worldofplayers.de', 'upload.worldofplayers.de'));
+    });
     $news_arr['news_text'] = parse_fscode($news_arr['news_text'], $flags, $to_html, $to_text, $to_bbcode, $remove);
 
     // title
     $news_arr['news_title'] = killhtml($news_arr['news_title']);
 
-    // Template lesen und fÃ¼llen
+    // Template lesen und füllen
     $template = new \template();
     $template->setFile('0_news.tpl');
     if ($featured_url) {
