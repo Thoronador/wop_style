@@ -20,8 +20,8 @@ function assetProxy($url, $key, $safelist = array(), $baseUrl = "https://assets.
         return $url;
     }
 
-    $b64digest = rtrim(base64_encode(hash_hmac("sha1", $url, $key, true)), "=");
-    $b64url = rtrim(base64_encode($url), "=");
+    $b64digest = rtrim(strtr(base64_encode(hash_hmac("sha1", $url, $key, true)), '+/', '-_'), "=");
+    $b64url = rtrim(strtr(base64_encode($url), '+/', '-_'), "=");
 
     return $baseUrl . $b64digest . "/" . $b64url;
 }
