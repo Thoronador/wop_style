@@ -16,8 +16,13 @@
   </div>
 </div>
 
-[%sponsor%]
-
+<!-- Resp. Webseite WoP -->
+<ins class="adsbygoogle sponsor"
+      style="display:block"
+      data-ad-client="ca-pub-8000940427139377"
+      data-ad-slot="8419603175"
+      data-ad-format="horizontal"></ins>
+<!-- / Resp. Webseite WoP -->
 
 <div class="navbar navbar-default" role="navigation">
   <div class="container">
@@ -79,13 +84,13 @@
     {..body..}
     {..javascript..}
     <script type="text/javascript">
-      const cb = new Cookiebanner({
-        message: "Wir verwenden Cookies um Dir den Besuch dieser Webseite zu ermöglichen (Werbung, Social Media). Dabei werden Informationen über die Nutzung teils weitergegeben. Durch Deinen Besuch stimmst Du dem zu.",
-        linkmsg: "Weitere Informationen",
-        moreinfo: "$URL(datenschutz)"
-      }); cb.run();
+      conditionalLoadAds();
+      gdprCookieNotice({
+        statement: 'https://www.worldofplayers.de/datenschutz.html',
+        explicit: ['analytics', 'marketing'],
+        marketing: ['__gads']
+      });
     </script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </body>
 </html><!--section-end::MATRIX-->
 
