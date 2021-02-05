@@ -86,6 +86,7 @@
     <script type="text/javascript">
       conditionalLoadAds();
       gdprCookieNotice({
+        domain: '.worldofplayers.de',
         statement: 'https://www.worldofplayers.de/datenschutz.html',
         explicit: ['analytics', 'marketing'],
         marketing: ['__gads']
